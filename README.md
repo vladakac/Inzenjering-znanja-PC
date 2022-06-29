@@ -1,0 +1,2 @@
+# Inzenjering znanja PC
+ 
