@@ -9,6 +9,142 @@
 <http://www.semanticweb.org/vlada/ontologies/2022/5/components> rdf:type owl:Ontology .
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_chipset
+:Motherboard_chipset rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_form
+:Motherboard_form rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_m.2_slots
+:Motherboard_m.2_slots rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_max
+:Motherboard_memory_max rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_max_frequency
+:Motherboard_memory_max_frequency rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_slots
+:Motherboard_memory_slots rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_type
+:Motherboard_memory_type rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_pcie_slots
+:Motherboard_pcie_slots rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_sata_port
+:Motherboard_sata_port rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_usb_ports
+:Motherboard_usb_ports rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_clock
+:cpu_core_clock rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_count
+:cpu_core_count rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_integrated_graphics
+:cpu_integrated_graphics rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_power_usage
+:cpu_power_usage rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_series
+:cpu_series rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_boost_memory_clock
+:gpu_boost_memory_clock rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_chipset
+:gpu_chipset rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_connector
+:gpu_connector rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_dp_ports
+:gpu_dp_ports rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_dvi_ports
+:gpu_dvi_ports rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_hdmi_ports
+:gpu_hdmi_ports rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory
+:gpu_memory rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory_clock
+:gpu_memory_clock rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory_type
+:gpu_memory_type rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_power_usage
+:gpu_power_usage rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_vga_ports
+:gpu_vga_ports rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_memory
+:ram_memory rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_speed
+:ram_speed rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_type
+:ram_type rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#socket
+:socket rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_capacity
+:storage_capacity rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_rpm
+:storage_rpm rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_sata_speed
+:storage_sata_speed rdf:type owl:DatatypeProperty .
+
+
+#################################################################
 #    Classes
 #################################################################
 
