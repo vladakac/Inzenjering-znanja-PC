@@ -52,6 +52,18 @@
 :Motherboard_usb_ports rdf:type owl:DatatypeProperty .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#case_front_panel_usb
+:case_front_panel_usb rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#case_side_panel
+:case_side_panel rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cooler_height
+:cooler_height rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_clock
 :cpu_core_clock rdf:type owl:DatatypeProperty .
 
@@ -70,6 +82,10 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_series
 :cpu_series rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#fan_bearing
+:fan_bearing rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_boost_memory_clock
@@ -116,6 +132,94 @@
 :gpu_vga_ports rdf:type owl:DatatypeProperty .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#headphones_has_microphone
+:headphones_has_microphone rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#keyboard_switch_type
+:keyboard_switch_type rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_aspect_ratio
+:monitor_aspect_ratio rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_curved_screen
+:monitor_curved_screen rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_frame_sync
+:monitor_frame_sync rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_refresh_rate
+:monitor_refresh_rate rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_response_time
+:monitor_response_time rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_size
+:monitor_size rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_dpi
+:mouse_dpi rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_hand
+:mouse_hand rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_tracking
+:mouse_tracking rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#os_mode
+:os_mode rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#peripheral_connector
+:peripheral_connector rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#peripheral_style
+:peripheral_style rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_efficiency_rating
+:psu_efficiency_rating rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_fanless
+:psu_fanless rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_molex_4_pin
+:psu_molex_4_pin rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_pcie_6_pin
+:psu_pcie_6_pin rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_pcie_8_pin
+:psu_pcie_8_pin rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_sata
+:psu_sata rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_type
+:psu_type rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_wattage
+:psu_wattage rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_memory
 :ram_memory rdf:type owl:DatatypeProperty .
 
@@ -128,8 +232,20 @@
 :ram_type rdf:type owl:DatatypeProperty .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#resolution
+:resolution rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#rgb
+:rgb rdf:type owl:DatatypeProperty .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#socket
 :socket rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#speakers_wattage
+:speakers_wattage rdf:type owl:DatatypeProperty .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_capacity
@@ -142,6 +258,14 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_sata_speed
 :storage_sata_speed rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#tenkeyless
+:tenkeyless rdf:type owl:DatatypeProperty .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#water_cooler_size
+:water_cooler_size rdf:type owl:DatatypeProperty .
 
 
 #################################################################
