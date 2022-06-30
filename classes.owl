@@ -1,0 +1,369 @@
+@prefix : <http://www.semanticweb.org/vlada/ontologies/2022/5/components#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <http://www.semanticweb.org/vlada/ontologies/2022/5/components> .
+
+<http://www.semanticweb.org/vlada/ontologies/2022/5/components> rdf:type owl:Ontology .
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#AMD
+:AMD rdf:type owl:Class ;
+     rdfs:subClassOf :CPU .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ATX
+:ATX rdf:type owl:Class ;
+     rdfs:subClassOf :Motherboard .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#BluetoothDriver
+:BluetoothDriver rdf:type owl:Class ;
+                 rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#CPU
+:CPU rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Camera
+:Camera rdf:type owl:Class ;
+        rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Case
+:Case rdf:type owl:Class ;
+      rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Component
+:Component rdf:type owl:Class .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Controller
+:Controller rdf:type owl:Class ;
+            rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Cooling
+:Cooling rdf:type owl:Class ;
+         rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#DisplayDriver
+:DisplayDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Driver
+:Driver rdf:type owl:Class ;
+        rdfs:subClassOf :SoftwareComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ExternalComponent
+:ExternalComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :HardwareComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ExternalMemory
+:ExternalMemory rdf:type owl:Class ;
+                rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Fan
+:Fan rdf:type owl:Class ;
+     rdfs:subClassOf :Cooling .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#FullTower
+:FullTower rdf:type owl:Class ;
+           rdfs:subClassOf :Case .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#FullyModular
+:FullyModular rdf:type owl:Class ;
+              rdfs:subClassOf :PSU .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GPU
+:GPU rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#HDD
+:HDD rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#HardwareComponent
+:HardwareComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :Component .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Headphone
+:Headphone rdf:type owl:Class ;
+           rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#IPS
+:IPS rdf:type owl:Class ;
+     rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Inkjet
+:Inkjet rdf:type owl:Class ;
+        rdfs:subClassOf :Printer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Intel
+:Intel rdf:type owl:Class ;
+       rdfs:subClassOf :CPU .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#InternalComponent
+:InternalComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :HardwareComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Joystick
+:Joystick rdf:type owl:Class ;
+          rdfs:subClassOf :Controller .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Keyboard
+:Keyboard rdf:type owl:Class ;
+          rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#KeyboardDriver
+:KeyboardDriver rdf:type owl:Class ;
+                rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#LED
+:LED rdf:type owl:Class ;
+     rdfs:subClassOf :Printer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Laser
+:Laser rdf:type owl:Class ;
+       rdfs:subClassOf :Printer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Linux
+:Linux rdf:type owl:Class ;
+       rdfs:subClassOf :OS .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#M.2
+:M.2 rdf:type owl:Class ;
+     rdfs:subClassOf :SSD .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Mac
+:Mac rdf:type owl:Class ;
+     rdfs:subClassOf :OS .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Mechanic
+:Mechanic rdf:type owl:Class ;
+          rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Membrane
+:Membrane rdf:type owl:Class ;
+          rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MemoryDriver
+:MemoryDriver rdf:type owl:Class ;
+              rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MicroATX
+:MicroATX rdf:type owl:Class ;
+          rdfs:subClassOf :Motherboard .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Microphone
+:Microphone rdf:type owl:Class ;
+            rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MidTower
+:MidTower rdf:type owl:Class ;
+          rdfs:subClassOf :Case .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MiniITX
+:MiniITX rdf:type owl:Class ;
+         rdfs:subClassOf :Motherboard .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MiniTower
+:MiniTower rdf:type owl:Class ;
+           rdfs:subClassOf :Case .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Monitor
+:Monitor rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard
+:Motherboard rdf:type owl:Class ;
+             rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Mouse
+:Mouse rdf:type owl:Class ;
+       rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MouseDriver
+:MouseDriver rdf:type owl:Class ;
+             rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NetworkDriver
+:NetworkDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NonModular
+:NonModular rdf:type owl:Class ;
+            rdfs:subClassOf :PSU .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#OS
+:OS rdf:type owl:Class ;
+    rdfs:subClassOf :SoftwareComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#OpticalDrive
+:OpticalDrive rdf:type owl:Class ;
+              rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#OpticalDriver
+:OpticalDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PSU
+:PSU rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Printer
+:Printer rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PrinterDriver
+:PrinterDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RAM
+:RAM rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SATA
+:SATA rdf:type owl:Class ;
+      rdfs:subClassOf :SSD .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SSD
+:SSD rdf:type owl:Class ;
+     rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Scanner
+:Scanner rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ScannerDriver
+:ScannerDriver rdf:type owl:Class ;
+               rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SemiMechanic
+:SemiMechanic rdf:type owl:Class ;
+              rdfs:subClassOf :Keyboard .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SemiModular
+:SemiModular rdf:type owl:Class ;
+             rdfs:subClassOf :PSU .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SoftwareComponent
+:SoftwareComponent rdf:type owl:Class ;
+                   rdfs:subClassOf :Component .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SoundCard
+:SoundCard rdf:type owl:Class ;
+           rdfs:subClassOf :InternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SoundDriver
+:SoundDriver rdf:type owl:Class ;
+             rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Speaker
+:Speaker rdf:type owl:Class ;
+         rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TN
+:TN rdf:type owl:Class ;
+    rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#UsbDriver
+:UsbDriver rdf:type owl:Class ;
+           rdfs:subClassOf :Driver .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#VA
+:VA rdf:type owl:Class ;
+    rdfs:subClassOf :Monitor .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WaterCooling
+:WaterCooling rdf:type owl:Class ;
+              rdfs:subClassOf :Cooling .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Wheel
+:Wheel rdf:type owl:Class ;
+       rdfs:subClassOf :Controller .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Windows
+:Windows rdf:type owl:Class ;
+         rdfs:subClassOf :OS .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WirelessAdapter
+:WirelessAdapter rdf:type owl:Class ;
+                 rdfs:subClassOf :ExternalComponent .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WirelessCard
+:WirelessCard rdf:type owl:Class ;
+              rdfs:subClassOf :InternalComponent .
+
+
+###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
