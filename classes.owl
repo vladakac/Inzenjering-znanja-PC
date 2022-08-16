@@ -13,43 +13,63 @@
 #################################################################
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_chipset
-:Motherboard_chipset rdf:type owl:DatatypeProperty .
+:Motherboard_chipset rdf:type owl:DatatypeProperty ;
+                     rdfs:domain :Motherboard ;
+                     rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_form
-:Motherboard_form rdf:type owl:DatatypeProperty .
+:Motherboard_form rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Motherboard ;
+                  rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_m.2_slots
-:Motherboard_m.2_slots rdf:type owl:DatatypeProperty .
+:Motherboard_m.2_slots rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Motherboard ;
+                       rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_max
-:Motherboard_memory_max rdf:type owl:DatatypeProperty .
+:Motherboard_memory_max rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Motherboard ;
+                        rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_max_frequency
-:Motherboard_memory_max_frequency rdf:type owl:DatatypeProperty .
+:Motherboard_memory_max_frequency rdf:type owl:DatatypeProperty ;
+                                  rdfs:domain :Motherboard ;
+                                  rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_slots
-:Motherboard_memory_slots rdf:type owl:DatatypeProperty .
+:Motherboard_memory_slots rdf:type owl:DatatypeProperty ;
+                          rdfs:domain :Motherboard ;
+                          rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_type
-:Motherboard_memory_type rdf:type owl:DatatypeProperty .
+:Motherboard_memory_type rdf:type owl:DatatypeProperty ;
+                         rdfs:domain :Motherboard ;
+                         rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_pcie_slots
-:Motherboard_pcie_slots rdf:type owl:DatatypeProperty .
+:Motherboard_pcie_slots rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :Motherboard ;
+                        rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_sata_port
-:Motherboard_sata_port rdf:type owl:DatatypeProperty .
+:Motherboard_sata_port rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Motherboard ;
+                       rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_usb_ports
-:Motherboard_usb_ports rdf:type owl:DatatypeProperty .
+:Motherboard_usb_ports rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Motherboard ;
+                       rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#case_front_panel_usb
@@ -101,91 +121,135 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#fan_bearing
-:fan_bearing rdf:type owl:DatatypeProperty .
+:fan_bearing rdf:type owl:DatatypeProperty ;
+             rdfs:domain :Fan ;
+             rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_boost_memory_clock
-:gpu_boost_memory_clock rdf:type owl:DatatypeProperty .
+:gpu_boost_memory_clock rdf:type owl:DatatypeProperty ;
+                        rdfs:domain :GPU ;
+                        rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_chipset
-:gpu_chipset rdf:type owl:DatatypeProperty .
+:gpu_chipset rdf:type owl:DatatypeProperty ;
+             rdfs:domain :GPU ;
+             rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_connector
-:gpu_connector rdf:type owl:DatatypeProperty .
+:gpu_connector rdf:type owl:DatatypeProperty ;
+               rdfs:domain :GPU ;
+               rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_dp_ports
-:gpu_dp_ports rdf:type owl:DatatypeProperty .
+:gpu_dp_ports rdf:type owl:DatatypeProperty ;
+              rdfs:domain :GPU ;
+              rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_dvi_ports
-:gpu_dvi_ports rdf:type owl:DatatypeProperty .
+:gpu_dvi_ports rdf:type owl:DatatypeProperty ;
+               rdfs:domain :GPU ;
+               rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_hdmi_ports
-:gpu_hdmi_ports rdf:type owl:DatatypeProperty .
+:gpu_hdmi_ports rdf:type owl:DatatypeProperty ;
+                rdfs:domain :GPU ;
+                rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory
-:gpu_memory rdf:type owl:DatatypeProperty .
+:gpu_memory rdf:type owl:DatatypeProperty ;
+            rdfs:domain :GPU ;
+            rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory_clock
-:gpu_memory_clock rdf:type owl:DatatypeProperty .
+:gpu_memory_clock rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :GPU ;
+                  rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory_type
-:gpu_memory_type rdf:type owl:DatatypeProperty .
+:gpu_memory_type rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :GPU ;
+                 rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_power_usage
-:gpu_power_usage rdf:type owl:DatatypeProperty .
+:gpu_power_usage rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :GPU ;
+                 rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_vga_ports
-:gpu_vga_ports rdf:type owl:DatatypeProperty .
+:gpu_vga_ports rdf:type owl:DatatypeProperty ;
+               rdfs:domain :GPU ;
+               rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#headphones_has_microphone
-:headphones_has_microphone rdf:type owl:DatatypeProperty .
+:headphones_has_microphone rdf:type owl:DatatypeProperty ;
+                           rdfs:domain :Headphone ;
+                           rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#keyboard_switch_type
-:keyboard_switch_type rdf:type owl:DatatypeProperty .
+:keyboard_switch_type rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Keyboard ;
+                      rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_aspect_ratio
-:monitor_aspect_ratio rdf:type owl:DatatypeProperty .
+:monitor_aspect_ratio rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Monitor ;
+                      rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_curved_screen
-:monitor_curved_screen rdf:type owl:DatatypeProperty .
+:monitor_curved_screen rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Monitor ;
+                       rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_frame_sync
-:monitor_frame_sync rdf:type owl:DatatypeProperty .
+:monitor_frame_sync rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :Monitor ;
+                    rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_refresh_rate
-:monitor_refresh_rate rdf:type owl:DatatypeProperty .
+:monitor_refresh_rate rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Monitor ;
+                      rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_response_time
-:monitor_response_time rdf:type owl:DatatypeProperty .
+:monitor_response_time rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :Monitor ;
+                       rdfs:range xsd:double .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_size
-:monitor_size rdf:type owl:DatatypeProperty .
+:monitor_size rdf:type owl:DatatypeProperty ;
+              rdfs:domain :Monitor ;
+              rdfs:range xsd:double .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_dpi
-:mouse_dpi rdf:type owl:DatatypeProperty .
+:mouse_dpi rdf:type owl:DatatypeProperty ;
+           rdfs:domain :Mouse ;
+           rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_hand
-:mouse_hand rdf:type owl:DatatypeProperty .
+:mouse_hand rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Mouse ;
+            rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_tracking
@@ -193,7 +257,9 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#os_mode
-:os_mode rdf:type owl:DatatypeProperty .
+:os_mode rdf:type owl:DatatypeProperty ;
+         rdfs:domain :OS ;
+         rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#peripheral_connector
@@ -205,83 +271,134 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_efficiency_rating
-:psu_efficiency_rating rdf:type owl:DatatypeProperty .
+:psu_efficiency_rating rdf:type owl:DatatypeProperty ;
+                       rdfs:domain :PSU ;
+                       rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_fanless
-:psu_fanless rdf:type owl:DatatypeProperty .
+:psu_fanless rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PSU ;
+             rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_molex_4_pin
-:psu_molex_4_pin rdf:type owl:DatatypeProperty .
+:psu_molex_4_pin rdf:type owl:DatatypeProperty ;
+                 rdfs:domain :PSU ;
+                 rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_pcie_6_pin
-:psu_pcie_6_pin rdf:type owl:DatatypeProperty .
+:psu_pcie_6_pin rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PSU ;
+                rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_pcie_8_pin
-:psu_pcie_8_pin rdf:type owl:DatatypeProperty .
+:psu_pcie_8_pin rdf:type owl:DatatypeProperty ;
+                rdfs:domain :PSU ;
+                rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_sata
-:psu_sata rdf:type owl:DatatypeProperty .
+:psu_sata rdf:type owl:DatatypeProperty ;
+          rdfs:domain :PSU ;
+          rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_type
-:psu_type rdf:type owl:DatatypeProperty .
+:psu_type rdf:type owl:DatatypeProperty ;
+          rdfs:domain :PSU ;
+          rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_wattage
-:psu_wattage rdf:type owl:DatatypeProperty .
+:psu_wattage rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PSU ;
+             rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_memory
-:ram_memory rdf:type owl:DatatypeProperty .
+:ram_memory rdf:type owl:DatatypeProperty ;
+            rdfs:domain :RAM ;
+            rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_speed
-:ram_speed rdf:type owl:DatatypeProperty .
+:ram_speed rdf:type owl:DatatypeProperty ;
+           rdfs:domain :RAM ;
+           rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_type
-:ram_type rdf:type owl:DatatypeProperty .
+:ram_type rdf:type owl:DatatypeProperty ;
+          rdfs:domain :RAM ;
+          rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#resolution
-:resolution rdf:type owl:DatatypeProperty .
+:resolution rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Monitor ;
+            rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#rgb
-:rgb rdf:type owl:DatatypeProperty .
+:rgb rdf:type owl:DatatypeProperty ;
+     rdfs:domain :Case ,
+                 :Cooling ,
+                 :Keyboard ,
+                 :Motherboard ,
+                 :Mouse ,
+                 :PSU ,
+                 :RAM ;
+     rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#socket
-:socket rdf:type owl:DatatypeProperty .
+:socket rdf:type owl:DatatypeProperty ;
+        rdfs:domain :CPU ,
+                    :GPU ;
+        rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#speakers_wattage
-:speakers_wattage rdf:type owl:DatatypeProperty .
+:speakers_wattage rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :Speaker ;
+                  rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_capacity
-:storage_capacity rdf:type owl:DatatypeProperty .
+:storage_capacity rdf:type owl:DatatypeProperty ;
+                  rdfs:domain :ExternalMemory ,
+                              :HDD ,
+                              :SSD ;
+                  rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_rpm
-:storage_rpm rdf:type owl:DatatypeProperty .
+:storage_rpm rdf:type owl:DatatypeProperty ;
+             rdfs:domain :HDD ;
+             rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_sata_speed
-:storage_sata_speed rdf:type owl:DatatypeProperty .
+:storage_sata_speed rdf:type owl:DatatypeProperty ;
+                    rdfs:domain :ExternalMemory ,
+                                :HDD ,
+                                :SSD ;
+                    rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#tenkeyless
-:tenkeyless rdf:type owl:DatatypeProperty .
+:tenkeyless rdf:type owl:DatatypeProperty ;
+            rdfs:domain :Keyboard ;
+            rdfs:range xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#water_cooler_size
-:water_cooler_size rdf:type owl:DatatypeProperty .
+:water_cooler_size rdf:type owl:DatatypeProperty ;
+                   rdfs:domain :WaterCooling ;
+                   rdfs:range xsd:double .
 
 
 #################################################################
