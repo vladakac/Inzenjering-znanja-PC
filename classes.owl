@@ -96,6 +96,12 @@
                 rdfs:range xsd:integer .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_clock_boost
+:cpu_core_clock_boost rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :CPU ;
+                      rdfs:range xsd:integer .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_count
 :cpu_core_count rdf:type owl:DatatypeProperty ;
                 rdfs:domain :CPU ;
@@ -154,6 +160,12 @@
 :gpu_dvi_ports rdf:type owl:DatatypeProperty ;
                rdfs:domain :GPU ;
                rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_hashrate
+:gpu_hashrate rdf:type owl:DatatypeProperty ;
+              rdfs:domain :GPU ;
+              rdfs:range xsd:integer .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_hdmi_ports
@@ -282,6 +294,12 @@
              rdfs:range xsd:boolean .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_modular
+:psu_modular rdf:type owl:DatatypeProperty ;
+             rdfs:domain :PSU ;
+             rdfs:range xsd:boolean .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_molex_4_pin
 :psu_molex_4_pin rdf:type owl:DatatypeProperty ;
                  rdfs:domain :PSU ;
@@ -356,8 +374,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#socket
 :socket rdf:type owl:DatatypeProperty ;
-        rdfs:domain :CPU ,
-                    :GPU ;
+        rdfs:domain :Motherboard ;
         rdfs:range xsd:string .
 
 
@@ -387,6 +404,13 @@
                                 :HDD ,
                                 :SSD ;
                     rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_type
+:storage_type rdf:type owl:DatatypeProperty ;
+              rdfs:domain :HDD ,
+                          :SSD ;
+              rdfs:range xsd:string .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#tenkeyless
@@ -757,6 +781,160 @@
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WirelessCard
 :WirelessCard rdf:type owl:Class ;
               rdfs:subClassOf :InternalComponent .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GT_1030
+:GT_1030 rdf:type owl:NamedIndividual ;
+         :gpu_boost_memory_clock 2100 ;
+         :gpu_chipset "Nvidia" ;
+         :gpu_connector "PCI Express 3.0" ;
+         :gpu_dp_ports 0 ;
+         :gpu_dvi_ports 0 ;
+         :gpu_hashrate 0 ;
+         :gpu_hdmi_ports 1 ;
+         :gpu_memory 2048 ;
+         :gpu_memory_clock 2100 ;
+         :gpu_memory_type "GDDR4" ;
+         :gpu_power_usage 20 ;
+         :gpu_vga_ports 0 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GT_730
+:GT_730 rdf:type owl:NamedIndividual ;
+        :gpu_boost_memory_clock 1600 ;
+        :gpu_chipset "Nvidia" ;
+        :gpu_connector "PCI Express 2.0" ;
+        :gpu_dp_ports 0 ;
+        :gpu_dvi_ports 1 ;
+        :gpu_hashrate 0 ;
+        :gpu_hdmi_ports 1 ;
+        :gpu_memory 2048 ;
+        :gpu_memory_clock 1600 ;
+        :gpu_memory_type "GDDR3" ;
+        :gpu_power_usage 23 ;
+        :gpu_vga_ports 1 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_Fury_Beast_16gb
+:Kingston_Fury_Beast_16gb rdf:type owl:NamedIndividual ;
+                          :ram_memory 16 ;
+                          :ram_speed 3200 ;
+                          :ram_type "DDR4" ;
+                          :rgb "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B550_Tomahawk
+:MSI_B550_Tomahawk rdf:type owl:NamedIndividual ;
+                   :Motherboard_chipset "AMD B550" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 2 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4866 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 4 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus
+:Samsung_970_EVO_Plus rdf:type owl:NamedIndividual ;
+                      :storage_capacity 1024 ;
+                      :storage_sata_speed 0 ;
+                      :storage_type "m.2" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Western_Digital_Blue_2TB
+:Western_Digital_Blue_2TB rdf:type owl:NamedIndividual ;
+                          :storage_capacity 2048 ;
+                          :storage_rpm 7200 ;
+                          :storage_sata_speed 6 ;
+                          :storage_type "SATA" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10100
+:i3-10100 rdf:type owl:NamedIndividual ;
+          :cpu_core_clock 3600 ;
+          :cpu_core_clock_boost 4300 ;
+          :cpu_core_count 4 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 65 ;
+          :cpu_series 3 ;
+          :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10100F
+:i3-10100F rdf:type owl:NamedIndividual ;
+           :cpu_core_clock 3600 ;
+           :cpu_core_clock_boost 4300 ;
+           :cpu_core_count 4 ;
+           :cpu_integrated_graphics "false"^^xsd:boolean ;
+           :cpu_power_usage 65 ;
+           :cpu_series 3 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10105
+:i3-10105 rdf:type owl:NamedIndividual ;
+          :cpu_core_clock 3700 ;
+          :cpu_core_clock_boost 4300 ;
+          :cpu_core_count 4 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 65 ;
+          :cpu_series 3 ;
+          :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10105F
+:i3-10105F rdf:type owl:NamedIndividual ;
+           :cpu_core_clock 3700 ;
+           :cpu_core_clock_boost 4400 ;
+           :cpu_core_count 4 ;
+           :cpu_integrated_graphics "false"^^xsd:boolean ;
+           :cpu_power_usage 65 ;
+           :cpu_series 3 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12100
+:i3-12100 rdf:type owl:NamedIndividual ;
+          :cpu_core_clock 3300 ;
+          :cpu_core_clock_boost 4300 ;
+          :cpu_core_count 4 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 60 ;
+          :cpu_series 3 ;
+          :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12100F
+:i3-12100F rdf:type owl:NamedIndividual ;
+           :cpu_core_clock 3300 ;
+           :cpu_core_clock_boost 4300 ;
+           :cpu_core_count 4 ;
+           :cpu_integrated_graphics "false"^^xsd:boolean ;
+           :cpu_power_usage 58 ;
+           :cpu_series 3 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_RMX_850W_80+_Gold
+<http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_RMX_850W_80+_Gold> rdf:type owl:NamedIndividual ;
+                                                                                          :psu_efficiency_rating "80+ Gold" ;
+                                                                                          :psu_fanless "false"^^xsd:boolean ;
+                                                                                          :psu_modular "true"^^xsd:boolean ;
+                                                                                          :psu_molex_4_pin 4 ;
+                                                                                          :psu_pcie_6_pin 4 ;
+                                                                                          :psu_pcie_8_pin 4 ;
+                                                                                          :psu_sata 14 ;
+                                                                                          :psu_type "ATX" ;
+                                                                                          :psu_wattage 850 .
 
 
 ###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
