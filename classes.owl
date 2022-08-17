@@ -1089,9 +1089,9 @@
            :case_front_panel_usb "true"^^xsd:boolean ;
            :case_side_panel "true"^^xsd:boolean .
 
-
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10100
-:i3-10100 rdf:type owl:NamedIndividual ;
+:i3-10100 rdf:type owl:NamedIndividual ,
+                   :Intel ;
           :cpu_core_clock 3600 ;
           :cpu_core_clock_boost 4300 ;
           :cpu_core_count 4 ;
@@ -1102,7 +1102,8 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10100F
-:i3-10100F rdf:type owl:NamedIndividual ;
+:i3-10100F rdf:type owl:NamedIndividual ,
+                    :Intel ;
            :cpu_core_clock 3600 ;
            :cpu_core_clock_boost 4300 ;
            :cpu_core_count 4 ;
@@ -1113,7 +1114,8 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10105
-:i3-10105 rdf:type owl:NamedIndividual ;
+:i3-10105 rdf:type owl:NamedIndividual ,
+                   :Intel ;
           :cpu_core_clock 3700 ;
           :cpu_core_clock_boost 4300 ;
           :cpu_core_count 4 ;
@@ -1124,7 +1126,8 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10105F
-:i3-10105F rdf:type owl:NamedIndividual ;
+:i3-10105F rdf:type owl:NamedIndividual ,
+                    :Intel ;
            :cpu_core_clock 3700 ;
            :cpu_core_clock_boost 4400 ;
            :cpu_core_count 4 ;
@@ -1135,7 +1138,8 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12100
-:i3-12100 rdf:type owl:NamedIndividual ;
+:i3-12100 rdf:type owl:NamedIndividual ,
+                   :Intel ;
           :cpu_core_clock 3300 ;
           :cpu_core_clock_boost 4300 ;
           :cpu_core_count 4 ;
@@ -1146,7 +1150,8 @@
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12100F
-:i3-12100F rdf:type owl:NamedIndividual ;
+:i3-12100F rdf:type owl:NamedIndividual ,
+                    :Intel ;
            :cpu_core_clock 3300 ;
            :cpu_core_clock_boost 4300 ;
            :cpu_core_count 4 ;
@@ -1156,17 +1161,506 @@
            :socket "LGA1700" .
 
 
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_RMX_850W_80+_Gold
-<http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_RMX_850W_80+_Gold> rdf:type owl:NamedIndividual ;
-                                                                                          :psu_efficiency_rating "80+ Gold" ;
-                                                                                          :psu_fanless "false"^^xsd:boolean ;
-                                                                                          :psu_modular "true"^^xsd:boolean ;
-                                                                                          :psu_molex_4_pin 4 ;
-                                                                                          :psu_pcie_6_pin 4 ;
-                                                                                          :psu_pcie_8_pin 4 ;
-                                                                                          :psu_sata 14 ;
-                                                                                          :psu_type "ATX" ;
-                                                                                          :psu_wattage 850 .
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12300
+:i3-12300 rdf:type owl:NamedIndividual ,
+                   :Intel ;
+          :cpu_core_clock 3500 ;
+          :cpu_core_clock_boost 4400 ;
+          :cpu_core_count 4 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 60 ;
+          :cpu_series 3 ;
+          :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-10600
+:i5-10600 rdf:type owl:NamedIndividual ,
+                   :Intel ;
+          :cpu_core_clock 3300 ;
+          :cpu_core_clock_boost 4800 ;
+          :cpu_core_count 6 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 65 ;
+          :cpu_series 5 ;
+          :socket "LGA1200" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-11600K
+:i5-11600K rdf:type owl:NamedIndividual ,
+                    :Intel ;
+           :cpu_core_clock 3900 ;
+           :cpu_core_clock_boost 4900 ;
+           :cpu_core_count 6 ;
+           :cpu_integrated_graphics "true"^^xsd:boolean ;
+           :cpu_power_usage 125 ;
+           :cpu_series 5 ;
+           :socket "LGA1200" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-12400
+:i5-12400 rdf:type owl:NamedIndividual ,
+                   :Intel ;
+          :cpu_core_clock 2500 ;
+          :cpu_core_clock_boost 4400 ;
+          :cpu_core_count 6 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 65 ;
+          :cpu_series 5 ;
+          :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-12400F
+:i5-12400F rdf:type owl:NamedIndividual ,
+                    :Intel ;
+           :cpu_core_clock 2500 ;
+           :cpu_core_clock_boost 4400 ;
+           :cpu_core_count 6 ;
+           :cpu_integrated_graphics "false"^^xsd:boolean ;
+           :cpu_power_usage 65 ;
+           :cpu_series 5 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-12600K
+:i5-12600K rdf:type owl:NamedIndividual ,
+                    :Intel ;
+           :cpu_core_clock 3700 ;
+           :cpu_core_clock_boost 4900 ;
+           :cpu_core_count 10 ;
+           :cpu_integrated_graphics "true"^^xsd:boolean ;
+           :cpu_power_usage 125 ;
+           :cpu_series 5 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-8400
+:i5-8400 rdf:type owl:NamedIndividual ,
+                  :Intel ;
+         :cpu_core_clock 2800 ;
+         :cpu_core_clock_boost 4000 ;
+         :cpu_core_count 6 ;
+         :cpu_integrated_graphics "true"^^xsd:boolean ;
+         :cpu_power_usage 65 ;
+         :cpu_series 5 ;
+         :socket "LGA1151" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-9400
+:i5-9400 rdf:type owl:NamedIndividual ,
+                  :Intel ;
+         :cpu_core_clock 2900 ;
+         :cpu_core_clock_boost 4100 ;
+         :cpu_core_count 6 ;
+         :cpu_integrated_graphics "true"^^xsd:boolean ;
+         :cpu_power_usage 65 ;
+         :cpu_series 5 ;
+         :socket "LGA1151" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-10700
+:i7-10700 rdf:type owl:NamedIndividual ,
+                   :Intel ;
+          :cpu_core_clock 2900 ;
+          :cpu_core_clock_boost 4800 ;
+          :cpu_core_count 8 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 65 ;
+          :cpu_series 7 ;
+          :socket "LGA1200" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-10700K
+:i7-10700K rdf:type owl:NamedIndividual ,
+                    :Intel ;
+           :cpu_core_clock 3800 ;
+           :cpu_core_clock_boost 5100 ;
+           :cpu_core_count 8 ;
+           :cpu_integrated_graphics "true"^^xsd:boolean ;
+           :cpu_power_usage 125 ;
+           :cpu_series 7 ;
+           :socket "LGA1200" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-11700
+:i7-11700 rdf:type owl:NamedIndividual ,
+                   :Intel ;
+          :cpu_core_clock 2500 ;
+          :cpu_core_clock_boost 4900 ;
+          :cpu_core_count 8 ;
+          :cpu_integrated_graphics "true"^^xsd:boolean ;
+          :cpu_power_usage 65 ;
+          :cpu_series 7 ;
+          :socket "LGA1200" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-12700F
+:i7-12700F rdf:type owl:NamedIndividual ,
+                    :Intel ;
+           :cpu_core_clock 2100 ;
+           :cpu_core_clock_boost 4900 ;
+           :cpu_core_count 12 ;
+           :cpu_integrated_graphics "false"^^xsd:boolean ;
+           :cpu_power_usage 65 ;
+           :cpu_series 7 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-12700K
+:i7-12700K rdf:type owl:NamedIndividual ,
+                    :Intel ;
+           :cpu_core_clock 3600 ;
+           :cpu_core_clock_boost 5000 ;
+           :cpu_core_count 12 ;
+           :cpu_integrated_graphics "true"^^xsd:boolean ;
+           :cpu_power_usage 125 ;
+           :cpu_series 7 ;
+           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen3-4100
+:Ryzen3-4100 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3800 ;
+             :cpu_core_clock_boost 4000 ;
+             :cpu_core_count 4 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 3 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-3500
+:Ryzen5-3500 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3600 ;
+             :cpu_core_clock_boost 4100 ;
+             :cpu_core_count 6 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 5 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-4500
+:Ryzen5-4500 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3600 ;
+             :cpu_core_clock_boost 4100 ;
+             :cpu_core_count 6 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 5 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600
+:Ryzen5-5600 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3500 ;
+             :cpu_core_clock_boost 4400 ;
+             :cpu_core_count 6 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 5 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600X
+:Ryzen5-5600X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3700 ;
+              :cpu_core_clock_boost 4600 ;
+              :cpu_core_count 6 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 65 ;
+              :cpu_series 5 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-3800X
+:Ryzen7-3800X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3600 ;
+              :cpu_core_clock_boost 4400 ;
+              :cpu_core_count 8 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 65 ;
+              :cpu_series 7 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5700X
+:Ryzen7-5700X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3400 ;
+              :cpu_core_clock_boost 4600 ;
+              :cpu_core_count 8 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 65 ;
+              :cpu_series 7 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5800X
+:Ryzen7-5800X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3800 ;
+              :cpu_core_clock_boost 4700 ;
+              :cpu_core_count 8 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 105 ;
+              :cpu_series 7 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5900X
+:Ryzen9-5900X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3700 ;
+              :cpu_core_clock_boost 4800 ;
+              :cpu_core_count 12 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 105 ;
+              :cpu_series 9 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5950X
+:Ryzen9-5950X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3400 ;
+              :cpu_core_clock_boost 4900 ;
+              :cpu_core_count 16 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 105 ;
+              :cpu_series 9 ;
+              :socket "AM4" .
+
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Antec_HCG_400
+:Antec_HCG_400 rdf:type owl:NamedIndividual ,
+                        :PSU ;
+               :psu_efficiency_rating "80+ Bronze" ;
+               :psu_fanless "false"^^xsd:boolean ;
+               :psu_modular "false"^^xsd:boolean ;
+               :psu_molex_4_pin 4 ;
+               :psu_pcie_6_pin 1 ;
+               :psu_pcie_8_pin 0 ;
+               :psu_sata 4 ;
+               :psu_type "ATX12V / EPS12V" ;
+               :psu_wattage 400 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#AsusThor_P2_1000
+:AsusThor_P2_1000 rdf:type owl:NamedIndividual ,
+                           :PSU ;
+                  :psu_efficiency_rating "80+ Platinum" ;
+                  :psu_fanless "false"^^xsd:boolean ;
+                  :psu_modular "true"^^xsd:boolean ;
+                  :psu_molex_4_pin 6 ;
+                  :psu_pcie_6_pin 0 ;
+                  :psu_pcie_8_pin 0 ;
+                  :psu_sata 12 ;
+                  :psu_type "ATX" ;
+                  :psu_wattage 1000 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#CoolerMaster_V850
+:CoolerMaster_V850 rdf:type owl:NamedIndividual ,
+                            :PSU ;
+                   :psu_efficiency_rating "80+ Platinum" ;
+                   :psu_fanless "false"^^xsd:boolean ;
+                   :psu_modular "true"^^xsd:boolean ;
+                   :psu_molex_4_pin 4 ;
+                   :psu_pcie_6_pin 0 ;
+                   :psu_pcie_8_pin 0 ;
+                   :psu_sata 12 ;
+                   :psu_type "ATX" ;
+                   :psu_wattage 850 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_HX1500i
+:Corsair_HX1500i rdf:type owl:NamedIndividual ,
+                          :PSU ;
+                 :psu_efficiency_rating "80+ Platinum" ;
+                 :psu_fanless "false"^^xsd:boolean ;
+                 :psu_modular "true"^^xsd:boolean ;
+                 :psu_molex_4_pin 8 ;
+                 :psu_pcie_6_pin 0 ;
+                 :psu_pcie_8_pin 0 ;
+                 :psu_sata 8 ;
+                 :psu_type "ATX" ;
+                 :psu_wattage 1500 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_TX750
+:Corsair_TX750 rdf:type owl:NamedIndividual ,
+                        :PSU ;
+               :psu_efficiency_rating "80+ Bronze" ;
+               :psu_fanless "false"^^xsd:boolean ;
+               :psu_modular "false"^^xsd:boolean ;
+               :psu_molex_4_pin 8 ;
+               :psu_pcie_6_pin 0 ;
+               :psu_pcie_8_pin 0 ;
+               :psu_sata 8 ;
+               :psu_type "ATX" ;
+               :psu_wattage 750 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#EVGA_T2
+:EVGA_T2 rdf:type owl:NamedIndividual ,
+                  :PSU ;
+         :psu_efficiency_rating "80+ Titanium" ;
+         :psu_fanless "false"^^xsd:boolean ;
+         :psu_modular "true"^^xsd:boolean ;
+         :psu_molex_4_pin 6 ;
+         :psu_pcie_6_pin 5 ;
+         :psu_pcie_8_pin 0 ;
+         :psu_sata 16 ;
+         :psu_type "ATX12V/EPS12V" ;
+         :psu_wattage 1600 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#EnermaxMaxTytan_1050
+:EnermaxMaxTytan_1050 rdf:type owl:NamedIndividual ,
+                               :PSU ;
+                      :psu_efficiency_rating "80+ Titanium" ;
+                      :psu_fanless "false"^^xsd:boolean ;
+                      :psu_modular "true"^^xsd:boolean ;
+                      :psu_molex_4_pin 8 ;
+                      :psu_pcie_6_pin 0 ;
+                      :psu_pcie_8_pin 0 ;
+                      :psu_sata 16 ;
+                      :psu_type "ATX" ;
+                      :psu_wattage 1050 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Evga_G3
+:Evga_G3 rdf:type owl:NamedIndividual ,
+                  :PSU ;
+         :psu_efficiency_rating "80+ Gold" ;
+         :psu_fanless "false"^^xsd:boolean ;
+         :psu_modular "true"^^xsd:boolean ;
+         :psu_molex_4_pin 4 ;
+         :psu_pcie_6_pin 0 ;
+         :psu_pcie_8_pin 0 ;
+         :psu_sata 9 ;
+         :psu_type "ATX" ;
+         :psu_wattage 850 .
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GigabyteAorus_1200
+:GigabyteAorus_1200 rdf:type owl:NamedIndividual ,
+                             :PSU ;
+                    :psu_efficiency_rating "80+ Platinum" ;
+                    :psu_fanless "false"^^xsd:boolean ;
+                    :psu_modular "true"^^xsd:boolean ;
+                    :psu_molex_4_pin 6 ;
+                    :psu_pcie_6_pin 0 ;
+                    :psu_pcie_8_pin 0 ;
+                    :psu_sata 16 ;
+                    :psu_type "ATX" ;
+                    :psu_wattage 1200 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NOXHummer_650
+:NOXHummer_650 rdf:type owl:NamedIndividual ,
+                        :PSU ;
+               :psu_efficiency_rating "80+ Bronze" ;
+               :psu_fanless "false"^^xsd:boolean ;
+               :psu_modular "true"^^xsd:boolean ;
+               :psu_molex_4_pin 4 ;
+               :psu_pcie_6_pin 0 ;
+               :psu_pcie_8_pin 0 ;
+               :psu_sata 6 ;
+               :psu_type "ATX" ;
+               :psu_wattage 650 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PhanteksRevoltPro_1000
+:PhanteksRevoltPro_1000 rdf:type owl:NamedIndividual ,
+                                 :PSU ;
+                        :psu_efficiency_rating "80+ Gold" ;
+                        :psu_fanless "false"^^xsd:boolean ;
+                        :psu_modular "true"^^xsd:boolean ;
+                        :psu_molex_4_pin 3 ;
+                        :psu_pcie_6_pin 0 ;
+                        :psu_pcie_8_pin 0 ;
+                        :psu_sata 14 ;
+                        :psu_type "ATX" ;
+                        :psu_wattage 1000 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RosewillGreen_530
+:RosewillGreen_530 rdf:type owl:NamedIndividual ,
+                            :PSU ;
+                   :psu_efficiency_rating "80+ " ;
+                   :psu_fanless "false"^^xsd:boolean ;
+                   :psu_modular "false"^^xsd:boolean ;
+                   :psu_molex_4_pin 6 ;
+                   :psu_pcie_6_pin 1 ;
+                   :psu_pcie_8_pin 0 ;
+                   :psu_sata 6 ;
+                   :psu_type "ATX12V / EPS12V" ;
+                   :psu_wattage 530 .
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SeaSonic_Prime_600
+:SeaSonic_Prime_600 rdf:type owl:NamedIndividual ,
+                             :PSU ;
+                    :psu_efficiency_rating "80+ Titanium" ;
+                    :psu_fanless "true"^^xsd:boolean ;
+                    :psu_modular "true"^^xsd:boolean ;
+                    :psu_molex_4_pin 5 ;
+                    :psu_pcie_6_pin 0 ;
+                    :psu_pcie_8_pin 0 ;
+                    :psu_sata 6 ;
+                    :psu_type "ATX" ;
+                    :psu_wattage 600 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverStoneStrider_1500
+:SilverStoneStrider_1500 rdf:type owl:NamedIndividual ,
+                                  :PSU ;
+                         :psu_efficiency_rating "80+ Silver" ;
+                         :psu_fanless "false"^^xsd:boolean ;
+                         :psu_modular "false"^^xsd:boolean ;
+                         :psu_molex_4_pin 12 ;
+                         :psu_pcie_6_pin 4 ;
+                         :psu_pcie_8_pin 0 ;
+                         :psu_sata 12 ;
+                         :psu_type "ATX12V / EPS12V" ;
+                         :psu_wattage 750 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverstoneHella_2050
+:SilverstoneHella_2050 rdf:type owl:NamedIndividual ,
+                                :PSU ;
+                       :psu_efficiency_rating "" ;
+                       :psu_fanless "false"^^xsd:boolean ;
+                       :psu_modular "true"^^xsd:boolean ;
+                       :psu_molex_4_pin 3 ;
+                       :psu_pcie_6_pin 0 ;
+                       :psu_pcie_8_pin 0 ;
+                       :psu_sata 12 ;
+                       :psu_type "ATX" ;
+                       :psu_wattage 2500 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SuperFlowerLedex_1000
+:SuperFlowerLedex_1000 rdf:type owl:NamedIndividual ,
+                                :PSU ;
+                       :psu_efficiency_rating "80+ Titanium" ;
+                       :psu_fanless "false"^^xsd:boolean ;
+                       :psu_modular "true"^^xsd:boolean ;
+                       :psu_molex_4_pin 6 ;
+                       :psu_pcie_6_pin 0 ;
+                       :psu_pcie_8_pin 0 ;
+                       :psu_sata 12 ;
+                       :psu_type "ATX / BTX" ;
+                       :psu_wattage 1000 .
+
+
+
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#be_quiet!_Dark_Rock_Pro_4
