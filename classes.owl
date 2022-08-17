@@ -827,8 +827,162 @@
                           :rgb "false"^^xsd:boolean .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Asus_TUF_GAMING_X570-PLUS
+:Asus_TUF_GAMING_X570-PLUS rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "AMD X570" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 1 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4400 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 8 ;
+                   :Motherboard_usb_ports 3 ;
+                   :rgb "true"^^xsd:boolean ;
+                   :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_Z690_Tomahawk
+:MSI_Z690_Tomahawk rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "Intel Z690" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 5 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 5200 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 3 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 4 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B660M_MORTAR
+:MSI_B660M_MORTAR rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "Intel B660" ;
+                   :Motherboard_form "Micro ATX" ;
+                   :Motherboard_m.2_slots 3 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4800 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 4 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Asus_PRIME_Z690-P
+:Asus_PRIME_Z690-P rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "Intel Z690" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 3 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 5333 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 4 ;
+                   :Motherboard_sata_port 4 ;
+                   :Motherboard_usb_ports 5 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B660_GAMING_X_AX
+:Gigabyte_B660_GAMING_X_AX rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "Intel B660" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 3 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4400 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 3 ;
+                   :Motherboard_sata_port 4 ;
+                   :Motherboard_usb_ports 4 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Asus_ROG_STRIX_B660-I_GAMING
+:Asus_ROG_STRIX_B660-I_GAMING rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "Intel B660" ;
+                   :Motherboard_form "Mini ITX" ;
+                   :Motherboard_m.2_slots 2 ;
+                   :Motherboard_memory_max 64 ;
+                   :Motherboard_memory_max_frequency 6200 ;
+                   :Motherboard_memory_slots 2 ;
+                   :Motherboard_memory_type "DDR5" ;
+                   :Motherboard_pcie_slots 1 ;
+                   :Motherboard_sata_port 4 ;
+                   :Motherboard_usb_ports 3 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_N7_B550
+:NZXT_N7_B550 rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "AMD B550" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 3 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4733 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 3 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B450_Tomahawk_MAX
+:MSI_B450_Tomahawk_MAX rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "AMD B450" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 1 ;
+                   :Motherboard_memory_max 64 ;
+                   :Motherboard_memory_max_frequency 4133 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 3 ;
+                   :rgb "true"^^xsd:boolean ;
+                   :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B550M_DS3H
+:Gigabyte_B550M_DS3H rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                   :Motherboard_chipset "AMD B550" ;
+                   :Motherboard_form "Micro ATX" ;
+                   :Motherboard_m.2_slots 2 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4600 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 4 ;
+                   :Motherboard_usb_ports 2 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "АМ4" .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B550_Tomahawk
-:MSI_B550_Tomahawk rdf:type owl:NamedIndividual ;
+:MSI_B550_Tomahawk rdf:type owl:NamedIndividual ,
+                            :Motherboard ;
                    :Motherboard_chipset "AMD B550" ;
                    :Motherboard_form "ATX" ;
                    :Motherboard_m.2_slots 2 ;
