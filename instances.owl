@@ -10,6 +10,24 @@
                                                                     owl:imports <http://www.semanticweb.org/vlada/ontologies/2022/5/classes.owl> .
 
 #################################################################
+#    Data properties
+#################################################################
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate
+<http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate> rdfs:range xsd:decimal .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size
+<http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size> rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#name
+:name rdf:type owl:DatatypeProperty ;
+      rdfs:domain <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Component> ;
+      rdfs:range xsd:string .
+
+
+#################################################################
 #    Individuals
 #################################################################
 
@@ -310,7 +328,8 @@
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock> 2100 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR4" ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 20 ;
-         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 .
+         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+         :name "GT_1030" .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#GT_730

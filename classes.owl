@@ -174,8 +174,7 @@
 # http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate
 
 :gpu_hashrate a owl:DatatypeProperty ;
-	rdfs:domain :GPU ;
-	rdfs:range xsd:integer .
+	rdfs:domain :GPU .
 # 
 # http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hdmi_ports
 
@@ -420,8 +419,7 @@
 # http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size
 
 :water_cooler_size a owl:DatatypeProperty ;
-	rdfs:domain :WaterCooling ;
-	rdfs:range xsd:double .
+	rdfs:domain :WaterCooling .
 # 
 # 
 # 
