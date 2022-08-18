@@ -1,2618 +1,789 @@
-@prefix : <http://www.semanticweb.org/vlada/ontologies/2022/5/components#> .
+@prefix : <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix xml: <http://www.w3.org/XML/1998/namespace> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
-@base <http://www.semanticweb.org/vlada/ontologies/2022/5/components> .
 
-<http://www.semanticweb.org/vlada/ontologies/2022/5/components> rdf:type owl:Ontology .
-
-#################################################################
-#    Data properties
-#################################################################
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_chipset
-:Motherboard_chipset rdf:type owl:DatatypeProperty ;
-                     rdfs:domain :Motherboard ;
-                     rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_form
-:Motherboard_form rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Motherboard ;
-                  rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_m.2_slots
-:Motherboard_m.2_slots rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Motherboard ;
-                       rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_max
-:Motherboard_memory_max rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Motherboard ;
-                        rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_max_frequency
-:Motherboard_memory_max_frequency rdf:type owl:DatatypeProperty ;
-                                  rdfs:domain :Motherboard ;
-                                  rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_slots
-:Motherboard_memory_slots rdf:type owl:DatatypeProperty ;
-                          rdfs:domain :Motherboard ;
-                          rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_memory_type
-:Motherboard_memory_type rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :Motherboard ;
-                         rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_pcie_slots
-:Motherboard_pcie_slots rdf:type owl:DatatypeProperty ;
-                        rdfs:domain :Motherboard ;
-                        rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_sata_port
-:Motherboard_sata_port rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Motherboard ;
-                       rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard_usb_ports
-:Motherboard_usb_ports rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Motherboard ;
-                       rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#case_front_panel_usb
-:case_front_panel_usb rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Case ;
-                      rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#case_side_panel
-:case_side_panel rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :Case ;
-                 rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cooler_height
-:cooler_height rdf:type owl:DatatypeProperty ;
-               rdfs:domain :Cooling ;
-               rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_clock
-:cpu_core_clock rdf:type owl:DatatypeProperty ;
-                rdfs:domain :CPU ;
-                rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_clock_boost
-:cpu_core_clock_boost rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :CPU ;
-                      rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_core_count
-:cpu_core_count rdf:type owl:DatatypeProperty ;
-                rdfs:domain :CPU ;
-                rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_integrated_graphics
-:cpu_integrated_graphics rdf:type owl:DatatypeProperty ;
-                         rdfs:domain :CPU ;
-                         rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_power_usage
-:cpu_power_usage rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :CPU ;
-                 rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#cpu_series
-:cpu_series rdf:type owl:DatatypeProperty ;
-            rdfs:domain :CPU ;
-            rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#fan_bearing
-:fan_bearing rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Fan ;
-             rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_boost_clock
-:gpu_boost_clock rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :GPU ;
-                 rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_chipset
-:gpu_chipset rdf:type owl:DatatypeProperty ;
-             rdfs:domain :GPU ;
-             rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_clock
-:gpu_clock rdf:type owl:DatatypeProperty ;
-           rdfs:domain :GPU ;
-           rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_connector
-:gpu_connector rdf:type owl:DatatypeProperty ;
-               rdfs:domain :GPU ;
-               rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_dp_ports
-:gpu_dp_ports rdf:type owl:DatatypeProperty ;
-              rdfs:domain :GPU ;
-              rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_dvi_ports
-:gpu_dvi_ports rdf:type owl:DatatypeProperty ;
-               rdfs:domain :GPU ;
-               rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_hashrate
-:gpu_hashrate rdf:type owl:DatatypeProperty ;
-              rdfs:domain :GPU ;
-              rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_hdmi_ports
-:gpu_hdmi_ports rdf:type owl:DatatypeProperty ;
-                rdfs:domain :GPU ;
-                rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory
-:gpu_memory rdf:type owl:DatatypeProperty ;
-            rdfs:domain :GPU ;
-            rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory_clock
-:gpu_memory_clock rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :GPU ;
-                  rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_memory_type
-:gpu_memory_type rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :GPU ;
-                 rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_power_usage
-:gpu_power_usage rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :GPU ;
-                 rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#gpu_vga_ports
-:gpu_vga_ports rdf:type owl:DatatypeProperty ;
-               rdfs:domain :GPU ;
-               rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#headphones_has_microphone
-:headphones_has_microphone rdf:type owl:DatatypeProperty ;
-                           rdfs:domain :Headphone ;
-                           rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#keyboard_switch_type
-:keyboard_switch_type rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Keyboard ;
-                      rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_aspect_ratio
-:monitor_aspect_ratio rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Monitor ;
-                      rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_curved_screen
-:monitor_curved_screen rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Monitor ;
-                       rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_frame_sync
-:monitor_frame_sync rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :Monitor ;
-                    rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_refresh_rate
-:monitor_refresh_rate rdf:type owl:DatatypeProperty ;
-                      rdfs:domain :Monitor ;
-                      rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_response_time
-:monitor_response_time rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Monitor ;
-                       rdfs:range xsd:double .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#monitor_size
-:monitor_size rdf:type owl:DatatypeProperty ;
-              rdfs:domain :Monitor ;
-              rdfs:range xsd:double .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_dpi
-:mouse_dpi rdf:type owl:DatatypeProperty ;
-           rdfs:domain :Mouse ;
-           rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_hand
-:mouse_hand rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Mouse ;
-            rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#mouse_tracking
-:mouse_tracking rdf:type owl:DatatypeProperty .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#os_mode
-:os_mode rdf:type owl:DatatypeProperty ;
-         rdfs:domain :OS ;
-         rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#peripheral_connector
-:peripheral_connector rdf:type owl:DatatypeProperty .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#peripheral_style
-:peripheral_style rdf:type owl:DatatypeProperty .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_efficiency_rating
-:psu_efficiency_rating rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :PSU ;
-                       rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_fanless
-:psu_fanless rdf:type owl:DatatypeProperty ;
-             rdfs:domain :PSU ;
-             rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_modular
-:psu_modular rdf:type owl:DatatypeProperty ;
-             rdfs:domain :PSU ;
-             rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_molex_4_pin
-:psu_molex_4_pin rdf:type owl:DatatypeProperty ;
-                 rdfs:domain :PSU ;
-                 rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_pcie_6_pin
-:psu_pcie_6_pin rdf:type owl:DatatypeProperty ;
-                rdfs:domain :PSU ;
-                rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_pcie_8_pin
-:psu_pcie_8_pin rdf:type owl:DatatypeProperty ;
-                rdfs:domain :PSU ;
-                rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_sata
-:psu_sata rdf:type owl:DatatypeProperty ;
-          rdfs:domain :PSU ;
-          rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_type
-:psu_type rdf:type owl:DatatypeProperty ;
-          rdfs:domain :PSU ;
-          rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#psu_wattage
-:psu_wattage rdf:type owl:DatatypeProperty ;
-             rdfs:domain :PSU ;
-             rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_memory
-:ram_memory rdf:type owl:DatatypeProperty ;
-            rdfs:domain :RAM ;
-            rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_speed
-:ram_speed rdf:type owl:DatatypeProperty ;
-           rdfs:domain :RAM ;
-           rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ram_type
-:ram_type rdf:type owl:DatatypeProperty ;
-          rdfs:domain :RAM ;
-          rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#resolution
-:resolution rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Monitor ;
-            rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#rgb
-:rgb rdf:type owl:DatatypeProperty ;
-     rdfs:domain :Case ,
-                 :Cooling ,
-                 :Keyboard ,
-                 :Motherboard ,
-                 :Mouse ,
-                 :PSU ,
-                 :RAM ;
-     rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#socket
-:socket rdf:type owl:DatatypeProperty ;
-        rdfs:domain :Motherboard ;
-        rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#speakers_wattage
-:speakers_wattage rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :Speaker ;
-                  rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_capacity
-:storage_capacity rdf:type owl:DatatypeProperty ;
-                  rdfs:domain :ExternalMemory ,
-                              :HDD ,
-                              :SSD ;
-                  rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_rpm
-:storage_rpm rdf:type owl:DatatypeProperty ;
-             rdfs:domain :HDD ;
-             rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_sata_speed
-:storage_sata_speed rdf:type owl:DatatypeProperty ;
-                    rdfs:domain :ExternalMemory ,
-                                :HDD ,
-                                :SSD ;
-                    rdfs:range xsd:integer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#storage_type
-:storage_type rdf:type owl:DatatypeProperty ;
-              rdfs:domain :HDD ,
-                          :SSD ;
-              rdfs:range xsd:string .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#tenkeyless
-:tenkeyless rdf:type owl:DatatypeProperty ;
-            rdfs:domain :Keyboard ;
-            rdfs:range xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#water_cooler_size
-:water_cooler_size rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :WaterCooling ;
-                   rdfs:range xsd:double .
-
-
-#################################################################
-#    Classes
-#################################################################
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#AMD
-:AMD rdf:type owl:Class ;
-     rdfs:subClassOf :CPU .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ATX
-:ATX rdf:type owl:Class ;
-     rdfs:subClassOf :Motherboard .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#BluetoothDriver
-:BluetoothDriver rdf:type owl:Class ;
-                 rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#CPU
-:CPU rdf:type owl:Class ;
-     rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Camera
-:Camera rdf:type owl:Class ;
-        rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Case
-:Case rdf:type owl:Class ;
-      rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Component
-:Component rdf:type owl:Class .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Controller
-:Controller rdf:type owl:Class ;
-            rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Cooling
-:Cooling rdf:type owl:Class ;
-         rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#DisplayDriver
-:DisplayDriver rdf:type owl:Class ;
-               rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Driver
-:Driver rdf:type owl:Class ;
-        rdfs:subClassOf :SoftwareComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ExternalComponent
-:ExternalComponent rdf:type owl:Class ;
-                   rdfs:subClassOf :HardwareComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ExternalMemory
-:ExternalMemory rdf:type owl:Class ;
-                rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Fan
-:Fan rdf:type owl:Class ;
-     rdfs:subClassOf :Cooling .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#FullTower
-:FullTower rdf:type owl:Class ;
-           rdfs:subClassOf :Case .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#FullyModular
-:FullyModular rdf:type owl:Class ;
-              rdfs:subClassOf :PSU .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GPU
-:GPU rdf:type owl:Class ;
-     rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#HDD
-:HDD rdf:type owl:Class ;
-     rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#HardwareComponent
-:HardwareComponent rdf:type owl:Class ;
-                   rdfs:subClassOf :Component .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Headphone
-:Headphone rdf:type owl:Class ;
-           rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#IPS
-:IPS rdf:type owl:Class ;
-     rdfs:subClassOf :Monitor .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Inkjet
-:Inkjet rdf:type owl:Class ;
-        rdfs:subClassOf :Printer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Intel
-:Intel rdf:type owl:Class ;
-       rdfs:subClassOf :CPU .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#InternalComponent
-:InternalComponent rdf:type owl:Class ;
-                   rdfs:subClassOf :HardwareComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Joystick
-:Joystick rdf:type owl:Class ;
-          rdfs:subClassOf :Controller .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Keyboard
-:Keyboard rdf:type owl:Class ;
-          rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#KeyboardDriver
-:KeyboardDriver rdf:type owl:Class ;
-                rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#LED
-:LED rdf:type owl:Class ;
-     rdfs:subClassOf :Printer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Laser
-:Laser rdf:type owl:Class ;
-       rdfs:subClassOf :Printer .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Linux
-:Linux rdf:type owl:Class ;
-       rdfs:subClassOf :OS .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#M.2
-:M.2 rdf:type owl:Class ;
-     rdfs:subClassOf :SSD .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Mac
-:Mac rdf:type owl:Class ;
-     rdfs:subClassOf :OS .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Mechanic
-:Mechanic rdf:type owl:Class ;
-          rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Membrane
-:Membrane rdf:type owl:Class ;
-          rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MemoryDriver
-:MemoryDriver rdf:type owl:Class ;
-              rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MicroATX
-:MicroATX rdf:type owl:Class ;
-          rdfs:subClassOf :Motherboard .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Microphone
-:Microphone rdf:type owl:Class ;
-            rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MidTower
-:MidTower rdf:type owl:Class ;
-          rdfs:subClassOf :Case .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MiniITX
-:MiniITX rdf:type owl:Class ;
-         rdfs:subClassOf :Motherboard .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MiniTower
-:MiniTower rdf:type owl:Class ;
-           rdfs:subClassOf :Case .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Monitor
-:Monitor rdf:type owl:Class ;
-         rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Motherboard
-:Motherboard rdf:type owl:Class ;
-             rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Mouse
-:Mouse rdf:type owl:Class ;
-       rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MouseDriver
-:MouseDriver rdf:type owl:Class ;
-             rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NetworkDriver
-:NetworkDriver rdf:type owl:Class ;
-               rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NonModular
-:NonModular rdf:type owl:Class ;
-            rdfs:subClassOf :PSU .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#OS
-:OS rdf:type owl:Class ;
-    rdfs:subClassOf :SoftwareComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#OpticalDrive
-:OpticalDrive rdf:type owl:Class ;
-              rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#OpticalDriver
-:OpticalDriver rdf:type owl:Class ;
-               rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PSU
-:PSU rdf:type owl:Class ;
-     rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Printer
-:Printer rdf:type owl:Class ;
-         rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PrinterDriver
-:PrinterDriver rdf:type owl:Class ;
-               rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RAM
-:RAM rdf:type owl:Class ;
-     rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SATA
-:SATA rdf:type owl:Class ;
-      rdfs:subClassOf :SSD .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SSD
-:SSD rdf:type owl:Class ;
-     rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Scanner
-:Scanner rdf:type owl:Class ;
-         rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#ScannerDriver
-:ScannerDriver rdf:type owl:Class ;
-               rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SemiMechanic
-:SemiMechanic rdf:type owl:Class ;
-              rdfs:subClassOf :Keyboard .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SemiModular
-:SemiModular rdf:type owl:Class ;
-             rdfs:subClassOf :PSU .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SoftwareComponent
-:SoftwareComponent rdf:type owl:Class ;
-                   rdfs:subClassOf :Component .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SoundCard
-:SoundCard rdf:type owl:Class ;
-           rdfs:subClassOf :InternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SoundDriver
-:SoundDriver rdf:type owl:Class ;
-             rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Speaker
-:Speaker rdf:type owl:Class ;
-         rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TN
-:TN rdf:type owl:Class ;
-    rdfs:subClassOf :Monitor .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#UsbDriver
-:UsbDriver rdf:type owl:Class ;
-           rdfs:subClassOf :Driver .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#VA
-:VA rdf:type owl:Class ;
-    rdfs:subClassOf :Monitor .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WaterCooling
-:WaterCooling rdf:type owl:Class ;
-              rdfs:subClassOf :Cooling .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Wheel
-:Wheel rdf:type owl:Class ;
-       rdfs:subClassOf :Controller .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Windows
-:Windows rdf:type owl:Class ;
-         rdfs:subClassOf :OS .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WirelessAdapter
-:WirelessAdapter rdf:type owl:Class ;
-                 rdfs:subClassOf :ExternalComponent .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WirelessCard
-:WirelessCard rdf:type owl:Class ;
-              rdfs:subClassOf :InternalComponent .
-
-
-#################################################################
-#    Individuals
-#################################################################
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Antec_HCG_400
-:Antec_HCG_400 rdf:type owl:NamedIndividual ,
-                        :PSU ;
-               :psu_efficiency_rating "80+ Bronze" ;
-               :psu_fanless "false"^^xsd:boolean ;
-               :psu_modular "false"^^xsd:boolean ;
-               :psu_molex_4_pin 4 ;
-               :psu_pcie_6_pin 1 ;
-               :psu_pcie_8_pin 0 ;
-               :psu_sata 4 ;
-               :psu_type "ATX12V / EPS12V" ;
-               :psu_wattage 400 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Antec_NX410
-:Antec_NX410 rdf:type owl:NamedIndividual ,
-                      :Case ;
-             :case_front_panel_usb "true"^^xsd:boolean ;
-             :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#AsusThor_P2_1000
-:AsusThor_P2_1000 rdf:type owl:NamedIndividual ,
-                           :PSU ;
-                  :psu_efficiency_rating "80+ Platinum" ;
-                  :psu_fanless "false"^^xsd:boolean ;
-                  :psu_modular "true"^^xsd:boolean ;
-                  :psu_molex_4_pin 6 ;
-                  :psu_pcie_6_pin 0 ;
-                  :psu_pcie_8_pin 0 ;
-                  :psu_sata 12 ;
-                  :psu_type "ATX" ;
-                  :psu_wattage 1000 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Asus_PRIME_Z690-P
-:Asus_PRIME_Z690-P rdf:type owl:NamedIndividual ,
-                            :Motherboard ;
-                   :Motherboard_chipset "Intel Z690" ;
-                   :Motherboard_form "ATX" ;
-                   :Motherboard_m.2_slots 3 ;
-                   :Motherboard_memory_max 128 ;
-                   :Motherboard_memory_max_frequency 5333 ;
-                   :Motherboard_memory_slots 4 ;
-                   :Motherboard_memory_type "DDR4" ;
-                   :Motherboard_pcie_slots 4 ;
-                   :Motherboard_sata_port 4 ;
-                   :Motherboard_usb_ports 5 ;
-                   :rgb "false"^^xsd:boolean ;
-                   :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Asus_ROG_STRIX_B660-I_GAMING
-:Asus_ROG_STRIX_B660-I_GAMING rdf:type owl:NamedIndividual ,
-                                       :Motherboard ;
-                              :Motherboard_chipset "Intel B660" ;
-                              :Motherboard_form "Mini ITX" ;
-                              :Motherboard_m.2_slots 2 ;
-                              :Motherboard_memory_max 64 ;
-                              :Motherboard_memory_max_frequency 6200 ;
-                              :Motherboard_memory_slots 2 ;
-                              :Motherboard_memory_type "DDR5" ;
-                              :Motherboard_pcie_slots 1 ;
-                              :Motherboard_sata_port 4 ;
-                              :Motherboard_usb_ports 3 ;
-                              :rgb "false"^^xsd:boolean ;
-                              :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Asus_TUF_GAMING_X570-PLUS
-:Asus_TUF_GAMING_X570-PLUS rdf:type owl:NamedIndividual ,
-                                    :Motherboard ;
-                           :Motherboard_chipset "AMD X570" ;
-                           :Motherboard_form "ATX" ;
-                           :Motherboard_m.2_slots 1 ;
-                           :Motherboard_memory_max 128 ;
-                           :Motherboard_memory_max_frequency 4400 ;
-                           :Motherboard_memory_slots 4 ;
-                           :Motherboard_memory_type "DDR4" ;
-                           :Motherboard_pcie_slots 2 ;
-                           :Motherboard_sata_port 8 ;
-                           :Motherboard_usb_ports 3 ;
-                           :rgb "true"^^xsd:boolean ;
-                           :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#CoolerMaster_V850
-:CoolerMaster_V850 rdf:type owl:NamedIndividual ,
-                            :PSU ;
-                   :psu_efficiency_rating "80+ Platinum" ;
-                   :psu_fanless "false"^^xsd:boolean ;
-                   :psu_modular "true"^^xsd:boolean ;
-                   :psu_molex_4_pin 4 ;
-                   :psu_pcie_6_pin 0 ;
-                   :psu_pcie_8_pin 0 ;
-                   :psu_sata 12 ;
-                   :psu_type "ATX" ;
-                   :psu_wattage 850 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Cooler_Master_Hyper_212_RGB_Black_Edition
-:Cooler_Master_Hyper_212_RGB_Black_Edition rdf:type owl:NamedIndividual ,
-                                                    :Fan ;
-                                           :cooler_height 159 ;
-                                           :rgb "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_4000D_Airflow
-:Corsair_4000D_Airflow rdf:type owl:NamedIndividual ,
-                                :Case ;
-                       :case_front_panel_usb "true"^^xsd:boolean ;
-                       :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_Dominator_Platinum_RGB_32_GB
-:Corsair_Dominator_Platinum_RGB_32_GB rdf:type owl:NamedIndividual ,
-                                               :RAM ;
-                                      :ram_memory 32 ;
-                                      :ram_speed 6200 ;
-                                      :ram_type "DDR5" ;
-                                      :rgb "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_HX1500i
-:Corsair_HX1500i rdf:type owl:NamedIndividual ,
-                          :PSU ;
-                 :psu_efficiency_rating "80+ Platinum" ;
-                 :psu_fanless "false"^^xsd:boolean ;
-                 :psu_modular "true"^^xsd:boolean ;
-                 :psu_molex_4_pin 8 ;
-                 :psu_pcie_6_pin 0 ;
-                 :psu_pcie_8_pin 0 ;
-                 :psu_sata 8 ;
-                 :psu_type "ATX" ;
-                 :psu_wattage 1500 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_K55_RGB
-:Corsair_K55_RGB rdf:type owl:NamedIndividual ,
-                          :Keyboard ;
-                 :keyboard_switch_type "Membrane" ;
-                 :rgb "true"^^xsd:boolean ;
-                 :tenkeyless "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_TX750
-:Corsair_TX750 rdf:type owl:NamedIndividual ,
-                        :PSU ;
-               :psu_efficiency_rating "80+ Bronze" ;
-               :psu_fanless "false"^^xsd:boolean ;
-               :psu_modular "false"^^xsd:boolean ;
-               :psu_molex_4_pin 8 ;
-               :psu_pcie_6_pin 0 ;
-               :psu_pcie_8_pin 0 ;
-               :psu_sata 8 ;
-               :psu_type "ATX" ;
-               :psu_wattage 750 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_Vengeance_RGB_Pro_32_GB
-:Corsair_Vengeance_RGB_Pro_32_GB rdf:type owl:NamedIndividual ,
-                                          :RAM ;
-                                 :ram_memory 32 ;
-                                 :ram_speed 3600 ;
-                                 :ram_type "DDR4" ;
-                                 :rgb "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#EVGA_T2
-:EVGA_T2 rdf:type owl:NamedIndividual ,
-                  :PSU ;
-         :psu_efficiency_rating "80+ Titanium" ;
-         :psu_fanless "false"^^xsd:boolean ;
-         :psu_modular "true"^^xsd:boolean ;
-         :psu_molex_4_pin 6 ;
-         :psu_pcie_6_pin 5 ;
-         :psu_pcie_8_pin 0 ;
-         :psu_sata 16 ;
-         :psu_type "ATX12V/EPS12V" ;
-         :psu_wattage 1600 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#EnermaxMaxTytan_1050
-:EnermaxMaxTytan_1050 rdf:type owl:NamedIndividual ,
-                               :PSU ;
-                      :psu_efficiency_rating "80+ Titanium" ;
-                      :psu_fanless "false"^^xsd:boolean ;
-                      :psu_modular "true"^^xsd:boolean ;
-                      :psu_molex_4_pin 8 ;
-                      :psu_pcie_6_pin 0 ;
-                      :psu_pcie_8_pin 0 ;
-                      :psu_sata 16 ;
-                      :psu_type "ATX" ;
-                      :psu_wattage 1050 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Evga_G3
-:Evga_G3 rdf:type owl:NamedIndividual ,
-                  :PSU ;
-         :psu_efficiency_rating "80+ Gold" ;
-         :psu_fanless "false"^^xsd:boolean ;
-         :psu_modular "true"^^xsd:boolean ;
-         :psu_molex_4_pin 4 ;
-         :psu_pcie_6_pin 0 ;
-         :psu_pcie_8_pin 0 ;
-         :psu_sata 9 ;
-         :psu_type "ATX" ;
-         :psu_wattage 850 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Ripjaws_V_16_GB
-:G.Skill_Ripjaws_V_16_GB rdf:type owl:NamedIndividual ,
-                                  :RAM ;
-                         :ram_memory 16 ;
-                         :ram_speed 3200 ;
-                         :ram_type "DDR4" ;
-                         :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Trident_Z_RGB_128_GB
-:G.Skill_Trident_Z_RGB_128_GB rdf:type owl:NamedIndividual ,
-                                       :RAM ;
-                              :ram_memory 128 ;
-                              :ram_speed 4000 ;
-                              :ram_type "DDR4" ;
-                              :rgb "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Trident_Z_RGB_16_GB
-:G.Skill_Trident_Z_RGB_16_GB rdf:type owl:NamedIndividual ,
-                                      :RAM ;
-                             :ram_memory 16 ;
-                             :ram_speed 3600 ;
-                             :ram_type "DDR4" ;
-                             :rgb "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Trident_Z_Royal_32_GB
-:G.Skill_Trident_Z_Royal_32_GB rdf:type owl:NamedIndividual ,
-                                        :RAM ;
-                               :ram_memory 32 ;
-                               :ram_speed 3600 ;
-                               :ram_type "DDR4" ;
-                               :rgb "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GTX_1050_TI
-:GTX_1050_TI rdf:type owl:NamedIndividual ,
-                      :GPU ;
-             :gpu_boost_clock 1392 ;
-             :gpu_chipset "Nvidia" ;
-             :gpu_clock 1290 ;
-             :gpu_connector "PCI Express 3.0" ;
-             :gpu_dp_ports 1 ;
-             :gpu_dvi_ports 1 ;
-             :gpu_hashrate 6.4 ;
-             :gpu_hdmi_ports 1 ;
-             :gpu_memory 4096 ;
-             :gpu_memory_clock 7008 ;
-             :gpu_memory_type "GDDR5" ;
-             :gpu_power_usage 75 ;
-             :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GTX_1650
-:GTX_1650 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1590 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1410 ;
-          :gpu_connector "PCI Express 3.0" ;
-          :gpu_dp_ports 1 ;
-          :gpu_dvi_ports 1 ;
-          :gpu_hashrate 0 ;
-          :gpu_hdmi_ports 1 ;
-          :gpu_memory 4096 ;
-          :gpu_memory_clock 12000 ;
-          :gpu_memory_type "GDDR6" ;
-          :gpu_power_usage 100 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GTX_1660
-:GTX_1660 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1830 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1785 ;
-          :gpu_connector "PCI Express 3.0" ;
-          :gpu_dp_ports 3 ;
-          :gpu_dvi_ports 1 ;
-          :gpu_hashrate 27.5 ;
-          :gpu_hdmi_ports 1 ;
-          :gpu_memory 6144 ;
-          :gpu_memory_clock 8002 ;
-          :gpu_memory_type "GDDR6" ;
-          :gpu_power_usage 100 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GTX_1660_SUPER
-:GTX_1660_SUPER rdf:type owl:NamedIndividual ,
-                         :GPU ;
-                :gpu_boost_clock 1860 ;
-                :gpu_chipset "Nvidia" ;
-                :gpu_clock 1530 ;
-                :gpu_connector "PCI Express 3.0" ;
-                :gpu_dp_ports 1 ;
-                :gpu_dvi_ports 1 ;
-                :gpu_hashrate 29 ;
-                :gpu_hdmi_ports 1 ;
-                :gpu_memory 6144 ;
-                :gpu_memory_clock 14002 ;
-                :gpu_memory_type "GDDR6" ;
-                :gpu_power_usage 100 ;
-                :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GTX_1660_TI
-:GTX_1660_TI rdf:type owl:NamedIndividual ,
-                      :GPU ;
-             :gpu_boost_clock 1800 ;
-             :gpu_chipset "Nvidia" ;
-             :gpu_clock 1770 ;
-             :gpu_connector "PCI Express 3.0" ;
-             :gpu_dp_ports 3 ;
-             :gpu_dvi_ports 1 ;
-             :gpu_hashrate 28 ;
-             :gpu_hdmi_ports 1 ;
-             :gpu_memory 6144 ;
-             :gpu_memory_clock 12000 ;
-             :gpu_memory_type "GDDR6" ;
-             :gpu_power_usage 100 ;
-             :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GT_1030
-:GT_1030 rdf:type owl:NamedIndividual ,
-                  :GPU ;
-         :gpu_boost_clock 1430 ;
-         :gpu_chipset "Nvidia" ;
-         :gpu_clock 1189 ;
-         :gpu_connector "PCI Express 3.0" ;
-         :gpu_dp_ports 0 ;
-         :gpu_dvi_ports 0 ;
-         :gpu_hashrate 0 ;
-         :gpu_hdmi_ports 1 ;
-         :gpu_memory 2048 ;
-         :gpu_memory_clock 2100 ;
-         :gpu_memory_type "GDDR4" ;
-         :gpu_power_usage 20 ;
-         :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GT_730
-:GT_730 rdf:type owl:NamedIndividual ,
-                 :GPU ;
-        :gpu_boost_clock 902 ;
-        :gpu_chipset "Nvidia" ;
-        :gpu_clock 902 ;
-        :gpu_connector "PCI Express 2.0" ;
-        :gpu_dp_ports 0 ;
-        :gpu_dvi_ports 1 ;
-        :gpu_hashrate 0 ;
-        :gpu_hdmi_ports 1 ;
-        :gpu_memory 2048 ;
-        :gpu_memory_clock 1600 ;
-        :gpu_memory_type "GDDR3" ;
-        :gpu_power_usage 23 ;
-        :gpu_vga_ports 1 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GigabyteAorus_1200
-:GigabyteAorus_1200 rdf:type owl:NamedIndividual ,
-                             :PSU ;
-                    :psu_efficiency_rating "80+ Platinum" ;
-                    :psu_fanless "false"^^xsd:boolean ;
-                    :psu_modular "true"^^xsd:boolean ;
-                    :psu_molex_4_pin 6 ;
-                    :psu_pcie_6_pin 0 ;
-                    :psu_pcie_8_pin 0 ;
-                    :psu_sata 16 ;
-                    :psu_type "ATX" ;
-                    :psu_wattage 1200 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B550M_DS3H
-:Gigabyte_B550M_DS3H rdf:type owl:NamedIndividual ,
-                              :Motherboard ;
-                     :Motherboard_chipset "AMD B550" ;
-                     :Motherboard_form "Micro ATX" ;
-                     :Motherboard_m.2_slots 2 ;
-                     :Motherboard_memory_max 128 ;
-                     :Motherboard_memory_max_frequency 4600 ;
-                     :Motherboard_memory_slots 4 ;
-                     :Motherboard_memory_type "DDR4" ;
-                     :Motherboard_pcie_slots 2 ;
-                     :Motherboard_sata_port 4 ;
-                     :Motherboard_usb_ports 2 ;
-                     :rgb "false"^^xsd:boolean ;
-                     :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B660_GAMING_X_AX
-:Gigabyte_B660_GAMING_X_AX rdf:type owl:NamedIndividual ,
-                                    :Motherboard ;
-                           :Motherboard_chipset "Intel B660" ;
-                           :Motherboard_form "ATX" ;
-                           :Motherboard_m.2_slots 3 ;
-                           :Motherboard_memory_max 128 ;
-                           :Motherboard_memory_max_frequency 4400 ;
-                           :Motherboard_memory_slots 4 ;
-                           :Motherboard_memory_type "DDR4" ;
-                           :Motherboard_pcie_slots 3 ;
-                           :Motherboard_sata_port 4 ;
-                           :Motherboard_usb_ports 4 ;
-                           :rgb "false"^^xsd:boolean ;
-                           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_FURY_Beast_16_GB
-:Kingston_FURY_Beast_16_GB rdf:type owl:NamedIndividual ,
-                                    :RAM ;
-                           :ram_memory 16 ;
-                           :ram_speed 3200 ;
-                           :ram_type "DDR4" ;
-                           :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_Fury_Beast_16gb
-:Kingston_Fury_Beast_16gb rdf:type owl:NamedIndividual ;
-                          :ram_memory 16 ;
-                          :ram_speed 3200 ;
-                          :ram_type "DDR4" ;
-                          :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_HyperX_Fury_16_GB
-:Kingston_HyperX_Fury_16_GB rdf:type owl:NamedIndividual ,
-                                     :RAM ;
-                            :ram_memory 16 ;
-                            :ram_speed 3200 ;
-                            :ram_type "DDR4" ;
-                            :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Lian_Li_LANCOOL_215
-:Lian_Li_LANCOOL_215 rdf:type owl:NamedIndividual ,
-                              :Case ;
-                     :case_front_panel_usb "true"^^xsd:boolean ;
-                     :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B450_Tomahawk_MAX
-:MSI_B450_Tomahawk_MAX rdf:type owl:NamedIndividual ,
-                                :Motherboard ;
-                       :Motherboard_chipset "AMD B450" ;
-                       :Motherboard_form "ATX" ;
-                       :Motherboard_m.2_slots 1 ;
-                       :Motherboard_memory_max 64 ;
-                       :Motherboard_memory_max_frequency 4133 ;
-                       :Motherboard_memory_slots 4 ;
-                       :Motherboard_memory_type "DDR4" ;
-                       :Motherboard_pcie_slots 2 ;
-                       :Motherboard_sata_port 6 ;
-                       :Motherboard_usb_ports 3 ;
-                       :rgb "true"^^xsd:boolean ;
-                       :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B550_Tomahawk
-:MSI_B550_Tomahawk rdf:type owl:NamedIndividual ,
-                            :Motherboard ;
-                   :Motherboard_chipset "AMD B550" ;
-                   :Motherboard_form "ATX" ;
-                   :Motherboard_m.2_slots 2 ;
-                   :Motherboard_memory_max 128 ;
-                   :Motherboard_memory_max_frequency 4866 ;
-                   :Motherboard_memory_slots 4 ;
-                   :Motherboard_memory_type "DDR4" ;
-                   :Motherboard_pcie_slots 2 ;
-                   :Motherboard_sata_port 6 ;
-                   :Motherboard_usb_ports 4 ;
-                   :rgb "false"^^xsd:boolean ;
-                   :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B660M_MORTAR
-:MSI_B660M_MORTAR rdf:type owl:NamedIndividual ,
-                           :Motherboard ;
-                  :Motherboard_chipset "Intel B660" ;
-                  :Motherboard_form "Micro ATX" ;
-                  :Motherboard_m.2_slots 3 ;
-                  :Motherboard_memory_max 128 ;
-                  :Motherboard_memory_max_frequency 4800 ;
-                  :Motherboard_memory_slots 4 ;
-                  :Motherboard_memory_type "DDR4" ;
-                  :Motherboard_pcie_slots 2 ;
-                  :Motherboard_sata_port 6 ;
-                  :Motherboard_usb_ports 4 ;
-                  :rgb "false"^^xsd:boolean ;
-                  :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_Z690_Tomahawk
-:MSI_Z690_Tomahawk rdf:type owl:NamedIndividual ,
-                            :Motherboard ;
-                   :Motherboard_chipset "Intel Z690" ;
-                   :Motherboard_form "ATX" ;
-                   :Motherboard_m.2_slots 5 ;
-                   :Motherboard_memory_max 128 ;
-                   :Motherboard_memory_max_frequency 5200 ;
-                   :Motherboard_memory_slots 4 ;
-                   :Motherboard_memory_type "DDR4" ;
-                   :Motherboard_pcie_slots 3 ;
-                   :Motherboard_sata_port 6 ;
-                   :Motherboard_usb_ports 4 ;
-                   :rgb "false"^^xsd:boolean ;
-                   :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NOXHummer_650
-:NOXHummer_650 rdf:type owl:NamedIndividual ,
-                        :PSU ;
-               :psu_efficiency_rating "80+ Bronze" ;
-               :psu_fanless "false"^^xsd:boolean ;
-               :psu_modular "true"^^xsd:boolean ;
-               :psu_molex_4_pin 4 ;
-               :psu_pcie_6_pin 0 ;
-               :psu_pcie_8_pin 0 ;
-               :psu_sata 6 ;
-               :psu_type "ATX" ;
-               :psu_wattage 650 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_H510
-:NZXT_H510 rdf:type owl:NamedIndividual ,
-                    :Case ;
-           :case_front_panel_usb "true"^^xsd:boolean ;
-           :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_H7
-:NZXT_H7 rdf:type owl:NamedIndividual ,
-                  :Case ;
-         :case_front_panel_usb "true"^^xsd:boolean ;
-         :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_Kraken_X53
-:NZXT_Kraken_X53 rdf:type owl:NamedIndividual ,
-                          :WaterCooling ;
-                 :rgb "true"^^xsd:boolean ;
-                 :water_cooler_size 240 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_Kraken_Z63
-:NZXT_Kraken_Z63 rdf:type owl:NamedIndividual ,
-                          :WaterCooling ;
-                 :rgb "true"^^xsd:boolean ;
-                 :water_cooler_size 280 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_N7_B550
-:NZXT_N7_B550 rdf:type owl:NamedIndividual ,
-                       :Motherboard ;
-              :Motherboard_chipset "AMD B550" ;
-              :Motherboard_form "ATX" ;
-              :Motherboard_m.2_slots 3 ;
-              :Motherboard_memory_max 128 ;
-              :Motherboard_memory_max_frequency 4733 ;
-              :Motherboard_memory_slots 4 ;
-              :Motherboard_memory_type "DDR4" ;
-              :Motherboard_pcie_slots 2 ;
-              :Motherboard_sata_port 6 ;
-              :Motherboard_usb_ports 3 ;
-              :rgb "false"^^xsd:boolean ;
-              :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Noctua_NH-D15
-:Noctua_NH-D15 rdf:type owl:NamedIndividual ,
-                        :Fan ;
-               :cooler_height 165 ;
-               :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PhanteksRevoltPro_1000
-:PhanteksRevoltPro_1000 rdf:type owl:NamedIndividual ,
-                                 :PSU ;
-                        :psu_efficiency_rating "80+ Gold" ;
-                        :psu_fanless "false"^^xsd:boolean ;
-                        :psu_modular "true"^^xsd:boolean ;
-                        :psu_molex_4_pin 3 ;
-                        :psu_pcie_6_pin 0 ;
-                        :psu_pcie_8_pin 0 ;
-                        :psu_sata 14 ;
-                        :psu_type "ATX" ;
-                        :psu_wattage 1000 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_2060
-:RTX_2060 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1680 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1680 ;
-          :gpu_connector "PCI Express 3.0" ;
-          :gpu_dp_ports 3 ;
-          :gpu_dvi_ports 0 ;
-          :gpu_hashrate 18 ;
-          :gpu_hdmi_ports 1 ;
-          :gpu_memory 4096 ;
-          :gpu_memory_clock 14000 ;
-          :gpu_memory_type "GDDR6" ;
-          :gpu_power_usage 100 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_2060_SUPER
-:RTX_2060_SUPER rdf:type owl:NamedIndividual ,
-                         :GPU ;
-                :gpu_boost_clock 1680 ;
-                :gpu_chipset "Nvidia" ;
-                :gpu_clock 1650 ;
-                :gpu_connector "PCI Express 3.0" ;
-                :gpu_dp_ports 3 ;
-                :gpu_dvi_ports 0 ;
-                :gpu_hashrate 39 ;
-                :gpu_hdmi_ports 1 ;
-                :gpu_memory 8192 ;
-                :gpu_memory_clock 14000 ;
-                :gpu_memory_type "GDDR6" ;
-                :gpu_power_usage 100 ;
-                :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3050
-:RTX_3050 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1852 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1822 ;
-          :gpu_connector "PCI Express 4.0" ;
-          :gpu_dp_ports 3 ;
-          :gpu_dvi_ports 1 ;
-          :gpu_hashrate 26.5 ;
-          :gpu_hdmi_ports 0 ;
-          :gpu_memory 8192 ;
-          :gpu_memory_clock 14000 ;
-          :gpu_memory_type "GDDR6" ;
-          :gpu_power_usage 150 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3060
-:RTX_3060 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1837 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1777 ;
-          :gpu_connector "PCI Express 3.0" ;
-          :gpu_dp_ports 2 ;
-          :gpu_dvi_ports 0 ;
-          :gpu_hashrate 21.5 ;
-          :gpu_hdmi_ports 2 ;
-          :gpu_memory 12288 ;
-          :gpu_memory_clock 15000 ;
-          :gpu_memory_type "GDDR6" ;
-          :gpu_power_usage 150 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3060_Dual
-:RTX_3060_Dual rdf:type owl:NamedIndividual ,
-                        :GPU ;
-               :gpu_boost_clock 1867 ;
-               :gpu_chipset "Nvidia" ;
-               :gpu_clock 1837 ;
-               :gpu_connector "PCI Express 4.0" ;
-               :gpu_dp_ports 3 ;
-               :gpu_dvi_ports 1 ;
-               :gpu_hashrate 21.5 ;
-               :gpu_hdmi_ports 0 ;
-               :gpu_memory 12288 ;
-               :gpu_memory_clock 15000 ;
-               :gpu_memory_type "GDDR6" ;
-               :gpu_power_usage 200 ;
-               :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3060_TI
-:RTX_3060_TI rdf:type owl:NamedIndividual ,
-                      :GPU ;
-             :gpu_boost_clock 1695 ;
-             :gpu_chipset "Nvidia" ;
-             :gpu_clock 1695 ;
-             :gpu_connector "PCI Express 4.0" ;
-             :gpu_dp_ports 3 ;
-             :gpu_dvi_ports 1 ;
-             :gpu_hashrate 60 ;
-             :gpu_hdmi_ports 0 ;
-             :gpu_memory 8192 ;
-             :gpu_memory_clock 14000 ;
-             :gpu_memory_type "GDDR6" ;
-             :gpu_power_usage 200 ;
-             :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3070
-:RTX_3070 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1800 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1770 ;
-          :gpu_connector "PCI Express 4.0" ;
-          :gpu_dp_ports 3 ;
-          :gpu_dvi_ports 0 ;
-          :gpu_hashrate 60 ;
-          :gpu_hdmi_ports 2 ;
-          :gpu_memory 12288 ;
-          :gpu_memory_clock 14000 ;
-          :gpu_memory_type "GDDR6" ;
-          :gpu_power_usage 200 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3070_TI
-:RTX_3070_TI rdf:type owl:NamedIndividual ,
-                      :GPU ;
-             :gpu_boost_clock 1815 ;
-             :gpu_chipset "Nvidia" ;
-             :gpu_clock 1785 ;
-             :gpu_connector "PCI Express 4.0" ;
-             :gpu_dp_ports 3 ;
-             :gpu_dvi_ports 0 ;
-             :gpu_hashrate 80 ;
-             :gpu_hdmi_ports 2 ;
-             :gpu_memory 8192 ;
-             :gpu_memory_clock 19000 ;
-             :gpu_memory_type "GDDR6X" ;
-             :gpu_power_usage 200 ;
-             :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3080
-:RTX_3080 rdf:type owl:NamedIndividual ,
-                   :GPU ;
-          :gpu_boost_clock 1740 ;
-          :gpu_chipset "Nvidia" ;
-          :gpu_clock 1740 ;
-          :gpu_connector "PCI Express 4.0" ;
-          :gpu_dp_ports 3 ;
-          :gpu_dvi_ports 0 ;
-          :gpu_hashrate 101.5 ;
-          :gpu_hdmi_ports 1 ;
-          :gpu_memory 12288 ;
-          :gpu_memory_clock 19000 ;
-          :gpu_memory_type "GDDR6X" ;
-          :gpu_power_usage 350 ;
-          :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_3080_TI
-:RTX_3080_TI rdf:type owl:NamedIndividual ,
-                      :GPU ;
-             :gpu_boost_clock 1695 ;
-             :gpu_chipset "Nvidia" ;
-             :gpu_clock 1695 ;
-             :gpu_connector "PCI Express 4.0" ;
-             :gpu_dp_ports 3 ;
-             :gpu_dvi_ports 1 ;
-             :gpu_hashrate 117 ;
-             :gpu_hdmi_ports 0 ;
-             :gpu_memory 8192 ;
-             :gpu_memory_clock 14000 ;
-             :gpu_memory_type "GDDR6X" ;
-             :gpu_power_usage 200 ;
-             :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_550
-:RX_550 rdf:type owl:NamedIndividual ,
-                 :GPU ;
-        :gpu_boost_clock 1183 ;
-        :gpu_chipset "AMD" ;
-        :gpu_clock 1183 ;
-        :gpu_connector "PCI Express 3.0" ;
-        :gpu_dp_ports 1 ;
-        :gpu_dvi_ports 1 ;
-        :gpu_hashrate 27 ;
-        :gpu_hdmi_ports 1 ;
-        :gpu_memory 4096 ;
-        :gpu_memory_clock 6000 ;
-        :gpu_memory_type "GDDR5" ;
-        :gpu_power_usage 75 ;
-        :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_560
-:RX_560 rdf:type owl:NamedIndividual ,
-                 :GPU ;
-        :gpu_boost_clock 1275 ;
-        :gpu_chipset "AMD" ;
-        :gpu_clock 1175 ;
-        :gpu_connector "PCI Express 3.0" ;
-        :gpu_dp_ports 1 ;
-        :gpu_dvi_ports 1 ;
-        :gpu_hashrate 40 ;
-        :gpu_hdmi_ports 1 ;
-        :gpu_memory 4096 ;
-        :gpu_memory_clock 6000 ;
-        :gpu_memory_type "GDDR5" ;
-        :gpu_power_usage 75 ;
-        :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6400
-:RX_6400 rdf:type owl:NamedIndividual ,
-                  :GPU ;
-         :gpu_boost_clock 2321 ;
-         :gpu_chipset "AMD" ;
-         :gpu_clock 2039 ;
-         :gpu_connector "PCI Express 4.0" ;
-         :gpu_dp_ports 1 ;
-         :gpu_dvi_ports 0 ;
-         :gpu_hashrate 0 ;
-         :gpu_hdmi_ports 1 ;
-         :gpu_memory 4096 ;
-         :gpu_memory_clock 16000 ;
-         :gpu_memory_type "GDDR6" ;
-         :gpu_power_usage 150 ;
-         :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6500_XT
-:RX_6500_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2815 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 2310 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 1 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 13 ;
-            :gpu_hdmi_ports 1 ;
-            :gpu_memory 4096 ;
-            :gpu_memory_clock 18000 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 100 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6600
-:RX_6600 rdf:type owl:NamedIndividual ,
-                  :GPU ;
-         :gpu_boost_clock 2491 ;
-         :gpu_chipset "AMD" ;
-         :gpu_clock 2044 ;
-         :gpu_connector "PCI Express 4.0" ;
-         :gpu_dp_ports 2 ;
-         :gpu_dvi_ports 0 ;
-         :gpu_hashrate 32 ;
-         :gpu_hdmi_ports 2 ;
-         :gpu_memory 8192 ;
-         :gpu_memory_clock 14000 ;
-         :gpu_memory_type "GDDR6" ;
-         :gpu_power_usage 150 ;
-         :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6600_XT
-:RX_6600_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2607 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 1925 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 3 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 32 ;
-            :gpu_hdmi_ports 1 ;
-            :gpu_memory 8192 ;
-            :gpu_memory_clock 16000 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 150 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6650_XT
-:RX_6650_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2689 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 2447 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 3 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 27 ;
-            :gpu_hdmi_ports 1 ;
-            :gpu_memory 8192 ;
-            :gpu_memory_clock 17500 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 200 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6700
-:RX_6700 rdf:type owl:NamedIndividual ,
-                  :GPU ;
-         :gpu_boost_clock 2495 ;
-         :gpu_chipset "AMD" ;
-         :gpu_clock 2330 ;
-         :gpu_connector "PCI Express 4.0" ;
-         :gpu_dp_ports 3 ;
-         :gpu_dvi_ports 0 ;
-         :gpu_hashrate 46 ;
-         :gpu_hdmi_ports 1 ;
-         :gpu_memory 10240 ;
-         :gpu_memory_clock 16000 ;
-         :gpu_memory_type "GDDR6" ;
-         :gpu_power_usage 220 ;
-         :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6700_XT
-:RX_6700_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2581 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 2424 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 3 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 46 ;
-            :gpu_hdmi_ports 1 ;
-            :gpu_memory 12288 ;
-            :gpu_memory_clock 16000 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 200 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6750_XT
-:RX_6750_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2643 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 2554 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 3 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 40 ;
-            :gpu_hdmi_ports 1 ;
-            :gpu_memory 12288 ;
-            :gpu_memory_clock 18000 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 200 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6800
-:RX_6800 rdf:type owl:NamedIndividual ,
-                  :GPU ;
-         :gpu_boost_clock 2155 ;
-         :gpu_chipset "AMD" ;
-         :gpu_clock 1925 ;
-         :gpu_connector "PCI Express 4.0" ;
-         :gpu_dp_ports 3 ;
-         :gpu_dvi_ports 0 ;
-         :gpu_hashrate 62 ;
-         :gpu_hdmi_ports 1 ;
-         :gpu_memory 8192 ;
-         :gpu_memory_clock 16000 ;
-         :gpu_memory_type "GDDR6" ;
-         :gpu_power_usage 250 ;
-         :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6800_XT
-:RX_6800_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2310 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 2250 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 3 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 62 ;
-            :gpu_hdmi_ports 1 ;
-            :gpu_memory 16384 ;
-            :gpu_memory_clock 16000 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 200 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RX_6900_XT
-:RX_6900_XT rdf:type owl:NamedIndividual ,
-                     :GPU ;
-            :gpu_boost_clock 2525 ;
-            :gpu_chipset "AMD" ;
-            :gpu_clock 2250 ;
-            :gpu_connector "PCI Express 4.0" ;
-            :gpu_dp_ports 2 ;
-            :gpu_dvi_ports 0 ;
-            :gpu_hashrate 62 ;
-            :gpu_hdmi_ports 2 ;
-            :gpu_memory 16384 ;
-            :gpu_memory_clock 16000 ;
-            :gpu_memory_type "GDDR6" ;
-            :gpu_power_usage 250 ;
-            :gpu_vga_ports 0 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RosewillGreen_530
-:RosewillGreen_530 rdf:type owl:NamedIndividual ,
-                            :PSU ;
-                   :psu_efficiency_rating "80+ " ;
-                   :psu_fanless "false"^^xsd:boolean ;
-                   :psu_modular "false"^^xsd:boolean ;
-                   :psu_molex_4_pin 6 ;
-                   :psu_pcie_6_pin 1 ;
-                   :psu_pcie_8_pin 0 ;
-                   :psu_sata 6 ;
-                   :psu_type "ATX12V / EPS12V" ;
-                   :psu_wattage 530 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen3-4100
-:Ryzen3-4100 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3800 ;
-             :cpu_core_clock_boost 4000 ;
-             :cpu_core_count 4 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 3 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-3500
-:Ryzen5-3500 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3600 ;
-             :cpu_core_clock_boost 4100 ;
-             :cpu_core_count 6 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 5 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-4500
-:Ryzen5-4500 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3600 ;
-             :cpu_core_clock_boost 4100 ;
-             :cpu_core_count 6 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 5 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600
-:Ryzen5-5600 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3500 ;
-             :cpu_core_clock_boost 4400 ;
-             :cpu_core_count 6 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 5 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600X
-:Ryzen5-5600X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3700 ;
-              :cpu_core_clock_boost 4600 ;
-              :cpu_core_count 6 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 65 ;
-              :cpu_series 5 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-3800X
-:Ryzen7-3800X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3600 ;
-              :cpu_core_clock_boost 4400 ;
-              :cpu_core_count 8 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 65 ;
-              :cpu_series 7 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5700X
-:Ryzen7-5700X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3400 ;
-              :cpu_core_clock_boost 4600 ;
-              :cpu_core_count 8 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 65 ;
-              :cpu_series 7 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5800X
-:Ryzen7-5800X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3800 ;
-              :cpu_core_clock_boost 4700 ;
-              :cpu_core_count 8 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 105 ;
-              :cpu_series 7 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5900X
-:Ryzen9-5900X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3700 ;
-              :cpu_core_clock_boost 4800 ;
-              :cpu_core_count 12 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 105 ;
-              :cpu_series 9 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5950X
-:Ryzen9-5950X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3400 ;
-              :cpu_core_clock_boost 4900 ;
-              :cpu_core_count 16 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 105 ;
-              :cpu_series 9 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_1TB_SATA_III
-:Samsung_1TB_SATA_III rdf:type owl:NamedIndividual ,
-                               :SSD ;
-                      :storage_capacity 1024 ;
-                      :storage_sata_speed 560 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_2TB_SATA_III
-:Samsung_2TB_SATA_III rdf:type owl:NamedIndividual ,
-                               :SSD ;
-                      :storage_capacity 2048 ;
-                      :storage_sata_speed 560 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_4TB_SATA_III
-:Samsung_4TB_SATA_III rdf:type owl:NamedIndividual ,
-                               :SSD ;
-                      :storage_capacity 4096 ;
-                      :storage_sata_speed 560 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_500GB_SATA_III
-:Samsung_500GB_SATA_III rdf:type owl:NamedIndividual ,
-                                 :SSD ;
-                        :storage_capacity 500 ;
-                        :storage_sata_speed 560 ;
-                        :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_860_EVO_250GB_SATA_III
-:Samsung_860_EVO_250GB_SATA_III rdf:type owl:NamedIndividual ,
-                                         :SSD ;
-                                :storage_capacity 250 ;
-                                :storage_sata_speed 550 ;
-                                :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus
-:Samsung_970_EVO_Plus rdf:type owl:NamedIndividual ;
-                      :storage_capacity 1024 ;
-                      :storage_sata_speed 0 ;
-                      :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus_1TB
-:Samsung_970_EVO_Plus_1TB rdf:type owl:NamedIndividual ,
-                                   :SSD ;
-                          :storage_capacity 1024 ;
-                          :storage_sata_speed 3500 ;
-                          :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus_250GB
-:Samsung_970_EVO_Plus_250GB rdf:type owl:NamedIndividual ,
-                                     :SSD ;
-                            :storage_capacity 250 ;
-                            :storage_sata_speed 3500 ;
-                            :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus_500GB
-:Samsung_970_EVO_Plus_500GB rdf:type owl:NamedIndividual ,
-                                     :SSD ;
-                            :storage_capacity 500 ;
-                            :storage_sata_speed 3500 ;
-                            :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_980_250GB
-:Samsung_980_250GB rdf:type owl:NamedIndividual ,
-                            :SSD ;
-                   :storage_capacity 250 ;
-                   :storage_sata_speed 2900 ;
-                   :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SeaSonic_Prime_600
-:SeaSonic_Prime_600 rdf:type owl:NamedIndividual ,
-                             :PSU ;
-                    :psu_efficiency_rating "80+ Titanium" ;
-                    :psu_fanless "true"^^xsd:boolean ;
-                    :psu_modular "true"^^xsd:boolean ;
-                    :psu_molex_4_pin 5 ;
-                    :psu_pcie_6_pin 0 ;
-                    :psu_pcie_8_pin 0 ;
-                    :psu_sata 6 ;
-                    :psu_type "ATX" ;
-                    :psu_wattage 600 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_10TB_7200rmp
-:Seagate_10TB_7200rmp rdf:type owl:NamedIndividual ,
-                               :HDD ;
-                      :storage_capacity 10240 ;
-                      :storage_rpm 7200 ;
-                      :storage_sata_speed 500 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_14TB_7200rmp
-:Seagate_14TB_7200rmp rdf:type owl:NamedIndividual ,
-                               :HDD ;
-                      :storage_capacity 14336 ;
-                      :storage_rpm 7200 ;
-                      :storage_sata_speed 500 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_1TB_5400rpm
-:Seagate_1TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 1024 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 400 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_1TB_7200rmp
-:Seagate_1TB_7200rmp rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 1024 ;
-                     :storage_rpm 7200 ;
-                     :storage_sata_speed 500 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_2TB_5400rpm
-:Seagate_2TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 2048 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 400 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_2TB_7200rmp
-:Seagate_2TB_7200rmp rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 2048 ;
-                     :storage_rpm 7200 ;
-                     :storage_sata_speed 500 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_3TB_5400rpm
-:Seagate_3TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 3072 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 400 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_6TB_5400rpm
-:Seagate_6TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 6144 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 400 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_8TB_7200rmp
-:Seagate_8TB_7200rmp rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 8192 ;
-                     :storage_rpm 7200 ;
-                     :storage_sata_speed 500 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverStoneStrider_1500
-:SilverStoneStrider_1500 rdf:type owl:NamedIndividual ,
-                                  :PSU ;
-                         :psu_efficiency_rating "80+ Silver" ;
-                         :psu_fanless "false"^^xsd:boolean ;
-                         :psu_modular "false"^^xsd:boolean ;
-                         :psu_molex_4_pin 12 ;
-                         :psu_pcie_6_pin 4 ;
-                         :psu_pcie_8_pin 0 ;
-                         :psu_sata 12 ;
-                         :psu_type "ATX12V / EPS12V" ;
-                         :psu_wattage 750 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverstoneHella_2050
-:SilverstoneHella_2050 rdf:type owl:NamedIndividual ,
-                                :PSU ;
-                       :psu_efficiency_rating "" ;
-                       :psu_fanless "false"^^xsd:boolean ;
-                       :psu_modular "true"^^xsd:boolean ;
-                       :psu_molex_4_pin 3 ;
-                       :psu_pcie_6_pin 0 ;
-                       :psu_pcie_8_pin 0 ;
-                       :psu_sata 12 ;
-                       :psu_type "ATX" ;
-                       :psu_wattage 2500 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SuperFlowerLedex_1000
-:SuperFlowerLedex_1000 rdf:type owl:NamedIndividual ,
-                                :PSU ;
-                       :psu_efficiency_rating "80+ Titanium" ;
-                       :psu_fanless "false"^^xsd:boolean ;
-                       :psu_modular "true"^^xsd:boolean ;
-                       :psu_molex_4_pin 6 ;
-                       :psu_pcie_6_pin 0 ;
-                       :psu_pcie_8_pin 0 ;
-                       :psu_sata 12 ;
-                       :psu_type "ATX / BTX" ;
-                       :psu_wattage 1000 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TRANSCEND_128GB
-:TRANSCEND_128GB rdf:type owl:NamedIndividual ,
-                          :SSD ;
-                 :storage_capacity 128 ;
-                 :storage_sata_speed 1800 ;
-                 :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TRANSCEND_128GB_SATA_III
-:TRANSCEND_128GB_SATA_III rdf:type owl:NamedIndividual ,
-                                   :SSD ;
-                          :storage_capacity 128 ;
-                          :storage_sata_speed 560 ;
-                          :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TRANSCEND_1TB
-:TRANSCEND_1TB rdf:type owl:NamedIndividual ,
-                        :SSD ;
-               :storage_capacity 1024 ;
-               :storage_sata_speed 3500 ;
-               :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TRANSCEND_500GB_SATA_III
-:TRANSCEND_500GB_SATA_III rdf:type owl:NamedIndividual ,
-                                   :SSD ;
-                          :storage_capacity 500 ;
-                          :storage_sata_speed 550 ;
-                          :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Toshiba_1TB_5400rpm
-:Toshiba_1TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 1024 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 450 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Toshiba_2TB_5400rpm
-:Toshiba_2TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 2048 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 450 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Toshiba_4TB_5400rpm
-:Toshiba_4TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 4096 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 450 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Toshiba_8TB_5400rpm
-:Toshiba_8TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 8192 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 450 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Black_1TB_7200rpm
-:WD_Black_1TB_7200rpm rdf:type owl:NamedIndividual ,
-                               :HDD ;
-                      :storage_capacity 1024 ;
-                      :storage_rpm 7200 ;
-                      :storage_sata_speed 150 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Black_250GB
-:WD_Black_250GB rdf:type owl:NamedIndividual ,
-                         :SSD ;
-                :storage_capacity 250 ;
-                :storage_sata_speed 3100 ;
-                :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Black_2TB
-:WD_Black_2TB rdf:type owl:NamedIndividual ,
-                       :SSD ;
-              :storage_capacity 2048 ;
-              :storage_sata_speed 7000 ;
-              :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Black_2TB_7200rpm
-:WD_Black_2TB_7200rpm rdf:type owl:NamedIndividual ,
-                               :HDD ;
-                      :storage_capacity 2048 ;
-                      :storage_rpm 7200 ;
-                      :storage_sata_speed 750 ;
-                      :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Blue_250GB
-:WD_Blue_250GB rdf:type owl:NamedIndividual ,
-                        :SSD ;
-               :storage_capacity 250 ;
-               :storage_sata_speed 2400 ;
-               :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Blue_2TB_5400rpm
-:WD_Blue_2TB_5400rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 2048 ;
-                     :storage_rpm 5400 ;
-                     :storage_sata_speed 450 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Blue_500GB
-:WD_Blue_500GB rdf:type owl:NamedIndividual ,
-                        :SSD ;
-               :storage_capacity 500 ;
-               :storage_sata_speed 3430 ;
-               :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Gold_4TB_7200rpm
-:WD_Gold_4TB_7200rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 4096 ;
-                     :storage_rpm 7200 ;
-                     :storage_sata_speed 750 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Gold_8TB_7200rpm
-:WD_Gold_8TB_7200rpm rdf:type owl:NamedIndividual ,
-                              :HDD ;
-                     :storage_capacity 8192 ;
-                     :storage_rpm 7200 ;
-                     :storage_sata_speed 750 ;
-                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Green_240GB_SATA_III
-:WD_Green_240GB_SATA_III rdf:type owl:NamedIndividual ,
-                                  :SSD ;
-                         :storage_capacity 240 ;
-                         :storage_sata_speed 545 ;
-                         :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Purple_1TB_5400rpm
-:WD_Purple_1TB_5400rpm rdf:type owl:NamedIndividual ,
-                                :HDD ;
-                       :storage_capacity 1024 ;
-                       :storage_rpm 5400 ;
-                       :storage_sata_speed 750 ;
-                       :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Purple_6TB_5400rpm
-:WD_Purple_6TB_5400rpm rdf:type owl:NamedIndividual ,
-                                :HDD ;
-                       :storage_capacity 6144 ;
-                       :storage_rpm 5400 ;
-                       :storage_sata_speed 450 ;
-                       :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Red_2TB_5420rpm
-:WD_Red_2TB_5420rpm rdf:type owl:NamedIndividual ,
-                             :HDD ;
-                    :storage_capacity 2048 ;
-                    :storage_rpm 5400 ;
-                    :storage_sata_speed 450 ;
-                    :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Red_4TB_7200rpm
-:WD_Red_4TB_7200rpm rdf:type owl:NamedIndividual ,
-                             :HDD ;
-                    :storage_capacity 4096 ;
-                    :storage_rpm 7200 ;
-                    :storage_sata_speed 750 ;
-                    :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Red_6TB_5400rpm
-:WD_Red_6TB_5400rpm rdf:type owl:NamedIndividual ,
-                             :HDD ;
-                    :storage_capacity 6144 ;
-                    :storage_rpm 5400 ;
-                    :storage_sata_speed 450 ;
-                    :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#WD_Red_8TB_7200rpm
-:WD_Red_8TB_7200rpm rdf:type owl:NamedIndividual ,
-                             :HDD ;
-                    :storage_capacity 8192 ;
-                    :storage_rpm 7200 ;
-                    :storage_sata_speed 750 ;
-                    :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Western_Digital_Blue_2TB
-:Western_Digital_Blue_2TB rdf:type owl:NamedIndividual ;
-                          :storage_capacity 2048 ;
-                          :storage_rpm 7200 ;
-                          :storage_sata_speed 6 ;
-                          :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Zalman_S2
-:Zalman_S2 rdf:type owl:NamedIndividual ,
-                    :Case ;
-           :case_front_panel_usb "true"^^xsd:boolean ;
-           :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10100
-:i3-10100 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 3600 ;
-          :cpu_core_clock_boost 4300 ;
-          :cpu_core_count 4 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 65 ;
-          :cpu_series 3 ;
-          :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10100F
-:i3-10100F rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3600 ;
-           :cpu_core_clock_boost 4300 ;
-           :cpu_core_count 4 ;
-           :cpu_integrated_graphics "false"^^xsd:boolean ;
-           :cpu_power_usage 65 ;
-           :cpu_series 3 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10105
-:i3-10105 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 3700 ;
-          :cpu_core_clock_boost 4300 ;
-          :cpu_core_count 4 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 65 ;
-          :cpu_series 3 ;
-          :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-10105F
-:i3-10105F rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3700 ;
-           :cpu_core_clock_boost 4400 ;
-           :cpu_core_count 4 ;
-           :cpu_integrated_graphics "false"^^xsd:boolean ;
-           :cpu_power_usage 65 ;
-           :cpu_series 3 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12100
-:i3-12100 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 3300 ;
-          :cpu_core_clock_boost 4300 ;
-          :cpu_core_count 4 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 60 ;
-          :cpu_series 3 ;
-          :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12100F
-:i3-12100F rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3300 ;
-           :cpu_core_clock_boost 4300 ;
-           :cpu_core_count 4 ;
-           :cpu_integrated_graphics "false"^^xsd:boolean ;
-           :cpu_power_usage 58 ;
-           :cpu_series 3 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i3-12300
-:i3-12300 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 3500 ;
-          :cpu_core_clock_boost 4400 ;
-          :cpu_core_count 4 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 60 ;
-          :cpu_series 3 ;
-          :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-10600
-:i5-10600 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 3300 ;
-          :cpu_core_clock_boost 4800 ;
-          :cpu_core_count 6 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 65 ;
-          :cpu_series 5 ;
-          :socket "LGA1200" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-11600K
-:i5-11600K rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3900 ;
-           :cpu_core_clock_boost 4900 ;
-           :cpu_core_count 6 ;
-           :cpu_integrated_graphics "true"^^xsd:boolean ;
-           :cpu_power_usage 125 ;
-           :cpu_series 5 ;
-           :socket "LGA1200" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-12400
-:i5-12400 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 2500 ;
-          :cpu_core_clock_boost 4400 ;
-          :cpu_core_count 6 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 65 ;
-          :cpu_series 5 ;
-          :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-12400F
-:i5-12400F rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 2500 ;
-           :cpu_core_clock_boost 4400 ;
-           :cpu_core_count 6 ;
-           :cpu_integrated_graphics "false"^^xsd:boolean ;
-           :cpu_power_usage 65 ;
-           :cpu_series 5 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-12600K
-:i5-12600K rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3700 ;
-           :cpu_core_clock_boost 4900 ;
-           :cpu_core_count 10 ;
-           :cpu_integrated_graphics "true"^^xsd:boolean ;
-           :cpu_power_usage 125 ;
-           :cpu_series 5 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-8400
-:i5-8400 rdf:type owl:NamedIndividual ,
-                  :Intel ;
-         :cpu_core_clock 2800 ;
-         :cpu_core_clock_boost 4000 ;
-         :cpu_core_count 6 ;
-         :cpu_integrated_graphics "true"^^xsd:boolean ;
-         :cpu_power_usage 65 ;
-         :cpu_series 5 ;
-         :socket "LGA1151" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i5-9400
-:i5-9400 rdf:type owl:NamedIndividual ,
-                  :Intel ;
-         :cpu_core_clock 2900 ;
-         :cpu_core_clock_boost 4100 ;
-         :cpu_core_count 6 ;
-         :cpu_integrated_graphics "true"^^xsd:boolean ;
-         :cpu_power_usage 65 ;
-         :cpu_series 5 ;
-         :socket "LGA1151" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-10700
-:i7-10700 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 2900 ;
-          :cpu_core_clock_boost 4800 ;
-          :cpu_core_count 8 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 65 ;
-          :cpu_series 7 ;
-          :socket "LGA1200" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-10700K
-:i7-10700K rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3800 ;
-           :cpu_core_clock_boost 5100 ;
-           :cpu_core_count 8 ;
-           :cpu_integrated_graphics "true"^^xsd:boolean ;
-           :cpu_power_usage 125 ;
-           :cpu_series 7 ;
-           :socket "LGA1200" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-11700
-:i7-11700 rdf:type owl:NamedIndividual ,
-                   :Intel ;
-          :cpu_core_clock 2500 ;
-          :cpu_core_clock_boost 4900 ;
-          :cpu_core_count 8 ;
-          :cpu_integrated_graphics "true"^^xsd:boolean ;
-          :cpu_power_usage 65 ;
-          :cpu_series 7 ;
-          :socket "LGA1200" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-12700F
-:i7-12700F rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 2100 ;
-           :cpu_core_clock_boost 4900 ;
-           :cpu_core_count 12 ;
-           :cpu_integrated_graphics "false"^^xsd:boolean ;
-           :cpu_power_usage 65 ;
-           :cpu_series 7 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#i7-12700K
-:i7-12700K rdf:type owl:NamedIndividual ,
-                    :Intel ;
-           :cpu_core_clock 3600 ;
-           :cpu_core_clock_boost 5000 ;
-           :cpu_core_count 12 ;
-           :cpu_integrated_graphics "true"^^xsd:boolean ;
-           :cpu_power_usage 125 ;
-           :cpu_series 7 ;
-           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#be_quiet!_Dark_Rock_Pro_4
-<http://www.semanticweb.org/vlada/ontologies/2022/5/components#be_quiet!_Dark_Rock_Pro_4> rdf:type owl:NamedIndividual ,
-                                                                                                   :Fan ;
-                                                                                          :cooler_height 163 ;
-                                                                                          :rgb "false"^^xsd:boolean .
-
-
-###  Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi
+<http://www.semanticweb.org/vlada/ontologies/2022/5/classes.owl> a owl:Ontology .
+# 
+# 
+# #################################################################
+# #
+# #    Data properties
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset
+
+:Motherboard_chipset a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form
+
+:Motherboard_form a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots
+
+:Motherboard_m.2_slots a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max
+
+:Motherboard_memory_max a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency
+
+:Motherboard_memory_max_frequency a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots
+
+:Motherboard_memory_slots a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_type
+
+:Motherboard_memory_type a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_pcie_slots
+
+:Motherboard_pcie_slots a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_sata_port
+
+:Motherboard_sata_port a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_usb_ports
+
+:Motherboard_usb_ports a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_front_panel_usb
+
+:case_front_panel_usb a owl:DatatypeProperty ;
+	rdfs:domain :Case ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_side_panel
+
+:case_side_panel a owl:DatatypeProperty ;
+	rdfs:domain :Case ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cooler_height
+
+:cooler_height a owl:DatatypeProperty ;
+	rdfs:domain :Cooling ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock
+
+:cpu_core_clock a owl:DatatypeProperty ;
+	rdfs:domain :CPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost
+
+:cpu_core_clock_boost a owl:DatatypeProperty ;
+	rdfs:domain :CPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count
+
+:cpu_core_count a owl:DatatypeProperty ;
+	rdfs:domain :CPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_integrated_graphics
+
+:cpu_integrated_graphics a owl:DatatypeProperty ;
+	rdfs:domain :CPU ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_power_usage
+
+:cpu_power_usage a owl:DatatypeProperty ;
+	rdfs:domain :CPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_series
+
+:cpu_series a owl:DatatypeProperty ;
+	rdfs:domain :CPU ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#fan_bearing
+
+:fan_bearing a owl:DatatypeProperty ;
+	rdfs:domain :Fan ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_boost_clock
+
+:gpu_boost_clock a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_chipset
+
+:gpu_chipset a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_clock
+
+:gpu_clock a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_connector
+
+:gpu_connector a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_dp_ports
+
+:gpu_dp_ports a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_dvi_ports
+
+:gpu_dvi_ports a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate
+
+:gpu_hashrate a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hdmi_ports
+
+:gpu_hdmi_ports a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory
+
+:gpu_memory a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock
+
+:gpu_memory_clock a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type
+
+:gpu_memory_type a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage
+
+:gpu_power_usage a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports
+
+:gpu_vga_ports a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#headphones_has_microphone
+
+:headphones_has_microphone a owl:DatatypeProperty ;
+	rdfs:domain :Headphone ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#keyboard_switch_type
+
+:keyboard_switch_type a owl:DatatypeProperty ;
+	rdfs:domain :Keyboard ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_aspect_ratio
+
+:monitor_aspect_ratio a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_curved_screen
+
+:monitor_curved_screen a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_frame_sync
+
+:monitor_frame_sync a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_refresh_rate
+
+:monitor_refresh_rate a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_response_time
+
+:monitor_response_time a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:double .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_size
+
+:monitor_size a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:double .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_dpi
+
+:mouse_dpi a owl:DatatypeProperty ;
+	rdfs:domain :Mouse ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_hand
+
+:mouse_hand a owl:DatatypeProperty ;
+	rdfs:domain :Mouse ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_tracking
+
+:mouse_tracking a owl:DatatypeProperty .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#os_mode
+
+:os_mode a owl:DatatypeProperty ;
+	rdfs:domain :OS ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#peripheral_connector
+
+:peripheral_connector a owl:DatatypeProperty .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#peripheral_style
+
+:peripheral_style a owl:DatatypeProperty .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_efficiency_rating
+
+:psu_efficiency_rating a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_fanless
+
+:psu_fanless a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_modular
+
+:psu_modular a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_molex_4_pin
+
+:psu_molex_4_pin a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_pcie_6_pin
+
+:psu_pcie_6_pin a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_pcie_8_pin
+
+:psu_pcie_8_pin a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_sata
+
+:psu_sata a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_type
+
+:psu_type a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_wattage
+
+:psu_wattage a owl:DatatypeProperty ;
+	rdfs:domain :PSU ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory
+
+:ram_memory a owl:DatatypeProperty ;
+	rdfs:domain :RAM ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed
+
+:ram_speed a owl:DatatypeProperty ;
+	rdfs:domain :RAM ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type
+
+:ram_type a owl:DatatypeProperty ;
+	rdfs:domain :RAM ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#resolution
+
+:resolution a owl:DatatypeProperty ;
+	rdfs:domain :Monitor ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb
+
+:rgb a owl:DatatypeProperty ;
+	rdfs:domain :Case , :Cooling , :Keyboard , :Motherboard , :Mouse , :PSU , :RAM ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#socket
+
+:socket a owl:DatatypeProperty ;
+	rdfs:domain :Motherboard ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#speakers_wattage
+
+:speakers_wattage a owl:DatatypeProperty ;
+	rdfs:domain :Speaker ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_capacity
+
+:storage_capacity a owl:DatatypeProperty ;
+	rdfs:domain :ExternalMemory , :HDD , :SSD ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_rpm
+
+:storage_rpm a owl:DatatypeProperty ;
+	rdfs:domain :HDD ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_sata_speed
+
+:storage_sata_speed a owl:DatatypeProperty ;
+	rdfs:domain :ExternalMemory , :HDD , :SSD ;
+	rdfs:range xsd:integer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_type
+
+:storage_type a owl:DatatypeProperty ;
+	rdfs:domain :HDD , :SSD ;
+	rdfs:range xsd:string .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#tenkeyless
+
+:tenkeyless a owl:DatatypeProperty ;
+	rdfs:domain :Keyboard ;
+	rdfs:range xsd:boolean .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size
+
+:water_cooler_size a owl:DatatypeProperty ;
+	rdfs:domain :WaterCooling ;
+	rdfs:range xsd:double .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Classes
+# #
+# #################################################################
+# 
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD
+
+:AMD a owl:Class ;
+	rdfs:subClassOf :CPU .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ATX
+
+:ATX a owl:Class ;
+	rdfs:subClassOf :Motherboard .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#BluetoothDriver
+
+:BluetoothDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU
+
+:CPU a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Camera
+
+:Camera a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case
+
+:Case a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Component
+
+:Component a owl:Class .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Controller
+
+:Controller a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling
+
+:Cooling a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#DisplayDriver
+
+:DisplayDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver
+
+:Driver a owl:Class ;
+	rdfs:subClassOf :SoftwareComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent
+
+:ExternalComponent a owl:Class ;
+	rdfs:subClassOf :HardwareComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalMemory
+
+:ExternalMemory a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Fan
+
+:Fan a owl:Class ;
+	rdfs:subClassOf :Cooling .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#FullTower
+
+:FullTower a owl:Class ;
+	rdfs:subClassOf :Case .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#FullyModular
+
+:FullyModular a owl:Class ;
+	rdfs:subClassOf :PSU .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU
+
+:GPU a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD
+
+:HDD a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent
+
+:HardwareComponent a owl:Class ;
+	rdfs:subClassOf :Component .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Headphone
+
+:Headphone a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#IPS
+
+:IPS a owl:Class ;
+	rdfs:subClassOf :Monitor .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Inkjet
+
+:Inkjet a owl:Class ;
+	rdfs:subClassOf :Printer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel
+
+:Intel a owl:Class ;
+	rdfs:subClassOf :CPU .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent
+
+:InternalComponent a owl:Class ;
+	rdfs:subClassOf :HardwareComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Joystick
+
+:Joystick a owl:Class ;
+	rdfs:subClassOf :Controller .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard
+
+:Keyboard a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#KeyboardDriver
+
+:KeyboardDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#LED
+
+:LED a owl:Class ;
+	rdfs:subClassOf :Printer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Laser
+
+:Laser a owl:Class ;
+	rdfs:subClassOf :Printer .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Linux
+
+:Linux a owl:Class ;
+	rdfs:subClassOf :OS .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#M.2
+
+:M.2 a owl:Class ;
+	rdfs:subClassOf :SSD .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mac
+
+:Mac a owl:Class ;
+	rdfs:subClassOf :OS .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mechanic
+
+:Mechanic a owl:Class ;
+	rdfs:subClassOf :Keyboard .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Membrane
+
+:Membrane a owl:Class ;
+	rdfs:subClassOf :Keyboard .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MemoryDriver
+
+:MemoryDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MicroATX
+
+:MicroATX a owl:Class ;
+	rdfs:subClassOf :Motherboard .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Microphone
+
+:Microphone a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MidTower
+
+:MidTower a owl:Class ;
+	rdfs:subClassOf :Case .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MiniITX
+
+:MiniITX a owl:Class ;
+	rdfs:subClassOf :Motherboard .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MiniTower
+
+:MiniTower a owl:Class ;
+	rdfs:subClassOf :Case .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor
+
+:Monitor a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard
+
+:Motherboard a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mouse
+
+:Mouse a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MouseDriver
+
+:MouseDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#NetworkDriver
+
+:NetworkDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#NonModular
+
+:NonModular a owl:Class ;
+	rdfs:subClassOf :PSU .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS
+
+:OS a owl:Class ;
+	rdfs:subClassOf :SoftwareComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OpticalDrive
+
+:OpticalDrive a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OpticalDriver
+
+:OpticalDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU
+
+:PSU a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Printer
+
+:Printer a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PrinterDriver
+
+:PrinterDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM
+
+:RAM a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SATA
+
+:SATA a owl:Class ;
+	rdfs:subClassOf :SSD .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD
+
+:SSD a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Scanner
+
+:Scanner a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ScannerDriver
+
+:ScannerDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SemiMechanic
+
+:SemiMechanic a owl:Class ;
+	rdfs:subClassOf :Keyboard .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SemiModular
+
+:SemiModular a owl:Class ;
+	rdfs:subClassOf :PSU .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoftwareComponent
+
+:SoftwareComponent a owl:Class ;
+	rdfs:subClassOf :Component .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoundCard
+
+:SoundCard a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoundDriver
+
+:SoundDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Speaker
+
+:Speaker a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#TN
+
+:TN a owl:Class ;
+	rdfs:subClassOf :Monitor .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#UsbDriver
+
+:UsbDriver a owl:Class ;
+	rdfs:subClassOf :Driver .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#VA
+
+:VA a owl:Class ;
+	rdfs:subClassOf :Monitor .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WaterCooling
+
+:WaterCooling a owl:Class ;
+	rdfs:subClassOf :Cooling .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Wheel
+
+:Wheel a owl:Class ;
+	rdfs:subClassOf :Controller .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Windows
+
+:Windows a owl:Class ;
+	rdfs:subClassOf :OS .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WirelessAdapter
+
+:WirelessAdapter a owl:Class ;
+	rdfs:subClassOf :ExternalComponent .
+# 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WirelessCard
+
+:WirelessCard a owl:Class ;
+	rdfs:subClassOf :InternalComponent .
+# 
+# Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi

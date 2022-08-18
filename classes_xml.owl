@@ -1,0 +1,1208 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl#"
+     xml:base="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_pcie_slots -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_pcie_slots">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_sata_port -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_sata_port">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_usb_ports -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_usb_ports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_front_panel_usb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_front_panel_usb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_side_panel -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_side_panel">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cooler_height -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cooler_height">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_integrated_graphics -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_integrated_graphics">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_power_usage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_power_usage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_series -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_series">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#fan_bearing -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#fan_bearing">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Fan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_boost_clock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_boost_clock">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_chipset -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_chipset">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_clock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_clock">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_connector -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_connector">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_dp_ports -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_dp_ports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_dvi_ports -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_dvi_ports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hdmi_ports -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hdmi_ports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#headphones_has_microphone -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#headphones_has_microphone">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Headphone"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#keyboard_switch_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#keyboard_switch_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_aspect_ratio -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_aspect_ratio">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_curved_screen -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_curved_screen">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_frame_sync -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_frame_sync">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_refresh_rate -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_refresh_rate">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_response_time -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_response_time">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#monitor_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_dpi -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_dpi">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mouse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_hand -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#mouse_hand">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mouse"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#os_mode -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#os_mode">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_efficiency_rating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_efficiency_rating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_fanless -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_fanless">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_modular -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_modular">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_molex_4_pin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_molex_4_pin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_pcie_6_pin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_pcie_6_pin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_pcie_8_pin -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_pcie_8_pin">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_sata -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_sata">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_wattage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_wattage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#resolution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#resolution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mouse"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#socket -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#socket">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#speakers_wattage -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#speakers_wattage">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Speaker"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_capacity -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_capacity">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalMemory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_rpm -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_rpm">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_sata_speed -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_sata_speed">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalMemory"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_type -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_type">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#tenkeyless -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#tenkeyless">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WaterCooling"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ATX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ATX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#BluetoothDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#BluetoothDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Camera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Camera">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Component -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Component"/>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Controller -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Controller">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#DisplayDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#DisplayDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoftwareComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalMemory -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalMemory">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Fan -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Fan">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#FullTower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#FullTower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#FullyModular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#FullyModular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#GPU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HDD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Headphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Headphone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#IPS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#IPS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Inkjet -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Inkjet">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Printer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Joystick -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Joystick">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#KeyboardDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#KeyboardDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#LED -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#LED">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Printer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Laser -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Laser">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Printer"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Linux -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Linux">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#M.2 -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#M.2">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mac -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mac">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mechanic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mechanic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Membrane -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Membrane">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MemoryDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MemoryDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MicroATX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MicroATX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Microphone -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Microphone">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MidTower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MidTower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MiniITX -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MiniITX">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MiniTower -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MiniTower">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mouse -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Mouse">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MouseDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#MouseDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#NetworkDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#NetworkDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#NonModular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#NonModular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoftwareComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OpticalDrive -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OpticalDrive">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OpticalDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OpticalDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Printer -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Printer">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PrinterDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PrinterDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SATA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SATA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Scanner -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Scanner">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ScannerDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ScannerDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SemiMechanic -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SemiMechanic">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Keyboard"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SemiModular -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SemiModular">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoftwareComponent -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoftwareComponent">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Component"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoundCard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoundCard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoundDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SoundDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Speaker -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Speaker">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#TN -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#TN">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#UsbDriver -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#UsbDriver">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Driver"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#VA -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#VA">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Monitor"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WaterCooling -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WaterCooling">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Cooling"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Wheel -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Wheel">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Controller"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Windows -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Windows">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#OS"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WirelessAdapter -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WirelessAdapter">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ExternalComponent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WirelessCard -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#WirelessCard">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
