@@ -127,6 +127,15 @@
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#case_side_panel> "true"^^xsd:boolean .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_Dominator_Platinum_RGB_32_GB
+:Corsair_Dominator_Platinum_RGB_32_GB rdf:type owl:NamedIndividual ,
+                                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 6200 ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR5" ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "true"^^xsd:boolean .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_HX1500i
 :Corsair_HX1500i rdf:type owl:NamedIndividual ,
                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU> ;
@@ -161,6 +170,24 @@
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_sata> 8 ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_type> "ATX" ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_wattage> 750 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_Vengeance_RGB_Pro_32_GB
+:Corsair_Vengeance_RGB_Pro_32_GB rdf:type owl:NamedIndividual ,
+                                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3600 ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Crucial_Ballistix_16_GB
+:Crucial_Ballistix_16_GB rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#EVGA_T2
@@ -203,6 +230,24 @@
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_sata> 9 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_type> "ATX" ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_wattage> 850 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#G.Skill_Ripjaws_V_16_GB
+:G.Skill_Ripjaws_V_16_GB rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#G.Skill_Ripjaws_V_32_GB
+:G.Skill_Ripjaws_V_32_GB rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3600 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#GTX_1050_TI
@@ -386,6 +431,15 @@
                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Kingston_HyperX_Fury_16_GB
+:Kingston_HyperX_Fury_16_GB rdf:type owl:NamedIndividual ,
+                                     <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Lian_Li_LANCOOL_215
@@ -973,7 +1027,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen3-4100
 :Ryzen3-4100 rdf:type owl:NamedIndividual ,
-                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3800 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4000 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -985,7 +1039,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen5-3500
 :Ryzen5-3500 rdf:type owl:NamedIndividual ,
-                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3600 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4100 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -997,7 +1051,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen5-4500
 :Ryzen5-4500 rdf:type owl:NamedIndividual ,
-                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3600 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4100 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1009,7 +1063,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen5-5600
 :Ryzen5-5600 rdf:type owl:NamedIndividual ,
-                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3500 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4400 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1021,7 +1075,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen5-5600X
 :Ryzen5-5600X rdf:type owl:NamedIndividual ,
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3700 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4600 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1033,7 +1087,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen7-3800X
 :Ryzen7-3800X rdf:type owl:NamedIndividual ,
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3600 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4400 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 8 ;
@@ -1045,7 +1099,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen7-5700X
 :Ryzen7-5700X rdf:type owl:NamedIndividual ,
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3400 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4600 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 8 ;
@@ -1057,7 +1111,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen7-5800X
 :Ryzen7-5800X rdf:type owl:NamedIndividual ,
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3800 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4700 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 8 ;
@@ -1069,7 +1123,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen9-5900X
 :Ryzen9-5900X rdf:type owl:NamedIndividual ,
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3700 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4800 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 12 ;
@@ -1081,7 +1135,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Ryzen9-5950X
 :Ryzen9-5950X rdf:type owl:NamedIndividual ,
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#AMD> ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3400 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4900 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 16 ;
@@ -1533,7 +1587,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-10100
 :i3-10100 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3600 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4300 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1545,7 +1599,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-10100F
 :i3-10100F rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3600 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4300 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1557,7 +1611,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-10105
 :i3-10105 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3700 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4300 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1569,7 +1623,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-10105F
 :i3-10105F rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3700 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4400 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1581,7 +1635,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-12100
 :i3-12100 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3300 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4300 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1593,7 +1647,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-12100F
 :i3-12100F rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3300 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4300 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1605,7 +1659,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i3-12300
 :i3-12300 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3500 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4400 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 4 ;
@@ -1617,7 +1671,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-10600
 :i5-10600 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3300 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4800 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1629,7 +1683,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-11600K
 :i5-11600K rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3900 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4900 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1641,7 +1695,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-12400
 :i5-12400 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2500 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4400 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1653,7 +1707,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-12400F
 :i5-12400F rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2500 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4400 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1665,7 +1719,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-12600K
 :i5-12600K rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3700 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4900 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 10 ;
@@ -1677,7 +1731,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-8400
 :i5-8400 rdf:type owl:NamedIndividual ,
-                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2800 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4000 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1689,7 +1743,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i5-9400
 :i5-9400 rdf:type owl:NamedIndividual ,
-                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2900 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4100 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 6 ;
@@ -1701,7 +1755,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i7-10700
 :i7-10700 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2900 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4800 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 8 ;
@@ -1713,7 +1767,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i7-10700K
 :i7-10700K rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3800 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 5100 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 8 ;
@@ -1725,7 +1779,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i7-11700
 :i7-11700 rdf:type owl:NamedIndividual ,
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2500 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4900 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 8 ;
@@ -1737,7 +1791,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i7-12700F
 :i7-12700F rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 2100 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 4900 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 12 ;
@@ -1749,7 +1803,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i7-12700K
 :i7-12700K rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3600 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 5000 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 12 ;
@@ -1761,7 +1815,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#i9-12900K
 :i9-12900K rdf:type owl:NamedIndividual ,
-                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Intel> ;
+                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#CPU> ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock> 3200 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_clock_boost> 5200 ;
            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#cpu_core_count> 16 ;
