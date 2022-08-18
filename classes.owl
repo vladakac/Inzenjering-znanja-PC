@@ -907,6 +907,15 @@
                        :case_side_panel "true"^^xsd:boolean .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_Dominator_Platinum_RGB_32_GB
+:Corsair_Dominator_Platinum_RGB_32_GB rdf:type owl:NamedIndividual ,
+                                               :RAM ;
+                                      :ram_memory 32 ;
+                                      :ram_speed 6200 ;
+                                      :ram_type "DDR5" ;
+                                      :rgb "true"^^xsd:boolean .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_HX1500i
 :Corsair_HX1500i rdf:type owl:NamedIndividual ,
                           :PSU ;
@@ -941,6 +950,15 @@
                :psu_sata 8 ;
                :psu_type "ATX" ;
                :psu_wattage 750 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Corsair_Vengeance_RGB_Pro_32_GB
+:Corsair_Vengeance_RGB_Pro_32_GB rdf:type owl:NamedIndividual ,
+                                          :RAM ;
+                                 :ram_memory 32 ;
+                                 :ram_speed 3600 ;
+                                 :ram_type "DDR4" ;
+                                 :rgb "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#EVGA_T2
@@ -983,6 +1001,42 @@
          :psu_sata 9 ;
          :psu_type "ATX" ;
          :psu_wattage 850 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Ripjaws_V_16_GB
+:G.Skill_Ripjaws_V_16_GB rdf:type owl:NamedIndividual ,
+                                  :RAM ;
+                         :ram_memory 16 ;
+                         :ram_speed 3200 ;
+                         :ram_type "DDR4" ;
+                         :rgb "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Trident_Z_RGB_128_GB
+:G.Skill_Trident_Z_RGB_128_GB rdf:type owl:NamedIndividual ,
+                                       :RAM ;
+                              :ram_memory 128 ;
+                              :ram_speed 4000 ;
+                              :ram_type "DDR4" ;
+                              :rgb "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Trident_Z_RGB_16_GB
+:G.Skill_Trident_Z_RGB_16_GB rdf:type owl:NamedIndividual ,
+                                      :RAM ;
+                             :ram_memory 16 ;
+                             :ram_speed 3600 ;
+                             :ram_type "DDR4" ;
+                             :rgb "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#G.Skill_Trident_Z_Royal_32_GB
+:G.Skill_Trident_Z_Royal_32_GB rdf:type owl:NamedIndividual ,
+                                        :RAM ;
+                               :ram_memory 32 ;
+                               :ram_speed 3600 ;
+                               :ram_type "DDR4" ;
+                               :rgb "true"^^xsd:boolean .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GTX_1050_TI
@@ -1109,6 +1163,235 @@
         :gpu_memory_type "GDDR3" ;
         :gpu_power_usage 23 ;
         :gpu_vga_ports 1 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GigabyteAorus_1200
+:GigabyteAorus_1200 rdf:type owl:NamedIndividual ,
+                             :PSU ;
+                    :psu_efficiency_rating "80+ Platinum" ;
+                    :psu_fanless "false"^^xsd:boolean ;
+                    :psu_modular "true"^^xsd:boolean ;
+                    :psu_molex_4_pin 6 ;
+                    :psu_pcie_6_pin 0 ;
+                    :psu_pcie_8_pin 0 ;
+                    :psu_sata 16 ;
+                    :psu_type "ATX" ;
+                    :psu_wattage 1200 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B550M_DS3H
+:Gigabyte_B550M_DS3H rdf:type owl:NamedIndividual ,
+                              :Motherboard ;
+                     :Motherboard_chipset "AMD B550" ;
+                     :Motherboard_form "Micro ATX" ;
+                     :Motherboard_m.2_slots 2 ;
+                     :Motherboard_memory_max 128 ;
+                     :Motherboard_memory_max_frequency 4600 ;
+                     :Motherboard_memory_slots 4 ;
+                     :Motherboard_memory_type "DDR4" ;
+                     :Motherboard_pcie_slots 2 ;
+                     :Motherboard_sata_port 4 ;
+                     :Motherboard_usb_ports 2 ;
+                     :rgb "false"^^xsd:boolean ;
+                     :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B660_GAMING_X_AX
+:Gigabyte_B660_GAMING_X_AX rdf:type owl:NamedIndividual ,
+                                    :Motherboard ;
+                           :Motherboard_chipset "Intel B660" ;
+                           :Motherboard_form "ATX" ;
+                           :Motherboard_m.2_slots 3 ;
+                           :Motherboard_memory_max 128 ;
+                           :Motherboard_memory_max_frequency 4400 ;
+                           :Motherboard_memory_slots 4 ;
+                           :Motherboard_memory_type "DDR4" ;
+                           :Motherboard_pcie_slots 3 ;
+                           :Motherboard_sata_port 4 ;
+                           :Motherboard_usb_ports 4 ;
+                           :rgb "false"^^xsd:boolean ;
+                           :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_FURY_Beast_16_GB
+:Kingston_FURY_Beast_16_GB rdf:type owl:NamedIndividual ,
+                                    :RAM ;
+                           :ram_memory 16 ;
+                           :ram_speed 3200 ;
+                           :ram_type "DDR4" ;
+                           :rgb "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_Fury_Beast_16gb
+:Kingston_Fury_Beast_16gb rdf:type owl:NamedIndividual ;
+                          :ram_memory 16 ;
+                          :ram_speed 3200 ;
+                          :ram_type "DDR4" ;
+                          :rgb "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_HyperX_Fury_16_GB
+:Kingston_HyperX_Fury_16_GB rdf:type owl:NamedIndividual ,
+                                     :RAM ;
+                            :ram_memory 16 ;
+                            :ram_speed 3200 ;
+                            :ram_type "DDR4" ;
+                            :rgb "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Lian_Li_LANCOOL_215
+:Lian_Li_LANCOOL_215 rdf:type owl:NamedIndividual ,
+                              :Case ;
+                     :case_front_panel_usb "true"^^xsd:boolean ;
+                     :case_side_panel "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B450_Tomahawk_MAX
+:MSI_B450_Tomahawk_MAX rdf:type owl:NamedIndividual ,
+                                :Motherboard ;
+                       :Motherboard_chipset "AMD B450" ;
+                       :Motherboard_form "ATX" ;
+                       :Motherboard_m.2_slots 1 ;
+                       :Motherboard_memory_max 64 ;
+                       :Motherboard_memory_max_frequency 4133 ;
+                       :Motherboard_memory_slots 4 ;
+                       :Motherboard_memory_type "DDR4" ;
+                       :Motherboard_pcie_slots 2 ;
+                       :Motherboard_sata_port 6 ;
+                       :Motherboard_usb_ports 3 ;
+                       :rgb "true"^^xsd:boolean ;
+                       :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B550_Tomahawk
+:MSI_B550_Tomahawk rdf:type owl:NamedIndividual ,
+                            :Motherboard ;
+                   :Motherboard_chipset "AMD B550" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 2 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 4866 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 2 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 4 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B660M_MORTAR
+:MSI_B660M_MORTAR rdf:type owl:NamedIndividual ,
+                           :Motherboard ;
+                  :Motherboard_chipset "Intel B660" ;
+                  :Motherboard_form "Micro ATX" ;
+                  :Motherboard_m.2_slots 3 ;
+                  :Motherboard_memory_max 128 ;
+                  :Motherboard_memory_max_frequency 4800 ;
+                  :Motherboard_memory_slots 4 ;
+                  :Motherboard_memory_type "DDR4" ;
+                  :Motherboard_pcie_slots 2 ;
+                  :Motherboard_sata_port 6 ;
+                  :Motherboard_usb_ports 4 ;
+                  :rgb "false"^^xsd:boolean ;
+                  :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_Z690_Tomahawk
+:MSI_Z690_Tomahawk rdf:type owl:NamedIndividual ,
+                            :Motherboard ;
+                   :Motherboard_chipset "Intel Z690" ;
+                   :Motherboard_form "ATX" ;
+                   :Motherboard_m.2_slots 5 ;
+                   :Motherboard_memory_max 128 ;
+                   :Motherboard_memory_max_frequency 5200 ;
+                   :Motherboard_memory_slots 4 ;
+                   :Motherboard_memory_type "DDR4" ;
+                   :Motherboard_pcie_slots 3 ;
+                   :Motherboard_sata_port 6 ;
+                   :Motherboard_usb_ports 4 ;
+                   :rgb "false"^^xsd:boolean ;
+                   :socket "LGA1700" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NOXHummer_650
+:NOXHummer_650 rdf:type owl:NamedIndividual ,
+                        :PSU ;
+               :psu_efficiency_rating "80+ Bronze" ;
+               :psu_fanless "false"^^xsd:boolean ;
+               :psu_modular "true"^^xsd:boolean ;
+               :psu_molex_4_pin 4 ;
+               :psu_pcie_6_pin 0 ;
+               :psu_pcie_8_pin 0 ;
+               :psu_sata 6 ;
+               :psu_type "ATX" ;
+               :psu_wattage 650 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_H510
+:NZXT_H510 rdf:type owl:NamedIndividual ,
+                    :Case ;
+           :case_front_panel_usb "true"^^xsd:boolean ;
+           :case_side_panel "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_H7
+:NZXT_H7 rdf:type owl:NamedIndividual ,
+                  :Case ;
+         :case_front_panel_usb "true"^^xsd:boolean ;
+         :case_side_panel "true"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_Kraken_X53
+:NZXT_Kraken_X53 rdf:type owl:NamedIndividual ,
+                          :WaterCooling ;
+                 :rgb "true"^^xsd:boolean ;
+                 :water_cooler_size 240 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_Kraken_Z63
+:NZXT_Kraken_Z63 rdf:type owl:NamedIndividual ,
+                          :WaterCooling ;
+                 :rgb "true"^^xsd:boolean ;
+                 :water_cooler_size 280 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_N7_B550
+:NZXT_N7_B550 rdf:type owl:NamedIndividual ,
+                       :Motherboard ;
+              :Motherboard_chipset "AMD B550" ;
+              :Motherboard_form "ATX" ;
+              :Motherboard_m.2_slots 3 ;
+              :Motherboard_memory_max 128 ;
+              :Motherboard_memory_max_frequency 4733 ;
+              :Motherboard_memory_slots 4 ;
+              :Motherboard_memory_type "DDR4" ;
+              :Motherboard_pcie_slots 2 ;
+              :Motherboard_sata_port 6 ;
+              :Motherboard_usb_ports 3 ;
+              :rgb "false"^^xsd:boolean ;
+              :socket "АМ4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Noctua_NH-D15
+:Noctua_NH-D15 rdf:type owl:NamedIndividual ,
+                        :Fan ;
+               :cooler_height 165 ;
+               :rgb "false"^^xsd:boolean .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PhanteksRevoltPro_1000
+:PhanteksRevoltPro_1000 rdf:type owl:NamedIndividual ,
+                                 :PSU ;
+                        :psu_efficiency_rating "80+ Gold" ;
+                        :psu_fanless "false"^^xsd:boolean ;
+                        :psu_modular "true"^^xsd:boolean ;
+                        :psu_molex_4_pin 3 ;
+                        :psu_pcie_6_pin 0 ;
+                        :psu_pcie_8_pin 0 ;
+                        :psu_sata 14 ;
+                        :psu_type "ATX" ;
+                        :psu_wattage 1000 .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RTX_2060
@@ -1525,6 +1808,140 @@
             :gpu_vga_ports 0 .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RosewillGreen_530
+:RosewillGreen_530 rdf:type owl:NamedIndividual ,
+                            :PSU ;
+                   :psu_efficiency_rating "80+ " ;
+                   :psu_fanless "false"^^xsd:boolean ;
+                   :psu_modular "false"^^xsd:boolean ;
+                   :psu_molex_4_pin 6 ;
+                   :psu_pcie_6_pin 1 ;
+                   :psu_pcie_8_pin 0 ;
+                   :psu_sata 6 ;
+                   :psu_type "ATX12V / EPS12V" ;
+                   :psu_wattage 530 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen3-4100
+:Ryzen3-4100 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3800 ;
+             :cpu_core_clock_boost 4000 ;
+             :cpu_core_count 4 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 3 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-3500
+:Ryzen5-3500 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3600 ;
+             :cpu_core_clock_boost 4100 ;
+             :cpu_core_count 6 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 5 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-4500
+:Ryzen5-4500 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3600 ;
+             :cpu_core_clock_boost 4100 ;
+             :cpu_core_count 6 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 5 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600
+:Ryzen5-5600 rdf:type owl:NamedIndividual ,
+                      :AMD ;
+             :cpu_core_clock 3500 ;
+             :cpu_core_clock_boost 4400 ;
+             :cpu_core_count 6 ;
+             :cpu_integrated_graphics "false"^^xsd:boolean ;
+             :cpu_power_usage 65 ;
+             :cpu_series 5 ;
+             :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600X
+:Ryzen5-5600X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3700 ;
+              :cpu_core_clock_boost 4600 ;
+              :cpu_core_count 6 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 65 ;
+              :cpu_series 5 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-3800X
+:Ryzen7-3800X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3600 ;
+              :cpu_core_clock_boost 4400 ;
+              :cpu_core_count 8 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 65 ;
+              :cpu_series 7 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5700X
+:Ryzen7-5700X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3400 ;
+              :cpu_core_clock_boost 4600 ;
+              :cpu_core_count 8 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 65 ;
+              :cpu_series 7 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5800X
+:Ryzen7-5800X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3800 ;
+              :cpu_core_clock_boost 4700 ;
+              :cpu_core_count 8 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 105 ;
+              :cpu_series 7 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5900X
+:Ryzen9-5900X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3700 ;
+              :cpu_core_clock_boost 4800 ;
+              :cpu_core_count 12 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 105 ;
+              :cpu_series 9 ;
+              :socket "AM4" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5950X
+:Ryzen9-5950X rdf:type owl:NamedIndividual ,
+                       :AMD ;
+              :cpu_core_clock 3400 ;
+              :cpu_core_clock_boost 4900 ;
+              :cpu_core_count 16 ;
+              :cpu_integrated_graphics "false"^^xsd:boolean ;
+              :cpu_power_usage 105 ;
+              :cpu_series 9 ;
+              :socket "AM4" .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_1TB_SATA_III
 :Samsung_1TB_SATA_III rdf:type owl:NamedIndividual ,
                                :SSD ;
@@ -1565,6 +1982,13 @@
                                 :storage_type "SATA" .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus
+:Samsung_970_EVO_Plus rdf:type owl:NamedIndividual ;
+                      :storage_capacity 1024 ;
+                      :storage_sata_speed 0 ;
+                      :storage_type "m.2" .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus_1TB
 :Samsung_970_EVO_Plus_1TB rdf:type owl:NamedIndividual ,
                                    :SSD ;
@@ -1595,6 +2019,20 @@
                    :storage_capacity 250 ;
                    :storage_sata_speed 2900 ;
                    :storage_type "m.2" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SeaSonic_Prime_600
+:SeaSonic_Prime_600 rdf:type owl:NamedIndividual ,
+                             :PSU ;
+                    :psu_efficiency_rating "80+ Titanium" ;
+                    :psu_fanless "true"^^xsd:boolean ;
+                    :psu_modular "true"^^xsd:boolean ;
+                    :psu_molex_4_pin 5 ;
+                    :psu_pcie_6_pin 0 ;
+                    :psu_pcie_8_pin 0 ;
+                    :psu_sata 6 ;
+                    :psu_type "ATX" ;
+                    :psu_wattage 600 .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Seagate_10TB_7200rmp
@@ -1676,6 +2114,48 @@
                      :storage_rpm 7200 ;
                      :storage_sata_speed 500 ;
                      :storage_type "SATA" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverStoneStrider_1500
+:SilverStoneStrider_1500 rdf:type owl:NamedIndividual ,
+                                  :PSU ;
+                         :psu_efficiency_rating "80+ Silver" ;
+                         :psu_fanless "false"^^xsd:boolean ;
+                         :psu_modular "false"^^xsd:boolean ;
+                         :psu_molex_4_pin 12 ;
+                         :psu_pcie_6_pin 4 ;
+                         :psu_pcie_8_pin 0 ;
+                         :psu_sata 12 ;
+                         :psu_type "ATX12V / EPS12V" ;
+                         :psu_wattage 750 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverstoneHella_2050
+:SilverstoneHella_2050 rdf:type owl:NamedIndividual ,
+                                :PSU ;
+                       :psu_efficiency_rating "" ;
+                       :psu_fanless "false"^^xsd:boolean ;
+                       :psu_modular "true"^^xsd:boolean ;
+                       :psu_molex_4_pin 3 ;
+                       :psu_pcie_6_pin 0 ;
+                       :psu_pcie_8_pin 0 ;
+                       :psu_sata 12 ;
+                       :psu_type "ATX" ;
+                       :psu_wattage 2500 .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SuperFlowerLedex_1000
+:SuperFlowerLedex_1000 rdf:type owl:NamedIndividual ,
+                                :PSU ;
+                       :psu_efficiency_rating "80+ Titanium" ;
+                       :psu_fanless "false"^^xsd:boolean ;
+                       :psu_modular "true"^^xsd:boolean ;
+                       :psu_molex_4_pin 6 ;
+                       :psu_pcie_6_pin 0 ;
+                       :psu_pcie_8_pin 0 ;
+                       :psu_sata 12 ;
+                       :psu_type "ATX / BTX" ;
+                       :psu_wattage 1000 .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#TRANSCEND_128GB
@@ -1883,414 +2363,6 @@
                     :storage_rpm 7200 ;
                     :storage_sata_speed 750 ;
                     :storage_type "SATA" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#GigabyteAorus_1200
-:GigabyteAorus_1200 rdf:type owl:NamedIndividual ,
-                             :PSU ;
-                    :psu_efficiency_rating "80+ Platinum" ;
-                    :psu_fanless "false"^^xsd:boolean ;
-                    :psu_modular "true"^^xsd:boolean ;
-                    :psu_molex_4_pin 6 ;
-                    :psu_pcie_6_pin 0 ;
-                    :psu_pcie_8_pin 0 ;
-                    :psu_sata 16 ;
-                    :psu_type "ATX" ;
-                    :psu_wattage 1200 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B550M_DS3H
-:Gigabyte_B550M_DS3H rdf:type owl:NamedIndividual ,
-                              :Motherboard ;
-                     :Motherboard_chipset "AMD B550" ;
-                     :Motherboard_form "Micro ATX" ;
-                     :Motherboard_m.2_slots 2 ;
-                     :Motherboard_memory_max 128 ;
-                     :Motherboard_memory_max_frequency 4600 ;
-                     :Motherboard_memory_slots 4 ;
-                     :Motherboard_memory_type "DDR4" ;
-                     :Motherboard_pcie_slots 2 ;
-                     :Motherboard_sata_port 4 ;
-                     :Motherboard_usb_ports 2 ;
-                     :rgb "false"^^xsd:boolean ;
-                     :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Gigabyte_B660_GAMING_X_AX
-:Gigabyte_B660_GAMING_X_AX rdf:type owl:NamedIndividual ,
-                                    :Motherboard ;
-                           :Motherboard_chipset "Intel B660" ;
-                           :Motherboard_form "ATX" ;
-                           :Motherboard_m.2_slots 3 ;
-                           :Motherboard_memory_max 128 ;
-                           :Motherboard_memory_max_frequency 4400 ;
-                           :Motherboard_memory_slots 4 ;
-                           :Motherboard_memory_type "DDR4" ;
-                           :Motherboard_pcie_slots 3 ;
-                           :Motherboard_sata_port 4 ;
-                           :Motherboard_usb_ports 4 ;
-                           :rgb "false"^^xsd:boolean ;
-                           :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Kingston_Fury_Beast_16gb
-:Kingston_Fury_Beast_16gb rdf:type owl:NamedIndividual ;
-                          :ram_memory 16 ;
-                          :ram_speed 3200 ;
-                          :ram_type "DDR4" ;
-                          :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Lian_Li_LANCOOL_215
-:Lian_Li_LANCOOL_215 rdf:type owl:NamedIndividual ,
-                              :Case ;
-                     :case_front_panel_usb "true"^^xsd:boolean ;
-                     :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B450_Tomahawk_MAX
-:MSI_B450_Tomahawk_MAX rdf:type owl:NamedIndividual ,
-                                :Motherboard ;
-                       :Motherboard_chipset "AMD B450" ;
-                       :Motherboard_form "ATX" ;
-                       :Motherboard_m.2_slots 1 ;
-                       :Motherboard_memory_max 64 ;
-                       :Motherboard_memory_max_frequency 4133 ;
-                       :Motherboard_memory_slots 4 ;
-                       :Motherboard_memory_type "DDR4" ;
-                       :Motherboard_pcie_slots 2 ;
-                       :Motherboard_sata_port 6 ;
-                       :Motherboard_usb_ports 3 ;
-                       :rgb "true"^^xsd:boolean ;
-                       :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B550_Tomahawk
-:MSI_B550_Tomahawk rdf:type owl:NamedIndividual ,
-                            :Motherboard ;
-                   :Motherboard_chipset "AMD B550" ;
-                   :Motherboard_form "ATX" ;
-                   :Motherboard_m.2_slots 2 ;
-                   :Motherboard_memory_max 128 ;
-                   :Motherboard_memory_max_frequency 4866 ;
-                   :Motherboard_memory_slots 4 ;
-                   :Motherboard_memory_type "DDR4" ;
-                   :Motherboard_pcie_slots 2 ;
-                   :Motherboard_sata_port 6 ;
-                   :Motherboard_usb_ports 4 ;
-                   :rgb "false"^^xsd:boolean ;
-                   :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_B660M_MORTAR
-:MSI_B660M_MORTAR rdf:type owl:NamedIndividual ,
-                           :Motherboard ;
-                  :Motherboard_chipset "Intel B660" ;
-                  :Motherboard_form "Micro ATX" ;
-                  :Motherboard_m.2_slots 3 ;
-                  :Motherboard_memory_max 128 ;
-                  :Motherboard_memory_max_frequency 4800 ;
-                  :Motherboard_memory_slots 4 ;
-                  :Motherboard_memory_type "DDR4" ;
-                  :Motherboard_pcie_slots 2 ;
-                  :Motherboard_sata_port 6 ;
-                  :Motherboard_usb_ports 4 ;
-                  :rgb "false"^^xsd:boolean ;
-                  :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#MSI_Z690_Tomahawk
-:MSI_Z690_Tomahawk rdf:type owl:NamedIndividual ,
-                            :Motherboard ;
-                   :Motherboard_chipset "Intel Z690" ;
-                   :Motherboard_form "ATX" ;
-                   :Motherboard_m.2_slots 5 ;
-                   :Motherboard_memory_max 128 ;
-                   :Motherboard_memory_max_frequency 5200 ;
-                   :Motherboard_memory_slots 4 ;
-                   :Motherboard_memory_type "DDR4" ;
-                   :Motherboard_pcie_slots 3 ;
-                   :Motherboard_sata_port 6 ;
-                   :Motherboard_usb_ports 4 ;
-                   :rgb "false"^^xsd:boolean ;
-                   :socket "LGA1700" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NOXHummer_650
-:NOXHummer_650 rdf:type owl:NamedIndividual ,
-                        :PSU ;
-               :psu_efficiency_rating "80+ Bronze" ;
-               :psu_fanless "false"^^xsd:boolean ;
-               :psu_modular "true"^^xsd:boolean ;
-               :psu_molex_4_pin 4 ;
-               :psu_pcie_6_pin 0 ;
-               :psu_pcie_8_pin 0 ;
-               :psu_sata 6 ;
-               :psu_type "ATX" ;
-               :psu_wattage 650 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_H510
-:NZXT_H510 rdf:type owl:NamedIndividual ,
-                    :Case ;
-           :case_front_panel_usb "true"^^xsd:boolean ;
-           :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_H7
-:NZXT_H7 rdf:type owl:NamedIndividual ,
-                  :Case ;
-         :case_front_panel_usb "true"^^xsd:boolean ;
-         :case_side_panel "true"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_Kraken_X53
-:NZXT_Kraken_X53 rdf:type owl:NamedIndividual ,
-                          :WaterCooling ;
-                 :rgb "true"^^xsd:boolean ;
-                 :water_cooler_size 240 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_Kraken_Z63
-:NZXT_Kraken_Z63 rdf:type owl:NamedIndividual ,
-                          :WaterCooling ;
-                 :rgb "true"^^xsd:boolean ;
-                 :water_cooler_size 280 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#NZXT_N7_B550
-:NZXT_N7_B550 rdf:type owl:NamedIndividual ,
-                       :Motherboard ;
-              :Motherboard_chipset "AMD B550" ;
-              :Motherboard_form "ATX" ;
-              :Motherboard_m.2_slots 3 ;
-              :Motherboard_memory_max 128 ;
-              :Motherboard_memory_max_frequency 4733 ;
-              :Motherboard_memory_slots 4 ;
-              :Motherboard_memory_type "DDR4" ;
-              :Motherboard_pcie_slots 2 ;
-              :Motherboard_sata_port 6 ;
-              :Motherboard_usb_ports 3 ;
-              :rgb "false"^^xsd:boolean ;
-              :socket "АМ4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Noctua_NH-D15
-:Noctua_NH-D15 rdf:type owl:NamedIndividual ,
-                        :Fan ;
-               :cooler_height 165 ;
-               :rgb "false"^^xsd:boolean .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#PhanteksRevoltPro_1000
-:PhanteksRevoltPro_1000 rdf:type owl:NamedIndividual ,
-                                 :PSU ;
-                        :psu_efficiency_rating "80+ Gold" ;
-                        :psu_fanless "false"^^xsd:boolean ;
-                        :psu_modular "true"^^xsd:boolean ;
-                        :psu_molex_4_pin 3 ;
-                        :psu_pcie_6_pin 0 ;
-                        :psu_pcie_8_pin 0 ;
-                        :psu_sata 14 ;
-                        :psu_type "ATX" ;
-                        :psu_wattage 1000 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#RosewillGreen_530
-:RosewillGreen_530 rdf:type owl:NamedIndividual ,
-                            :PSU ;
-                   :psu_efficiency_rating "80+ " ;
-                   :psu_fanless "false"^^xsd:boolean ;
-                   :psu_modular "false"^^xsd:boolean ;
-                   :psu_molex_4_pin 6 ;
-                   :psu_pcie_6_pin 1 ;
-                   :psu_pcie_8_pin 0 ;
-                   :psu_sata 6 ;
-                   :psu_type "ATX12V / EPS12V" ;
-                   :psu_wattage 530 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen3-4100
-:Ryzen3-4100 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3800 ;
-             :cpu_core_clock_boost 4000 ;
-             :cpu_core_count 4 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 3 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-3500
-:Ryzen5-3500 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3600 ;
-             :cpu_core_clock_boost 4100 ;
-             :cpu_core_count 6 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 5 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-4500
-:Ryzen5-4500 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3600 ;
-             :cpu_core_clock_boost 4100 ;
-             :cpu_core_count 6 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 5 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600
-:Ryzen5-5600 rdf:type owl:NamedIndividual ,
-                      :AMD ;
-             :cpu_core_clock 3500 ;
-             :cpu_core_clock_boost 4400 ;
-             :cpu_core_count 6 ;
-             :cpu_integrated_graphics "false"^^xsd:boolean ;
-             :cpu_power_usage 65 ;
-             :cpu_series 5 ;
-             :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen5-5600X
-:Ryzen5-5600X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3700 ;
-              :cpu_core_clock_boost 4600 ;
-              :cpu_core_count 6 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 65 ;
-              :cpu_series 5 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-3800X
-:Ryzen7-3800X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3600 ;
-              :cpu_core_clock_boost 4400 ;
-              :cpu_core_count 8 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 65 ;
-              :cpu_series 7 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5700X
-:Ryzen7-5700X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3400 ;
-              :cpu_core_clock_boost 4600 ;
-              :cpu_core_count 8 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 65 ;
-              :cpu_series 7 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen7-5800X
-:Ryzen7-5800X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3800 ;
-              :cpu_core_clock_boost 4700 ;
-              :cpu_core_count 8 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 105 ;
-              :cpu_series 7 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5900X
-:Ryzen9-5900X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3700 ;
-              :cpu_core_clock_boost 4800 ;
-              :cpu_core_count 12 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 105 ;
-              :cpu_series 9 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Ryzen9-5950X
-:Ryzen9-5950X rdf:type owl:NamedIndividual ,
-                       :AMD ;
-              :cpu_core_clock 3400 ;
-              :cpu_core_clock_boost 4900 ;
-              :cpu_core_count 16 ;
-              :cpu_integrated_graphics "false"^^xsd:boolean ;
-              :cpu_power_usage 105 ;
-              :cpu_series 9 ;
-              :socket "AM4" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Samsung_970_EVO_Plus
-:Samsung_970_EVO_Plus rdf:type owl:NamedIndividual ;
-                      :storage_capacity 1024 ;
-                      :storage_sata_speed 0 ;
-                      :storage_type "m.2" .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SeaSonic_Prime_600
-:SeaSonic_Prime_600 rdf:type owl:NamedIndividual ,
-                             :PSU ;
-                    :psu_efficiency_rating "80+ Titanium" ;
-                    :psu_fanless "true"^^xsd:boolean ;
-                    :psu_modular "true"^^xsd:boolean ;
-                    :psu_molex_4_pin 5 ;
-                    :psu_pcie_6_pin 0 ;
-                    :psu_pcie_8_pin 0 ;
-                    :psu_sata 6 ;
-                    :psu_type "ATX" ;
-                    :psu_wattage 600 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverStoneStrider_1500
-:SilverStoneStrider_1500 rdf:type owl:NamedIndividual ,
-                                  :PSU ;
-                         :psu_efficiency_rating "80+ Silver" ;
-                         :psu_fanless "false"^^xsd:boolean ;
-                         :psu_modular "false"^^xsd:boolean ;
-                         :psu_molex_4_pin 12 ;
-                         :psu_pcie_6_pin 4 ;
-                         :psu_pcie_8_pin 0 ;
-                         :psu_sata 12 ;
-                         :psu_type "ATX12V / EPS12V" ;
-                         :psu_wattage 750 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SilverstoneHella_2050
-:SilverstoneHella_2050 rdf:type owl:NamedIndividual ,
-                                :PSU ;
-                       :psu_efficiency_rating "" ;
-                       :psu_fanless "false"^^xsd:boolean ;
-                       :psu_modular "true"^^xsd:boolean ;
-                       :psu_molex_4_pin 3 ;
-                       :psu_pcie_6_pin 0 ;
-                       :psu_pcie_8_pin 0 ;
-                       :psu_sata 12 ;
-                       :psu_type "ATX" ;
-                       :psu_wattage 2500 .
-
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#SuperFlowerLedex_1000
-:SuperFlowerLedex_1000 rdf:type owl:NamedIndividual ,
-                                :PSU ;
-                       :psu_efficiency_rating "80+ Titanium" ;
-                       :psu_fanless "false"^^xsd:boolean ;
-                       :psu_modular "true"^^xsd:boolean ;
-                       :psu_molex_4_pin 6 ;
-                       :psu_pcie_6_pin 0 ;
-                       :psu_pcie_8_pin 0 ;
-                       :psu_sata 12 ;
-                       :psu_type "ATX / BTX" ;
-                       :psu_wattage 1000 .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/components#Western_Digital_Blue_2TB
