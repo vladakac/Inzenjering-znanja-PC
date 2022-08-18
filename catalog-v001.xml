@@ -2,12 +2,12 @@
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
     <uri id="User Entered Import Resolution" name="http://www.semanticweb.org/vlada/ontologies/2022/5/classes.owl" uri="classes.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1660837567911" name="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl" uri="classes_xml.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1660837567911" name="http://www.semanticweb.org/vlada/ontologies/2022/5/instances_xml.owl" uri="instances_xml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660843350873" name="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl" uri="classes_xml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660843350873" name="http://www.semanticweb.org/vlada/ontologies/2022/5/instances_xml.owl" uri="instances_xml.owl"/>
     </group>
     <uri id="Imports Wizard Entry" name="http://www.semanticweb.org/vlada/ontologies/2022/5/classes.owl" uri="classes_xml.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1660837567926" name="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl" uri="classes_xml.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1660837567926" name="http://www.semanticweb.org/vlada/ontologies/2022/5/instances_xml.owl" uri="instances_xml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660843350891" name="http://www.semanticweb.org/vlada/ontologies/2022/5/classes_xml.owl" uri="classes_xml.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1660843350891" name="http://www.semanticweb.org/vlada/ontologies/2022/5/instances_xml.owl" uri="instances_xml.owl"/>
     </group>
 </catalog>
