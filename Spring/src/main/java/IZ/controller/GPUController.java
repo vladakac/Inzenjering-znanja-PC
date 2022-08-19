@@ -13,10 +13,7 @@ public class GPUController {
 
     @Autowired
     private GPUService gpuService;
-    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
-    public String hello(){
-        return "asd";
-    }
+    
     @GetMapping(value = "{title}", produces = MediaType.APPLICATION_JSON_VALUE)
     public GPU getGPU(@PathVariable("title") String title){
         return gpuService.getGPU(title);

@@ -10,8 +10,9 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class RAM {
-    private String name;
+    private String title;
     private String type;
     private Integer memory;
     private Integer speed;
+    private boolean rgb;
 }

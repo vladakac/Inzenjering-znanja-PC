@@ -23,6 +23,6 @@ public class GPU {
     private Integer vgaPorts;
     private Integer dpPorts;
     private Integer hdmiPorts;
-    private Integer dviPorts;
+    private Integer dviPorts;   
 
 }

@@ -9,7 +9,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class HDD {
+public class SSD {
     private String title;
     private String type;
     private Integer capacity;

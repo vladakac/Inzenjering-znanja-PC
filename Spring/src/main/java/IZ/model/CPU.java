@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class CPU {
-    private String name;
+    private String title;
     private String socket;
     private String series;
     private Integer coreCount;

@@ -24,12 +24,6 @@
                   rdfs:range xsd:string .
 
 
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots
-:Motherboard_m.2_slots rdf:type owl:DatatypeProperty ;
-                       rdfs:domain :Motherboard ;
-                       rdfs:range xsd:integer .
-
-
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max
 :Motherboard_memory_max rdf:type owl:DatatypeProperty ;
                         rdfs:domain :Motherboard ;
@@ -170,7 +164,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_hashrate
 :gpu_hashrate rdf:type owl:DatatypeProperty ;
-              rdfs:domain :GPU;
+              rdfs:domain :GPU ;
               rdfs:range xsd:decimal .
 
 
@@ -403,11 +397,6 @@
              rdfs:domain :HDD ;
              rdfs:range xsd:integer .
 
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title
-:title rdf:type owl:DatatypeProperty ;
-             rdfs:domain :Component ;
-             rdfs:range xsd:string .
-
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#storage_sata_speed
 :storage_sata_speed rdf:type owl:DatatypeProperty ;
@@ -430,10 +419,22 @@
             rdfs:range xsd:boolean .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title
+:title rdf:type owl:DatatypeProperty ;
+       rdfs:domain :Component ;
+       rdfs:range xsd:string .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes#water_cooler_size
 :water_cooler_size rdf:type owl:DatatypeProperty ;
-                   rdfs:domain :WaterCooling;
+                   rdfs:domain :WaterCooling ;
                    rdfs:range xsd:integer .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/classes.owl#Motherboard_m2_slots
+:Motherboard_m2_slots rdf:type owl:DatatypeProperty ;
+                      rdfs:domain :Motherboard ;
+                      rdfs:range xsd:integer .
 
 
 #################################################################

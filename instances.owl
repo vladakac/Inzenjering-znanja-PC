@@ -56,7 +56,7 @@
                             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "Intel Z690" ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 3 ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 3 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 5333 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -74,7 +74,7 @@
                                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "Intel B660" ;
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "Mini ITX" ;
-                              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 2 ;
+                              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 2 ;
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 64 ;
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 6200 ;
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 2 ;
@@ -92,7 +92,7 @@
                                     <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "AMD X570" ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 1 ;
+                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 1 ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4400 ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -437,7 +437,7 @@
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "AMD B550" ;
                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "Micro ATX" ;
-                     <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 2 ;
+                     <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 2 ;
                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4600 ;
                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -455,7 +455,7 @@
                                     <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "Intel B660" ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 3 ;
+                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 3 ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4400 ;
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -491,7 +491,7 @@
                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "AMD B450" ;
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 1 ;
+                       <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 1 ;
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 64 ;
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4133 ;
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -509,7 +509,7 @@
                             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "AMD B550" ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 2 ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 2 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4866 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -527,7 +527,7 @@
                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "Intel B660" ;
                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "Micro ATX" ;
-                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 3 ;
+                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 3 ;
                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4800 ;
                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -545,7 +545,7 @@
                             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "Intel Z690" ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 5 ;
+                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 5 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 5200 ;
                    <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;
@@ -610,7 +610,7 @@
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard> ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_chipset> "AMD B550" ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_form> "ATX" ;
-              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m.2_slots> 3 ;
+              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_m2_slots> 3 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max> 128 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_max_frequency> 4733 ;
               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Motherboard_memory_slots> 4 ;

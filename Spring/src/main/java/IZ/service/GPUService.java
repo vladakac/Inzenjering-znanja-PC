@@ -2,8 +2,8 @@ package IZ.service;
 
 import IZ.model.GPU;
 import IZ.sparql.SparqlStaticFields;
-import org.apache.jena.query.*;
 import org.springframework.stereotype.Service;
+import org.apache.jena.query.*;
 
 
 @Service
@@ -37,7 +37,7 @@ public class GPUService {
         ResultSet results = q.execSelect();
         if (results.hasNext()) {
             QuerySolution solution = results.nextSolution();
-            gpu.setChipset((solution.getLiteral("title") != null) ? solution.getLiteral("title").getString() : null);
+            gpu.setTitle((solution.getLiteral("title") != null) ? solution.getLiteral("title").getString() : null);
             gpu.setChipset((solution.getLiteral("gpu_chipset") != null) ? solution.getLiteral("gpu_chipset").getString() : null);
             gpu.setMemory((solution.getLiteral("gpu_memory") != null) ? solution.getLiteral("gpu_memory").getInt() : -1);
             gpu.setMemoryType((solution.getLiteral("gpu_memory_type") != null) ? solution.getLiteral("gpu_memory_type").getString() : null);

@@ -10,7 +10,7 @@ import lombok.Setter;
 @AllArgsConstructor
 @NoArgsConstructor
 public class Motherboard {
-    private String name;
+    private String title;
     private String form;
     private String socket;
     private String chipset;
