@@ -19,10 +19,7 @@ public class GPUController {
     }
     @GetMapping(value = "{title}", produces = MediaType.APPLICATION_JSON_VALUE)
     public GPU getGPU(@PathVariable("title") String title){
-        GPU gpu = new GPU();
-        gpu.setTitle("RX550");
-        gpu = gpuService.getGPU(title);
-        return gpu;
+        return gpuService.getGPU(title);
     }
 
 }

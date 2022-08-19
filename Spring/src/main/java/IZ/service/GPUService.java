@@ -11,11 +11,12 @@ public class GPUService {
 
     public GPU getGPU(String title){
         String selectString = SparqlStaticFields.Prefix +
-                "SELECT ?gpu_chipset ?gpu_memory ?gpu_clock ?gpu_memory_clock ?gpu_power_usage ?gpu_connector ?gpu_hashrate ?gpu_vga_ports ?gpu_memory_type ?gpu_dp_ports ?gpu_boost_clock ?gpu_dvi_ports ?gpu_hdmi_ports \n" +
+                "SELECT ?title ?gpu_chipset ?gpu_memory ?gpu_clock ?gpu_memory_clock ?gpu_power_usage ?gpu_connector ?gpu_hashrate ?gpu_vga_ports ?gpu_memory_type ?gpu_dp_ports ?gpu_boost_clock ?gpu_dvi_ports ?gpu_hdmi_ports \n" +
                 "\tWHERE {\n" +
                 "?gpu rdf:type iz:GPU .\n" +
                 "?gpu iz:title \"" + title + "\".\n" +
                 "?gpu rdf:type iz:GPU .\n" +
+                "OPTIONAL {?gpu iz:title  ?title .}\n" +
                 "OPTIONAL {?gpu iz:gpu_chipset  ?gpu_chipset .}\n" +
                 "OPTIONAL {?gpu iz:gpu_memory ?gpu_memory .}\n" +
                 "OPTIONAL {?gpu iz:gpu_memory_type ?gpu_memory_type .}\n" +
@@ -36,9 +37,10 @@ public class GPUService {
         ResultSet results = q.execSelect();
         if (results.hasNext()) {
             QuerySolution solution = results.nextSolution();
-            gpu.setTitle((solution.getLiteral("title") != null) ? solution.getLiteral("title").getString() : null);
+            gpu.setChipset((solution.getLiteral("title") != null) ? solution.getLiteral("title").getString() : null);
             gpu.setChipset((solution.getLiteral("gpu_chipset") != null) ? solution.getLiteral("gpu_chipset").getString() : null);
             gpu.setMemory((solution.getLiteral("gpu_memory") != null) ? solution.getLiteral("gpu_memory").getInt() : -1);
+            gpu.setMemoryType((solution.getLiteral("gpu_memory_type") != null) ? solution.getLiteral("gpu_memory_type").getString() : null);
             gpu.setMemoryClock((solution.getLiteral("gpu_memory_clock") != null) ? solution.getLiteral("gpu_memory_clock").getInt() : -1);
             gpu.setClock((solution.getLiteral("gpu_clock") != null) ? solution.getLiteral("gpu_clock").getInt() : -1);
             gpu.setBoostClock((solution.getLiteral("gpu_boost_clock") != null) ? solution.getLiteral("gpu_boost_clock").getInt() : -1);
