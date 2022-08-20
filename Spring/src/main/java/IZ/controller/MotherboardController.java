@@ -2,6 +2,9 @@ package IZ.controller;
 
 import IZ.model.Motherboard;
 import IZ.service.MotherboardService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -19,7 +22,12 @@ public class MotherboardController {
     private MotherboardService motherboardService;
     
     @GetMapping(value = "{title}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public Motherboard getMotherboard(@PathVariable("title") String title){
-        return motherboardService.getMotherboard(title);
+    public Motherboard getOne(@PathVariable("title") String title){
+        return motherboardService.getOne(title);
+    }
+    
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Motherboard> getAll(){
+        return motherboardService.getAll();
     }
 }

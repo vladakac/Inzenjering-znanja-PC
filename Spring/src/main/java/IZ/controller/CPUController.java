@@ -2,6 +2,9 @@ package IZ.controller;
 
 import IZ.model.CPU;
 import IZ.service.CPUService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -19,7 +22,12 @@ public class CPUController {
     private CPUService cpuService;
     
     @GetMapping(value = "{title}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public CPU getCPU(@PathVariable("title") String title){
-        return cpuService.getCPU(title);
+    public CPU getOne(@PathVariable("title") String title){
+        return cpuService.getOne(title);
+    }
+    
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<CPU> getAll(){
+        return cpuService.getAll();
     }
 }

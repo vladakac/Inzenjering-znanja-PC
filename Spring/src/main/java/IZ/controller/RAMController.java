@@ -2,6 +2,9 @@ package IZ.controller;
 
 import IZ.model.RAM;
 import IZ.service.RAMService;
+
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
@@ -19,7 +22,12 @@ public class RAMController {
     private RAMService ramService;
     
     @GetMapping(value = "{title}", produces = MediaType.APPLICATION_JSON_VALUE)
-    public RAM getRAM(@PathVariable("title") String title){
-        return ramService.getRAM(title);
+    public RAM getOne(@PathVariable("title") String title){
+        return ramService.getOne(title);
+    }
+    
+    @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<RAM> getAll(){
+        return ramService.getAll();
     }
 }
