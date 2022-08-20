@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ComponentRecommendationComponent } from './component-recommendation/component-recommendation.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { UsageCompatibilityComponent } from './usage-compatibility/usage-compatibility.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ComponentRecommendationComponent,
-    NavbarComponent
+    NavbarComponent,
+    UsageCompatibilityComponent
   ],
   imports: [
     BrowserModule,
