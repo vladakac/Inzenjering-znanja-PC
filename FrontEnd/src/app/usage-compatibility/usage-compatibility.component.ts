@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComponentRecommendationService } from '../services/component-recommendation.service';
 
 @Component({
   selector: 'app-usage-compatibility',
@@ -11,17 +12,24 @@ export class UsageCompatibilityComponent implements OnInit {
   GPUS : any[] = ["1", "2"]
   RAMS : any[] = ["1", "2"]
   HDDS : any[] = ["1", "2"]
+  mobo = ''
+  cpu = ''
+  gpu = ''
+  ram = ''
+  hdd = ''
 
-  constructor() { }
+  constructor(private _compService : ComponentRecommendationService) { }
 
   ngOnInit(): void {
+    this._compService.GetMobos().subscribe(res => this.Mobos)
+    this._compService.GetCPUs().subscribe(res => this.CPUS)
+    this._compService.GetGPUs().subscribe(res => this.GPUS)
+    this._compService.GetRAMs().subscribe(res => this.RAMS)
+    this._compService.GetHDDs().subscribe(res => this.HDDS)
   }
 
   Submit(){
-  }
-
-  gpuSelect(GPU: any){
-    console.log(GPU)
+    console.log(this.mobo)
   }
 
 }
