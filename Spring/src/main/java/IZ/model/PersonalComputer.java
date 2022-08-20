@@ -13,19 +13,17 @@ import ucm.gaia.jcolibri.cbrcore.CaseComponent;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class CPU implements CaseComponent {
-	private String title;
-	private String socket;
-	private String series;
-	private Integer coreCount;
-	private Integer coreClock;
-	private boolean integratedGraphics;
-	private Integer coreClockBoost;
-	private Integer powerUsage;
-
+public class PersonalComputer implements CaseComponent {
+	private CPU cpu;
+	private GPU gpu;
+	private HDD hdd;
+	private Motherboard motherboard;
+	private RAM ram;
+	private SSD ssd;
+	
 	@JsonIgnore
 	@Override
 	public Attribute getIdAttribute() {
-		return new Attribute("id", this.getClass());
+		return new Attribute("id",this.getClass());
 	}
 }
