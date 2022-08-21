@@ -94,11 +94,11 @@ public class FuzzyController {
 		fis.evaluate();
 
 		FuzzyOutputDTO result = new FuzzyOutputDTO();
-		result.setHomeUsage((float) block.getVariable("home_usage").getValue());
-		result.setProfessionalUsage((float)  block.getVariable("professional_usage").getValue());
-		result.setServerHosting((float) block.getVariable("server_hosting").getValue());
-		result.setGaming((float) block.getVariable("gaming").getValue());
-		result.setMining((float) block.getVariable("mining").getValue());
+		result.setHomeUsage((float) block.getVariable("home_usage").getValue()*10);
+		result.setProfessionalUsage((float) block.getVariable("professional_usage").getValue()*10);
+		result.setServerHosting((float) block.getVariable("server_hosting").getValue()*10);
+		result.setGaming((float) block.getVariable("gaming").getValue()*10);
+		result.setMining((float) block.getVariable("mining").getValue()*10);
 		return result;
 	}
 }

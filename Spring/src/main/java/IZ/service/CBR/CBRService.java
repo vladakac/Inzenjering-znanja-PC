@@ -72,13 +72,23 @@ public class CBRService implements StandardCBRApplication {
 		_simConfig.addMapping(new Attribute("memoryMax", Motherboard.class), new Interval(100));
 		_simConfig.addMapping(new Attribute("memorySlots", Motherboard.class), new Interval(2));
 		
-		_simConfig.addMapping(new Attribute("memory", RAM.class), new Interval(2));
+		_simConfig.addMapping(new Attribute("memory", RAM.class), new Interval(32));
 		_simConfig.addMapping(new Attribute("type", RAM.class), new EqualsStringIgnoreCase());
 		_simConfig.addMapping(new Attribute("speed", RAM.class), new Interval(100));
 		
 		_simConfig.addMapping(new Attribute("capacity", SSD.class), new Interval(100));
 		_simConfig.addMapping(new Attribute("sataSpeed", SSD.class), new Interval(100));
 		_simConfig.addMapping(new Attribute("type", SSD.class), new EqualsStringIgnoreCase());
+		
+		// Equal - returns 1 if both individuals are equal, otherwise returns 0
+        // Interval - returns the similarity of two number inside an interval: sim(x,y) = 1-(|x-y|/interval)
+        // Threshold - returns 1 if the difference between two numbers is less than a threshold, 0 in the other case
+        // EqualsStringIgnoreCase - returns 1 if both String are the same despite case letters, 0 in the other case
+        // MaxString - returns a similarity value depending of the biggest substring that belong to both strings
+        // EnumDistance - returns the similarity of two enum values as the their distance: sim(x,y) = |ord(x) - ord(y)|
+        // EnumCyclicDistance - computes the similarity between two enum values as their cyclic distance
+        // Table - uses a table to obtain the similarity between two values. Allowed values are Strings or Enums. The table is read from a text file.
+        // TableSimilarity(List<String> values).setSimilarity(value1,value2,similarity)
 
 	}
 
