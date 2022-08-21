@@ -1,0 +1,93 @@
+net
+{
+     node_size = (0 0);
+     name = "New BN";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node prvi_pokusaj
+{
+     label = "C1";
+     position = (532 279);
+     states = ("vrata1" "vrata2" "vrata3");
+}
+
+node automobil
+{
+     label = "C2";
+     position = (911 281);
+     states = ("vrata1" "vrata2" "vrata3");
+}
+
+node domacin
+{
+     label = "C3";
+     position = (772 112);
+     states = ("vrata1" "vrata2" "vrata3");
+}
+
+node drugi_pokusaj
+{
+     label = "C4";
+     position = (590 454);
+     states = ("ostajemo" "menjamo");
+}
+
+node osvojio_auto
+{
+     label = "C5";
+     position = (933 453);
+     states = ("da" "ne");
+}
+
+potential (prvi_pokusaj)
+{
+ data = ( 0.33333334 0.33333334 0.33333334 );
+}
+
+potential (automobil)
+{
+ data = ( 0.33333334 0.33333334 0.33333334 );
+}
+
+potential (domacin | automobil prvi_pokusaj)
+{
+ data = ((( 0.0 0.5 0.5 )
+( 0.0 0.0 1.0 )
+( 0.0 1.0 0.0 ))
+(( 0.0 0.0 1.0 )
+( 0.5 0.0 0.5 )
+( 1.0 0.0 0.0 ))
+(( 0.0 1.0 0.0 )
+( 1.0 0.0 0.0 )
+( 0.5 0.5 0.0 )));
+}
+
+potential (drugi_pokusaj)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (osvojio_auto | drugi_pokusaj automobil prvi_pokusaj)
+{
+ data = (((( 1.0 0.0 )
+( 0.0 1.0 )
+( 0.0 1.0 ))
+(( 0.0 1.0 )
+( 1.0 0.0 )
+( 0.0 1.0 ))
+(( 0.0 1.0 )
+( 0.0 1.0 )
+( 1.0 0.0 )))
+((( 0.0 1.0 )
+( 1.0 0.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 0.0 1.0 )
+( 1.0 0.0 ))
+(( 1.0 0.0 )
+( 1.0 0.0 )
+( 0.0 1.0 ))));
+}
+
