@@ -9,13 +9,18 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import IZ.model.CPU;
+import IZ.model.Motherboard;
 import IZ.sparql.SparqlStaticFields;
 
 @Service
 public class CPUService {
+	@Autowired
+	private MotherboardService motherboardService;
+	
 	public CPU getOne(String title) {
 		String selectString = SparqlStaticFields.Prefix +
 				"SELECT ?socket ?title ?cpu_core_clock ?cpu_core_count ?cpu_core_clock_boost ?cpu_series ?cpu_power_usage ?cpu_integrated_graphics \n" +
@@ -81,6 +86,22 @@ public class CPUService {
 			cpu.setCoreClockBoost((solution.getLiteral("cpu_core_clock_boost") != null) ? solution.getLiteral("cpu_core_clock_boost").getInt(): null);
 			cpu.setPowerUsage((solution.getLiteral("cpu_power_usage") != null) ? solution.getLiteral("cpu_power_usage").getInt(): null);
 			cpus.add(cpu);
+		}
+		return cpus;
+	}
+	
+	public List<CPU> getCompatibleCPUS(String title) {
+		Motherboard motherboard = motherboardService.getOne(title);
+		String socket = motherboard.getSocket();
+		if(socket.contains("4")) {
+			socket = "AM4";
+		}
+		List<CPU> all = getAll();
+		List<CPU> cpus = new ArrayList<CPU>();
+		for(CPU cpu: all) {
+			if(cpu.getSocket().equals(socket.toString())) {
+				cpus.add(cpu);
+			}
 		}
 		return cpus;
 	}

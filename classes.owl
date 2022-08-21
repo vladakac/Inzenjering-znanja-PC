@@ -135,6 +135,12 @@
 	rdfs:domain :Fan ;
 	rdfs:range xsd:string .
 # 
+# http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw
+
+:gpu_recw a owl:DatatypeProperty ;
+	rdfs:domain :GPU ;
+	rdfs:range xsd:integer .
+# 
 # http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_boost_clock
 
 :gpu_boost_clock a owl:DatatypeProperty ;

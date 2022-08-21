@@ -285,6 +285,7 @@
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock> 7008 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR5" ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 75 ;
+              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 450 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GTX1050TI" .
 
@@ -305,6 +306,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GTX1650" .
 
 
@@ -324,6 +326,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GTX1660" .
 
 
@@ -343,6 +346,7 @@
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 450 ;
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GTX1660Super" .
 
 
@@ -362,6 +366,7 @@
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 450 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GTX1660TI" .
 
 
@@ -380,6 +385,7 @@
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock> 2100 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR4" ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 20 ;
+         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GT1030" .
 
@@ -399,6 +405,7 @@
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_clock> 1600 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR3" ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 23 ;
+        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 1 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GT730" .
 
@@ -658,6 +665,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 500 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX2060" .
 
 
@@ -677,6 +685,7 @@
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 550 ;
                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX2060Super" .
 
 
@@ -696,6 +705,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 150 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 550 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3050" .
 
 
@@ -715,6 +725,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 150 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 340 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3060" .
 
 
@@ -734,6 +745,7 @@
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 500 ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3060Dual" .
 
 
@@ -753,6 +765,7 @@
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3060TI" .
 
 
@@ -772,6 +785,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 650 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3070" .
 
 
@@ -791,6 +805,7 @@
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6X" ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 290 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3070TI" .
 
 
@@ -810,6 +825,7 @@
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6X" ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 350 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 750 ;
           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3080" .
 
 
@@ -829,6 +845,7 @@
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6X" ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 750 ;
              <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RTX3080TI" .
 
 
@@ -848,6 +865,7 @@
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR5" ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 75 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX550" .
 
 
@@ -867,6 +885,7 @@
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR5" ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 75 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 400 ;
         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX560" .
 
 
@@ -886,6 +905,7 @@
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 150 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 450 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6400" .
 
 
@@ -905,6 +925,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 100 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 450 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6500XT" .
 
 
@@ -924,6 +945,7 @@
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 150 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 550 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6600" .
 
 
@@ -943,6 +965,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 150 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 600 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6600XT" .
 
 
@@ -962,6 +985,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 750 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6650XT" .
 
 
@@ -981,6 +1005,7 @@
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 220 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 650 ;
          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6700" .
 
 
@@ -1000,6 +1025,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 650 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6700XT" .
 
 
@@ -1019,6 +1045,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 450 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6750XT" .
 
 
@@ -1057,6 +1084,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 200 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 800 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6800XT" .
 
 
@@ -1076,6 +1104,7 @@
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_memory_type> "GDDR6" ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_power_usage> 250 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_vga_ports> 0 ;
+            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#gpu_recw> 1000 ;
             <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "RX6900XT" .
 
 

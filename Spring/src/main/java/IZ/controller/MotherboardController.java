@@ -1,5 +1,6 @@
 package IZ.controller;
 
+import IZ.dto.MotherboardCompatibleDTO;
 import IZ.model.Motherboard;
 import IZ.service.MotherboardService;
 
@@ -10,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,5 +32,10 @@ public class MotherboardController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<Motherboard> getAll(){
         return motherboardService.getAll();
+    }
+    
+    @PostMapping(value = "compatible", produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<Motherboard> GetCompatibleMotherboards(@RequestBody MotherboardCompatibleDTO dto){
+        return motherboardService.getCompatibleMotherBoards(dto);
     }
 }

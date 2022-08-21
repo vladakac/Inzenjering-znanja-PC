@@ -28,6 +28,7 @@ public class GPU implements CaseComponent {
 	private Integer dpPorts;
 	private Integer hdmiPorts;
 	private Integer dviPorts;
+	private Integer recWattage;
 
 	@JsonIgnore
 	@Override

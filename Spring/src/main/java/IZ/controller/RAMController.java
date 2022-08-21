@@ -1,5 +1,6 @@
 package IZ.controller;
 
+import IZ.dto.RAMCompatibleDTO;
 import IZ.model.RAM;
 import IZ.service.RAMService;
 
@@ -10,6 +11,8 @@ import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -29,5 +32,10 @@ public class RAMController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<RAM> getAll(){
         return ramService.getAll();
+    }
+    
+    @PostMapping(value="compatible",produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<RAM> getCompatibleRAM(@RequestBody RAMCompatibleDTO dto){
+        return ramService.getCompatibleRAM(dto.getMoboTitle());
     }
 }

@@ -9,13 +9,22 @@ import org.apache.jena.query.QueryExecutionFactory;
 import org.apache.jena.query.QueryFactory;
 import org.apache.jena.query.QuerySolution;
 import org.apache.jena.query.ResultSet;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import IZ.dto.MotherboardCompatibleDTO;
+import IZ.model.CPU;
 import IZ.model.Motherboard;
+import IZ.model.RAM;
 import IZ.sparql.SparqlStaticFields;
 
 @Service
 public class MotherboardService {
+	@Autowired
+	private CPUService cpuService;
+	@Autowired
+	private RAMService ramService;
+	
 	public Motherboard getOne(String title){
         String selectString = SparqlStaticFields.Prefix +
                 "SELECT ?Motherboard_memory_type ?socket ?Motherboard_m2_slots ?Motherboard_pcie_slots ?Motherboard_sata_port ?Motherboard_memory_slots ?rgb ?Motherboard_memory_max ?Motherboard_memory_max_frequency ?title ?Motherboard_form ?Motherboard_usb_ports ?Motherboard_chipset \n" +
@@ -102,6 +111,23 @@ public class MotherboardService {
             if(motherboard.getForm() != null) {
             	motherboards.add(motherboard);
             }
+        }
+        return motherboards;
+    }
+	
+	public List<Motherboard> getCompatibleMotherBoards(MotherboardCompatibleDTO dto){
+		RAM ram = ramService.getOne(dto.getRamTitle());
+		CPU cpu = cpuService.getOne(dto.getCpuTitle());
+		String socket = cpu.getSocket();
+		if(socket.contains("4")){
+			socket = "AM4";
+		}
+        List<Motherboard> all = getAll();
+        List<Motherboard> motherboards = new ArrayList<Motherboard>();
+        for(Motherboard mb: all) {
+        	if(mb.getMemoryType().equals(ram.getType()) && mb.getSocket().equals(socket)){
+        		motherboards.add(mb);
+        	}
         }
         return motherboards;
     }

@@ -1,5 +1,6 @@
 package IZ.controller;
 
+import IZ.dto.GPUCompatibleDTO;
 import IZ.model.GPU;
 import IZ.service.GPUService;
 
@@ -25,6 +26,11 @@ public class GPUController {
     @GetMapping(produces = MediaType.APPLICATION_JSON_VALUE)
     public List<GPU> getAll(){
         return gpuService.getAll();
+    }
+    
+    @PostMapping(value="compatible",produces = MediaType.APPLICATION_JSON_VALUE)
+    public List<GPU> getCompatibleGPU(@RequestBody GPUCompatibleDTO dto){
+        return gpuService.getCompatibleGPU(dto.getPsuTitle());
     }
 
 }
