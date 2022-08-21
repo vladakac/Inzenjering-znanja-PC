@@ -5,7 +5,7 @@ import { Injectable } from '@angular/core';
   providedIn: 'root'
 })
 export class ComponentRecommendationService {
-  private _APIUrl = "https://localhost:****/api/";
+  private _APIUrl = "http://localhost:8080/api/";
 
   constructor(private _httpClient: HttpClient) { }
 
@@ -27,5 +27,17 @@ export class ComponentRecommendationService {
 
   GetHDDs(){
     return this._httpClient.get<any[]>(this._APIUrl + 'HDD')
+  }
+
+  GetSSDs(){
+    return this._httpClient.get<any[]>(this._APIUrl + 'SSD')
+  }
+
+  FuzzyCheck(body : any){
+    return this._httpClient.put<any[]>(this._APIUrl + 'fuzzy', body)
+  }
+  
+  FindSimilar(body : any){
+    return this._httpClient.put<any[]>(this._APIUrl + 'cbr', body)
   }
 }

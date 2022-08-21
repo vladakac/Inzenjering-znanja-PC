@@ -7,29 +7,35 @@ import { ComponentRecommendationService } from '../services/component-recommenda
   styleUrls: ['./usage-compatibility.component.css']
 })
 export class UsageCompatibilityComponent implements OnInit {
-  Mobos : any[] = ["1", "2"]
-  CPUS : any[] = ["1", "2"]
-  GPUS : any[] = ["1", "2"]
-  RAMS : any[] = ["1", "2"]
-  HDDS : any[] = ["1", "2"]
-  mobo = ''
+  CPUS : any[] = []
+  GPUS : any[] = []
+  RAMS : any[] = []
+  HDDS : any[] = []
   cpu = ''
   gpu = ''
   ram = ''
   hdd = ''
+  fuzzy : any = {}
+
+
 
   constructor(private _compService : ComponentRecommendationService) { }
 
   ngOnInit(): void {
-    this._compService.GetMobos().subscribe(res => this.Mobos)
-    this._compService.GetCPUs().subscribe(res => this.CPUS)
-    this._compService.GetGPUs().subscribe(res => this.GPUS)
-    this._compService.GetRAMs().subscribe(res => this.RAMS)
-    this._compService.GetHDDs().subscribe(res => this.HDDS)
+    this._compService.GetCPUs().subscribe(res => this.CPUS = res)
+    this._compService.GetGPUs().subscribe(res => this.GPUS = res)
+    this._compService.GetRAMs().subscribe(res => this.RAMS = res)
+    this._compService.GetHDDs().subscribe(res => this.HDDS = res)
   }
 
   Submit(){
-    console.log(this.mobo)
+    var body = {
+      ramTitle : this.ram,
+      cpuTitle : this.cpu,
+      gpuTitle : this.gpu,
+      diskTitle : this.hdd
+    }
+    this._compService.FuzzyCheck(body).subscribe(res => this.fuzzy = res)
   }
 
 }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ComponentRecommendationService } from '../services/component-recommendation.service';
 
 @Component({
   selector: 'app-failure-cause',
@@ -6,24 +7,35 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./failure-cause.component.css']
 })
 export class FailureCauseComponent implements OnInit {
-  Mobos : any[] = ["1", "2"]
-  CPUS : any[] = ["1", "2"]
-  GPUS : any[] = ["1", "2"]
-  RAMS : any[] = ["1", "2"]
-  HDDS : any[] = ["1", "2"]
+  Mobos : any[] = []
+  CPUS : any[] = []
+  GPUS : any[] = []
+  RAMS : any[] = []
+  HDDS : any[] = []
   mobo = ''
   cpu = ''
   gpu = ''
   ram = ''
   hdd = ''
 
-  constructor() { }
+  constructor(private _compService : ComponentRecommendationService) { }
 
   ngOnInit(): void {
+    this._compService.GetMobos().subscribe(res => this.Mobos = res)
+    this._compService.GetCPUs().subscribe(res => this.CPUS = res)
+    this._compService.GetGPUs().subscribe(res => this.GPUS = res)
+    this._compService.GetRAMs().subscribe(res => this.RAMS = res)
+    this._compService.GetHDDs().subscribe(res => this.HDDS = res)
   }
 
   Submit(){
-    console.log(this.mobo)
+    var body = {
+      ramTitle : this.ram,
+      cpuTitle : this.cpu,
+      gpuTitle : this.gpu,
+      diskTitle : this.hdd
+    }
+
   }
 
 }
