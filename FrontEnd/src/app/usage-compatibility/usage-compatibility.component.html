@@ -1,0 +1,60 @@
+<div class="mx-5 my-5">
+    <form>
+        <div class="form-group mt-3">
+          <label for="exampleFormControlSelect1">Select Motherboard:</label>
+          <select [(ngModel)]="mobo" class="form-control" name="moboSelect">
+            <option *ngFor="let Mobo of Mobos">{{Mobo}}</option>
+          </select>
+        </div>
+        <div class="form-group mt-3">
+            <label for="exampleFormControlSelect1">Select CPU:</label>
+            <select [(ngModel)]="cpu" class="form-control" name="cpuSelect">
+              <option *ngFor="let CPU of CPUS">{{CPU}}</option>
+            </select>
+          </div>
+          <div class="form-group mt-3">
+            <label for="exampleFormControlSelect1">Select GPU:</label>
+            <select [(ngModel)]="gpu" class="form-control" name="gpuSelect">
+              <option *ngFor="let GPU of GPUS">{{GPU}}</option>
+            </select>
+          </div>
+          <div class="form-group mt-3">
+            <label for="exampleFormControlSelect1">Select RAM:</label>
+            <select [(ngModel)]="ram" class="form-control" name="ramSelect">
+              <option *ngFor="let RAM of RAMS">{{RAM}}</option>
+            </select>
+          </div>
+          <div class="form-group mt-3">
+            <label for="exampleFormControlSelect1">Select HDD:</label>
+            <select [(ngModel)]="hdd" class="form-control" name="hddSelect">
+              <option *ngFor="let HDD of HDDS">{{HDD}}</option>
+            </select>
+          </div>
+        <button (click)="Submit()" style="background-color: #F64C72; color: white;" class="btn mt-5">Submit</button>
+    </form>
+
+    <div class="my-5">
+        <div class="my-3 row">
+            <div class="col">
+                <h5>Kucna upotreba:</h5>
+            </div>
+            <div class="col">
+                <label>0.5</label>
+            </div>
+            <div class="col"></div><div class="col"></div><div class="col"></div>
+        </div>
+        <div class="my-3">
+            <h5>Poslovna upotreba:</h5>
+        </div>
+        <div class="my-3">
+            <h5>Igranje igara:</h5>
+        </div>
+        <div class="my-3">
+            <h5>Rudarenje:</h5>
+        </div>
+        <div class="my-3">
+            <h5>Web hosting:</h5>
+        </div>
+    </div>
+</div>
+
