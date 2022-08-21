@@ -8,7 +8,6 @@ import ucm.gaia.jcolibri.cbrcore.CBRCase;
 import java.util.Collection;
 import java.util.List;
 
-import javax.management.loading.PrivateClassLoader;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;

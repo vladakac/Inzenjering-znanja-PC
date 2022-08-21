@@ -136,6 +136,16 @@
                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "Corsair4000DAirflow" .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_Dominator_Platinum_RGB_32_GB
+:Corsair_Dominator_Platinum_RGB_32_GB rdf:type owl:NamedIndividual ,
+                                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 6200 ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR5" ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "true"^^xsd:boolean ;
+                                      <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CorsairDominatorPlatinumRGB32GB" .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_HX1500i
 :Corsair_HX1500i rdf:type owl:NamedIndividual ,
                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU> ;
@@ -173,6 +183,26 @@
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_type> "ATX" ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_wattage> 750 ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CorsairTX750" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_Vengeance_RGB_Pro_32_GB
+:Corsair_Vengeance_RGB_Pro_32_GB rdf:type owl:NamedIndividual ,
+                                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3600 ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "true"^^xsd:boolean ;
+                                 <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CorsairVengeanceRGBPro32GB" .
+
+
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Crucial_Ballistix_16_GB
+:Crucial_Ballistix_16_GB rdf:type owl:NamedIndividual ,
+                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
+                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CrucialBallistix16GB" .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#EVGA_T2
@@ -229,6 +259,7 @@
                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GSkillRipJawsV16GB" .
 
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#G.Skill_Ripjaws_V_32_GB
 :G.Skill_Ripjaws_V_32_GB rdf:type owl:NamedIndividual ,
                                   <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
@@ -237,51 +268,6 @@
                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
                          <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "GSkillRipJawsV32GB" .
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_Vengeance_RGB_Pro_32_GB 
-:Corsair_Vengeance_RGB_Pro_32_GB  rdf:type owl:NamedIndividual ,
-                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3600 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "true"^^xsd:boolean ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CorsairVengeanceRGBPro32GB" .
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Crucial_Ballistix_16_GB
-:Crucial_Ballistix_16_GB  rdf:type owl:NamedIndividual ,
-                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CrucialBallistix16GB" .
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Corsair_Dominator_Platinum_RGB_32_GB
-:Corsair_Dominator_Platinum_RGB_32_GB  rdf:type owl:NamedIndividual ,
-                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 32 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 6200 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR5" ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "true"^^xsd:boolean ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "CorsairDominatorPlatinumRGB32GB" .
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Kingston_Fury_Beast_16gb
-:Kingston_Fury_Beast_16gb  rdf:type owl:NamedIndividual ,
-                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "KingstonFuryBeast16gb" .
-
-###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Kingston_HyperX_Fury_16_GB
-:Kingston_HyperX_Fury_16_GB  rdf:type owl:NamedIndividual ,
-                                  <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
-                         <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "KingstonHyperXFury16GB" .
 
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#GTX_1050_TI
@@ -478,6 +464,16 @@
                           <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "KingstonFuryBeast16gb" .
 
 
+###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Kingston_HyperX_Fury_16_GB
+:Kingston_HyperX_Fury_16_GB rdf:type owl:NamedIndividual ,
+                                     <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM> ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_memory> 16 ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_speed> 3200 ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#ram_type> "DDR4" ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#rgb> "false"^^xsd:boolean ;
+                            <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#title> "KingstonHyperXFury16GB" .
+
+
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#Lian_Li_LANCOOL_215
 :Lian_Li_LANCOOL_215 rdf:type owl:NamedIndividual ,
                               <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#Case> ;
@@ -560,7 +556,7 @@
 
 ###  http://www.semanticweb.org/vlada/ontologies/2022/5/instances.owl#NOXHummer_650
 :NOXHummer_650 rdf:type owl:NamedIndividual ,
-                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD> ;
+                        <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU> ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_efficiency_rating> "80+ Bronze" ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_fanless> "false"^^xsd:boolean ;
                <http://www.semanticweb.org/vlada/ontologies/2022/5/classes#psu_modular> "true"^^xsd:boolean ;

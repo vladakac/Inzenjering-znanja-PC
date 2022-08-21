@@ -67,7 +67,9 @@ public class SSDService {
 	            ssd.setRpm((solution.getLiteral("storage_rpm") != null) ? solution.getLiteral("storage_rpm").getInt() : null);
 	            ssd.setSataSpeed((solution.getLiteral("storage_sata_speed") != null) ? solution.getLiteral("storage_sata_speed").getInt() : null);
 	            ssd.setType((solution.getLiteral("storage_type") != null) ? solution.getLiteral("storage_type").getString() : null);
-	            ssdList.add(ssd);
+	            if(ssd.getCapacity() != null) {
+	            	ssdList.add(ssd);
+	            }
 	        }
 	        return ssdList;
 	    }

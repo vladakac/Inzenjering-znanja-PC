@@ -918,7 +918,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
         <classes:psu_efficiency_rating>80+ Bronze</classes:psu_efficiency_rating>
         <classes:psu_fanless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</classes:psu_fanless>
         <classes:psu_modular rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</classes:psu_modular>
