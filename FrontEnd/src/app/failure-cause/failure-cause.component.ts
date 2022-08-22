@@ -11,7 +11,7 @@ export class FailureCauseComponent implements OnInit {
   causes : any
   selectedSymp : any = []
   selectedCauses : any = []
-  results : any[] = []
+  results : Results = {"results": []}
 
   constructor(private _compService : ComponentRecommendationService) { }
 
@@ -28,4 +28,8 @@ export class FailureCauseComponent implements OnInit {
     this._compService.Bayes(body).subscribe(res => {this.results = res, console.log(this.results)})
   }
 
+}
+
+export interface Results {
+  results : any[]
 }

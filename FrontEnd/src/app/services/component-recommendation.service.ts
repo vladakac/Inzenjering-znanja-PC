@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { THIS_EXPR } from '@angular/compiler/src/output/output_ast';
 import { Injectable } from '@angular/core';
+import { Results } from '../failure-cause/failure-cause.component';
 
 @Injectable({
   providedIn: 'root'
@@ -55,7 +56,7 @@ export class ComponentRecommendationService {
   }
 
   Bayes(body : any){
-    return this._httpClient.post<any[]>(this._APIUrl +'bayes', body)
+    return this._httpClient.post<Results>(this._APIUrl +'bayes', body)
   }
 
   GetCompMobo(body : any){
