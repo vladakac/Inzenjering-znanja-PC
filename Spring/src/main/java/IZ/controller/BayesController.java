@@ -72,6 +72,23 @@ public class BayesController {
                         add(new BayesResponseDTO(Malfunctions.toString(malfunction), node.getMarginalAt(0)));
         }
         malfunctions.getResults().sort(Comparator.comparing(BayesResponseDTO::getProbability).reversed());
+
+        //Zakomentarisati ukoliko treba neizvesno da se prikazu procenti
+        float percentSum = 0;
+        for (int i = 0; i < malfunctions.getResults().size(); i++) {
+            BayesResponseDTO bayes = malfunctions.getResults().get(i);
+            percentSum+=bayes.getProbability();
+        }
+
+        for (int i = 0; i < malfunctions.getResults().size(); i++) {
+            malfunctions.getResults().get(i).setProbability(malfunctions.getResults().get(i).getProbability()/percentSum*100);
+        }
+
+        //Odkomentarisati (radi zaokruzivanja na do 100, inace je 0.nesto
+        /*for (int i = 0; i < malfunctions.getResults().size(); i++) {
+            malfunctions.getResults().get(i).setProbability(malfunctions.getResults().get(i).getProbability()*100);
+        }*/
+
         return malfunctions;
     }
 

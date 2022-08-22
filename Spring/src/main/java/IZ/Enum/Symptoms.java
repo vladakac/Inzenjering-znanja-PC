@@ -13,7 +13,6 @@ public enum Symptoms {
     noSpaceAvailable,
     cantDownloadSoftware,
     cantInstallSoftware,
-    noInput,
     filesCorrupted,
     filesMissing,
     monitorFlickering,
@@ -53,8 +52,6 @@ public enum Symptoms {
                 return "Cant_download_software";
             case cantInstallSoftware:
                 return "Cant_install_software";
-            case noInput:
-                return "No_input";
             case filesCorrupted:
                 return "Files_corrupted";
             case filesMissing:

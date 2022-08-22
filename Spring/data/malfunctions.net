@@ -2,7 +2,7 @@ net
 {
      node_size = (0 0);
      name = "New BN";
-     tree = "(C1,C2,C3,C4,C5,C6,C7,C11,C13,C14,C15,C17,C18,C21,C22,C23,C24,C26,C27,C28,C29,C30,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47,C48,C50,C53,C54,C57,C58,C60)";
+     tree = "(C1,C2,C3,C4,C5,C6,C7,C11,C13,C14,C15,C17,C18,C21,C22,C23,C24,C26,C27,C28,C29,C30,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47,C48,C50,C53,C54,C57,C58,C60,C12,C16,C19)";
      UnBBayes_Color_Probabilistic_Description = "-256";
      UnBBayes_Color_Probabilistic_Explanation = "-16711936";
 }
@@ -270,20 +270,6 @@ node Ethernet_card_malfunction
 {
      label = "C1";
      position = (62 552);
-     states = ("yes" "no");
-}
-
-node No_input
-{
-     label = "C2";
-     position = (1248 1028);
-     states = ("yes" "no");
-}
-
-node Keyboard_malfunction
-{
-     label = "C3";
-     position = (1241 934);
      states = ("yes" "no");
 }
 
@@ -667,20 +653,6 @@ potential (Ethernet_card_malfunction | MOBO_malfunction)
 {
  data = (( 0.6 0.4 )
 ( 0.2 0.8 ));
-}
-
-potential (No_input | Keyboard_malfunction)
-{
- data = (( 1.0 0.0 )
-( 0.1 0.9 ));
-}
-
-potential (Keyboard_malfunction | PC_dropped Cable_disconnected)
-{
- data = ((( 0.99 0.01 )
-( 0.3 0.7 ))
-(( 0.99 0.01 )
-( 0.1 0.9 )));
 }
 
 potential (No_space_available | Storage_malfunction)

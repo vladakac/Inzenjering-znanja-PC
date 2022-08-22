@@ -16,8 +16,7 @@ public enum Malfunctions {
     biosOutdated,
     systemFilesMalfunction,
     maliciousSoftware,
-    driversMalfunction,
-    keyboardMalfunction;
+    driversMalfunction;
 
     public static String getNodeName(Malfunctions malfunction){
         switch(malfunction){
@@ -53,8 +52,6 @@ public enum Malfunctions {
                 return "Malicious_software";
             case driversMalfunction:
                 return "Drivers_malfunction";
-            case keyboardMalfunction:
-                return "Keyboard_malfunction";
             default:
                 return "NO NODE FOUND";
         }
@@ -93,8 +90,6 @@ public enum Malfunctions {
                 return "There is a malware in your system";
             case driversMalfunction:
                 return "There is a driver malfunction";
-            case keyboardMalfunction:
-                return "Keyboard is not working";
             default:
                 return "NO NODE FOUND";
         }
