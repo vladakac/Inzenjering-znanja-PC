@@ -1,8 +1,8 @@
 # Inzenjering znanja PC
  
 # Technologies
- -Frontend: Angular
- -Backend: Spring
+ - Frontend: Angular
+ - Backend: Spring
 
 # Installation
  1. Clone the repository https://github.com/vladakac/Inzenjering-znanja-PC.git
