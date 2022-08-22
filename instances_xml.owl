@@ -8,6 +8,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:classes="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#">
     <owl:Ontology rdf:about="http://www.semanticweb.org/vlada/ontologies/2022/5/instances_xml.owl"/>
+    
 
 
     <!-- 
@@ -93,7 +94,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>Intel Z690</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5333</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -124,7 +125,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>Intel B660</classes:Motherboard_chipset>
         <classes:Motherboard_form>Mini ITX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6200</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_memory_slots>
@@ -155,7 +156,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>AMD X570</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4400</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -488,6 +489,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">7008</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR5</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>GTX1050TI</classes:title>
     </owl:NamedIndividual>
@@ -513,6 +515,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>GTX1650</classes:title>
     </owl:NamedIndividual>
@@ -538,6 +541,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">8002</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>GTX1660</classes:title>
     </owl:NamedIndividual>
@@ -563,6 +567,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14002</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>GTX1660Super</classes:title>
     </owl:NamedIndividual>
@@ -588,6 +593,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">12000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>GTX1660TI</classes:title>
     </owl:NamedIndividual>
@@ -613,6 +619,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2100</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR4</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">20</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>GT1030</classes:title>
     </owl:NamedIndividual>
@@ -638,6 +645,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1600</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR3</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">23</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</classes:gpu_vga_ports>
         <classes:title>GT730</classes:title>
     </owl:NamedIndividual>
@@ -681,7 +689,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>AMD B550</classes:Motherboard_chipset>
         <classes:Motherboard_form>Micro ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4600</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -712,7 +720,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>Intel B660</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4400</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -803,7 +811,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>AMD B450</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">64</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4133</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -834,7 +842,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>AMD B550</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4866</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -865,7 +873,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>Intel B660</classes:Motherboard_chipset>
         <classes:Motherboard_form>Micro ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4800</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -896,7 +904,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>Intel Z690</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5200</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -918,7 +926,6 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#HardwareComponent"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#InternalComponent"/>
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#PSU"/>
-        <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#SSD"/>
         <classes:psu_efficiency_rating>80+ Bronze</classes:psu_efficiency_rating>
         <classes:psu_fanless rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">false</classes:psu_fanless>
         <classes:psu_modular rdf:datatype="http://www.w3.org/2001/XMLSchema#boolean">true</classes:psu_modular>
@@ -1021,7 +1028,7 @@
         <rdf:type rdf:resource="http://www.semanticweb.org/vlada/ontologies/2022/5/classes#RAM"/>
         <classes:Motherboard_chipset>AMD B550</classes:Motherboard_chipset>
         <classes:Motherboard_form>ATX</classes:Motherboard_form>
-        <classes:Motherboard_m.2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m.2_slots>
+        <classes:Motherboard_m2_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</classes:Motherboard_m2_slots>
         <classes:Motherboard_memory_max rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">128</classes:Motherboard_memory_max>
         <classes:Motherboard_memory_max_frequency rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4733</classes:Motherboard_memory_max_frequency>
         <classes:Motherboard_memory_slots rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</classes:Motherboard_memory_slots>
@@ -1098,6 +1105,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX2060</classes:title>
     </owl:NamedIndividual>
@@ -1123,6 +1131,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX2060Super</classes:title>
     </owl:NamedIndividual>
@@ -1148,6 +1157,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3050</classes:title>
     </owl:NamedIndividual>
@@ -1173,6 +1183,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">340</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3060</classes:title>
     </owl:NamedIndividual>
@@ -1198,6 +1209,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">15000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">500</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3060Dual</classes:title>
     </owl:NamedIndividual>
@@ -1223,6 +1235,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3060TI</classes:title>
     </owl:NamedIndividual>
@@ -1248,6 +1261,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3070</classes:title>
     </owl:NamedIndividual>
@@ -1273,6 +1287,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6X</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">290</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3070TI</classes:title>
     </owl:NamedIndividual>
@@ -1298,6 +1313,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">19000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6X</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">350</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3080</classes:title>
     </owl:NamedIndividual>
@@ -1323,6 +1339,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6X</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RTX3080TI</classes:title>
     </owl:NamedIndividual>
@@ -1348,6 +1365,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR5</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX550</classes:title>
     </owl:NamedIndividual>
@@ -1373,6 +1391,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR5</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">75</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">400</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX560</classes:title>
     </owl:NamedIndividual>
@@ -1398,6 +1417,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6400</classes:title>
     </owl:NamedIndividual>
@@ -1423,6 +1443,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">100</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6500XT</classes:title>
     </owl:NamedIndividual>
@@ -1448,6 +1469,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">14000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">550</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6600</classes:title>
     </owl:NamedIndividual>
@@ -1473,6 +1495,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">150</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">600</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6600XT</classes:title>
     </owl:NamedIndividual>
@@ -1498,6 +1521,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">17500</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">750</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6650XT</classes:title>
     </owl:NamedIndividual>
@@ -1523,6 +1547,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">220</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6700</classes:title>
     </owl:NamedIndividual>
@@ -1548,6 +1573,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">650</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6700XT</classes:title>
     </owl:NamedIndividual>
@@ -1573,6 +1599,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">18000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">450</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6750XT</classes:title>
     </owl:NamedIndividual>
@@ -1623,6 +1650,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">200</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">800</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6800XT</classes:title>
     </owl:NamedIndividual>
@@ -1648,6 +1676,7 @@
         <classes:gpu_memory_clock rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">16000</classes:gpu_memory_clock>
         <classes:gpu_memory_type>GDDR6</classes:gpu_memory_type>
         <classes:gpu_power_usage rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">250</classes:gpu_power_usage>
+        <classes:gpu_recw rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1000</classes:gpu_recw>
         <classes:gpu_vga_ports rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</classes:gpu_vga_ports>
         <classes:title>RX6900XT</classes:title>
     </owl:NamedIndividual>
@@ -3244,4 +3273,3 @@
 
 
 <!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
-

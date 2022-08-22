@@ -1,0 +1,725 @@
+net
+{
+     node_size = (0 0);
+     name = "New BN";
+     tree = "(C1,C2,C3,C4,C5,C6,C7,C11,C13,C14,C15,C17,C18,C21,C22,C23,C24,C26,C27,C28,C29,C30,C32,C33,C34,C35,C36,C37,C38,C39,C40,C41,C42,C43,C44,C45,C46,C47,C48,C50,C53,C54,C57,C58,C60,C12,C16,C19)";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node PC_dropped
+{
+     label = "C1";
+     position = (75 12);
+     states = ("yes" "no");
+}
+
+node Liquid_spill
+{
+     label = "C2";
+     position = (626 10);
+     states = ("yes" "no");
+}
+
+node Overclocked
+{
+     label = "C3";
+     position = (842 9);
+     states = ("yes" "no");
+}
+
+node Dust_and_dirt
+{
+     label = "C4";
+     position = (1087 13);
+     states = ("yes" "no");
+}
+
+node MOBO_malfunction
+{
+     label = "C5";
+     position = (12 353);
+     states = ("yes" "no");
+}
+
+node GPU_malfunction
+{
+     label = "C6";
+     position = (657 388);
+     states = ("yes" "no");
+}
+
+node CPU_malfunction
+{
+     label = "C7";
+     position = (264 401);
+     states = ("yes" "no");
+}
+
+node Cable_disconnected
+{
+     label = "C13";
+     position = (18 174);
+     states = ("yes" "no");
+}
+
+node Cooling_malfunction
+{
+     label = "C14";
+     position = (334 159);
+     states = ("yes" "no");
+}
+
+node Audio_card_malfunction
+{
+     label = "C18";
+     position = (154 475);
+     states = ("yes" "no");
+}
+
+node Beeping
+{
+     label = "C21";
+     position = (147 665);
+     states = ("yes" "no");
+}
+
+node RAM_malfunction
+{
+     label = "C22";
+     position = (775 385);
+     states = ("yes" "no");
+}
+
+node Storage_malfunction
+{
+     label = "C23";
+     position = (537 385);
+     states = ("yes" "no");
+}
+
+node PSU_malfunction
+{
+     label = "C26";
+     position = (437 358);
+     states = ("yes" "no");
+}
+
+node Drivers_malfunction
+{
+     label = "C27";
+     position = (2065 368);
+     states = ("yes" "no");
+}
+
+node BIOS_Outdated
+{
+     label = "C28";
+     position = (1140 140);
+     states = ("yes" "no");
+}
+
+node Overheating
+{
+     label = "C29";
+     position = (269 1019);
+     states = ("yes" "no");
+}
+
+node Malicious_software
+{
+     label = "C30";
+     position = (1652 251);
+     states = ("yes" "no");
+}
+
+node System_files_malfunction
+{
+     label = "C32";
+     position = (1266 271);
+     states = ("yes" "no");
+}
+
+node Software_neglect
+{
+     label = "C33";
+     position = (1570 48);
+     states = ("yes" "no");
+}
+
+node FPS_drop
+{
+     label = "C36";
+     position = (2035 930);
+     states = ("yes" "no");
+}
+
+node Video_freeze
+{
+     label = "C37";
+     position = (2080 984);
+     states = ("yes" "no");
+}
+
+node No_audio
+{
+     label = "C38";
+     position = (1875 609);
+     states = ("yes" "no");
+}
+
+node Sound_chopping
+{
+     label = "C39";
+     position = (1836 572);
+     states = ("yes" "no");
+}
+
+node Audio_freeze
+{
+     label = "C42";
+     position = (1785 534);
+     states = ("yes" "no");
+}
+
+node Slow_browsing
+{
+     label = "C43";
+     position = (2268 714);
+     states = ("yes" "no");
+}
+
+node No_wifi
+{
+     label = "C44";
+     position = (2338 753);
+     states = ("yes" "no");
+}
+
+node Blue_screen
+{
+     label = "C45";
+     position = (485 953);
+     states = ("yes" "no");
+}
+
+node No_ethernet
+{
+     label = "C46";
+     position = (2232 779);
+     states = ("yes" "no");
+}
+
+node Cant_install_software
+{
+     label = "C47";
+     position = (1013 1047);
+     states = ("yes" "no");
+}
+
+node Cant_download_software
+{
+     label = "C48";
+     position = (960 938);
+     states = ("yes" "no");
+}
+
+node Antivirus
+{
+     label = "C50";
+     position = (1479 116);
+     states = ("yes" "no");
+}
+
+node Files_corrupted
+{
+     label = "C54";
+     position = (1534 938);
+     states = ("yes" "no");
+}
+
+node Smoke
+{
+     label = "C57";
+     position = (373 922);
+     states = ("yes" "no");
+}
+
+node Pixelization
+{
+     label = "C58";
+     position = (1994 884);
+     states = ("yes" "no");
+}
+
+node Monitor_flickering
+{
+     label = "C60";
+     position = (2136 1049);
+     states = ("yes" "no");
+}
+
+node Antivirus_permission
+{
+     label = "C1";
+     position = (967 204);
+     states = ("yes" "no");
+}
+
+node Ethernet_card_malfunction
+{
+     label = "C1";
+     position = (62 552);
+     states = ("yes" "no");
+}
+
+node No_space_available
+{
+     label = "C6";
+     position = (752 915);
+     states = ("yes" "no");
+}
+
+node Ports_malfunction
+{
+     label = "C12";
+     position = (896 327);
+     states = ("yes" "no");
+}
+
+node PC_reboot
+{
+     label = "C13";
+     position = (22 673);
+     states = ("yes" "no");
+}
+
+node PC_slow
+{
+     label = "C14";
+     position = (48 739);
+     states = ("yes" "no");
+}
+
+node PC_cant_turn_on
+{
+     label = "C15";
+     position = (33 828);
+     states = ("yes" "no");
+}
+
+node PC_cant_boot
+{
+     label = "C16";
+     position = (187 870);
+     states = ("yes" "no");
+}
+
+node PC_loud
+{
+     label = "C18";
+     position = (106 937);
+     states = ("yes" "no");
+}
+
+node Files_missing
+{
+     label = "C19";
+     position = (1545 1024);
+     states = ("yes" "no");
+}
+
+potential (PC_dropped)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Liquid_spill)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Overclocked)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Dust_and_dirt)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (MOBO_malfunction | BIOS_Outdated PC_dropped)
+{
+ data = ((( 0.8 0.2 )
+( 0.3 0.7 ))
+(( 0.7 0.3 )
+( 0.1 0.9 )));
+}
+
+potential (GPU_malfunction | Cooling_malfunction Overclocked PC_dropped)
+{
+ data = (((( 0.95 0.05 )
+( 0.85 0.15 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.8 0.2 )
+( 0.3 0.7 ))
+(( 0.7 0.3 )
+( 0.1 0.9 ))));
+}
+
+potential (CPU_malfunction | Overclocked PC_dropped)
+{
+ data = ((( 0.8 0.2 )
+( 0.3 0.7 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+
+potential (Cable_disconnected | PC_dropped)
+{
+ data = (( 0.8 0.2 )
+( 0.2 0.8 ));
+}
+
+potential (Cooling_malfunction | PC_dropped)
+{
+ data = (( 0.7 0.3 )
+( 0.3 0.7 ));
+}
+
+potential (Audio_card_malfunction | MOBO_malfunction)
+{
+ data = (( 0.6 0.4 )
+( 0.2 0.8 ));
+}
+
+potential (Beeping | GPU_malfunction RAM_malfunction CPU_malfunction)
+{
+ data = (((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.1 0.9 ))));
+}
+
+potential (RAM_malfunction | PC_dropped Overclocked)
+{
+ data = ((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+
+potential (Storage_malfunction | Dust_and_dirt PC_dropped)
+{
+ data = ((( 0.7 0.3 )
+( 0.2 0.8 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+
+potential (PSU_malfunction | Overclocked Liquid_spill PC_dropped Dust_and_dirt)
+{
+ data = ((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.8 0.2 )
+( 0.7 0.3 ))
+(( 0.6 0.4 )
+( 0.2 0.8 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.7 0.3 )
+( 0.6 0.4 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )))));
+}
+
+potential (Drivers_malfunction | Software_neglect Malicious_software)
+{
+ data = ((( 0.9 0.1 )
+( 0.2 0.8 ))
+(( 0.7 0.3 )
+( 0.1 0.9 )));
+}
+
+potential (BIOS_Outdated | Software_neglect)
+{
+ data = (( 0.8 0.2 )
+( 0.2 0.8 ));
+}
+
+potential (Overheating | Overclocked Cooling_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.4 0.6 ))
+(( 0.8 0.2 )
+( 0.1 0.9 )));
+}
+
+potential (Malicious_software | Antivirus Software_neglect)
+{
+ data = ((( 0.8 0.2 )
+( 0.05 0.95 ))
+(( 0.95 0.05 )
+( 0.7 0.3 )));
+}
+
+potential (System_files_malfunction | Malicious_software)
+{
+ data = (( 0.8 0.2 )
+( 0.1 0.9 ));
+}
+
+potential (Software_neglect)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (FPS_drop | CPU_malfunction GPU_malfunction Drivers_malfunction)
+{
+ data = (((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.6 0.4 )))
+((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.2 0.8 )
+( 0.1 0.9 ))));
+}
+
+potential (Video_freeze | CPU_malfunction GPU_malfunction Drivers_malfunction)
+{
+ data = (((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.6 0.4 )))
+((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.2 0.8 )
+( 0.1 0.9 ))));
+}
+
+potential (No_audio | Audio_card_malfunction Drivers_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )));
+}
+
+potential (Sound_chopping | Audio_card_malfunction Drivers_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )));
+}
+
+potential (Audio_freeze | Audio_card_malfunction Drivers_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )));
+}
+
+potential (Slow_browsing | Ethernet_card_malfunction Drivers_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )));
+}
+
+potential (No_wifi | Ethernet_card_malfunction Drivers_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )));
+}
+
+potential (Blue_screen | System_files_malfunction BIOS_Outdated Malicious_software Drivers_malfunction GPU_malfunction)
+{
+ data = (((((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.9 0.1 )
+( 0.8 0.2 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.7 0.3 ))))
+(((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.8 0.2 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.5 0.5 )))))
+((((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.7 0.3 )))
+((( 0.7 0.3 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.5 0.5 ))))
+(((( 0.7 0.3 )
+( 0.8 0.2 ))
+(( 0.7 0.3 )
+( 0.5 0.5 )))
+((( 0.7 0.3 )
+( 0.5 0.5 ))
+(( 0.5 0.5 )
+( 0.1 0.9 ))))));
+}
+
+potential (No_ethernet | Ethernet_card_malfunction Drivers_malfunction)
+{
+ data = ((( 0.95 0.05 )
+( 0.9 0.1 ))
+(( 0.2 0.8 )
+( 0.1 0.9 )));
+}
+
+potential (Cant_install_software | Antivirus_permission No_space_available)
+{
+ data = ((( 0.9 0.1 )
+( 0.2 0.8 ))
+(( 0.8 0.2 )
+( 0.1 0.9 )));
+}
+
+potential (Cant_download_software | Antivirus_permission No_space_available)
+{
+ data = ((( 0.9 0.1 )
+( 0.2 0.8 ))
+(( 0.8 0.2 )
+( 0.1 0.9 )));
+}
+
+potential (Antivirus)
+{
+ data = ( 0.5 0.5 );
+}
+
+potential (Files_corrupted | Storage_malfunction Malicious_software)
+{
+ data = ((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+
+potential (Smoke | GPU_malfunction PSU_malfunction)
+{
+ data = ((( 0.6 0.4 )
+( 0.2 0.8 ))
+(( 0.4 0.6 )
+( 0.1 0.9 )));
+}
+
+potential (Pixelization | GPU_malfunction Drivers_malfunction)
+{
+ data = ((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+
+potential (Monitor_flickering | Drivers_malfunction)
+{
+ data = (( 0.70000005 0.3 )
+( 0.35000002 0.65 ));
+}
+
+potential (Antivirus_permission | Antivirus)
+{
+ data = (( 0.6 0.4 )
+( 0.0 1.0 ));
+}
+
+potential (Ethernet_card_malfunction | MOBO_malfunction)
+{
+ data = (( 0.6 0.4 )
+( 0.2 0.8 ));
+}
+
+potential (No_space_available | Storage_malfunction)
+{
+ data = (( 0.8 0.2 )
+( 0.2 0.8 ));
+}
+
+potential (Ports_malfunction | Drivers_malfunction Liquid_spill)
+{
+ data = ((( 0.9 0.1 )
+( 0.2 0.8 ))
+(( 0.7 0.3 )
+( 0.1 0.9 )));
+}
+
+potential (PC_reboot | Dust_and_dirt PSU_malfunction CPU_malfunction)
+{
+ data = (((( 0.95 0.05 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.2 0.8 )))
+((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.85 0.15 )
+( 0.1 0.9 ))));
+}
+
+potential (PC_slow | Storage_malfunction Malicious_software CPU_malfunction)
+{
+ data = (((( 0.95 0.05 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.4 0.6 )))
+((( 0.8 0.2 )
+( 0.4 0.6 ))
+(( 0.8 0.2 )
+( 0.1 0.9 ))));
+}
+
+potential (PC_cant_turn_on | PSU_malfunction)
+{
+ data = (( 1.0 0.0 )
+( 0.1 0.9 ));
+}
+
+potential (PC_cant_boot | System_files_malfunction Storage_malfunction)
+{
+ data = ((( 0.9 0.1 )
+( 0.8 0.2 ))
+(( 0.8 0.2 )
+( 0.1 0.9 )));
+}
+
+potential (PC_loud | Overheating Cooling_malfunction)
+{
+ data = ((( 0.9 0.1 )
+( 0.7 0.3 ))
+(( 0.7 0.3 )
+( 0.1 0.9 )));
+}
+
+potential (Files_missing | Storage_malfunction Malicious_software)
+{
+ data = ((( 0.8 0.2 )
+( 0.6 0.4 ))
+(( 0.6 0.4 )
+( 0.1 0.9 )));
+}
+

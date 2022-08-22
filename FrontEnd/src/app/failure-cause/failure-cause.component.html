@@ -1,0 +1,33 @@
+<div class="mx-5 my-5">
+    <form>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Select symptoms:</label>
+        <select [(ngModel)]="selectedSymp" multiple class="form-control" name="selectedSymp">
+          <option *ngFor="let symptom of symptoms.symptomsList">{{symptom}}</option>
+        </select>
+        <label for="exampleFormControlSelect2">Select cause:</label>
+        <select [(ngModel)]="selectedCauses" multiple class="form-control" name="selectedCause">
+          <option *ngFor="let cause of causes.causesList">{{cause}}</option>
+        </select>
+      </div>
+        <button (click)="Submit()" style="background-color: #F64C72; color: white;" class="btn mt-5">Submit</button>
+    </form>
+
+    <div class="mt-5">
+      <table class="table table-hover table-bordered" style="border: #EAE7DC;">
+        <thead style="background-color:#EAE7DC; color: #F64C72;">
+          <tr>
+            <th scope="col">Malfunction</th>
+            <th scope="col">Probability</th>
+          </tr>
+        </thead>
+        <tbody style="color: #58504b;">
+          <tr *ngFor='let result of results.results'>
+            <td>{{result.malfunction}}</td>
+            <td>{{result.probability}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
+    
+</div>

@@ -1,0 +1,33 @@
+net
+{
+     node_size = (0 0);
+     name = "New BN";
+     UnBBayes_Color_Probabilistic_Description = "-256";
+     UnBBayes_Color_Probabilistic_Explanation = "-16711936";
+}
+
+node taksi
+{
+     label = "C1";
+     position = (493 224);
+     states = ("plavo" "zeleno");
+}
+
+node svedok
+{
+     label = "C2";
+     position = (780 225);
+     states = ("video_plavo" "video_zeleno");
+}
+
+potential (taksi)
+{
+ data = ( 0.85 0.15 );
+}
+
+potential (svedok | taksi)
+{
+ data = (( 0.8 0.2 )
+( 0.2 0.8 ));
+}
+
