@@ -1,36 +1,35 @@
 <div class="mx-5 my-5">
     <form>
-        <div class="form-group mt-3">
-          <label for="exampleFormControlSelect1">Select Motherboard:</label>
-          <select [(ngModel)]="mobo" class="form-control" name="moboSelect">
-            <option *ngFor="let Mobo of Mobos">{{Mobo.title}}</option>
-          </select>
-        </div>
-        <div class="form-group mt-3">
-            <label for="exampleFormControlSelect1">Select CPU:</label>
-            <select [(ngModel)]="cpu" class="form-control" name="cpuSelect">
-              <option *ngFor="let CPU of CPUS">{{CPU.title}}</option>
-            </select>
-          </div>
-          <div class="form-group mt-3">
-            <label for="exampleFormControlSelect1">Select GPU:</label>
-            <select [(ngModel)]="gpu" class="form-control" name="gpuSelect">
-              <option *ngFor="let GPU of GPUS">{{GPU.title}}</option>
-            </select>
-          </div>
-          <div class="form-group mt-3">
-            <label for="exampleFormControlSelect1">Select RAM:</label>
-            <select [(ngModel)]="ram" class="form-control" name="ramSelect">
-              <option *ngFor="let RAM of RAMS">{{RAM.title}}</option>
-            </select>
-          </div>
-          <div class="form-group mt-3">
-            <label for="exampleFormControlSelect1">Select Memory Disk:</label>
-            <select [(ngModel)]="hdd" class="form-control" name="hddSelect">
-              <option *ngFor="let HDD of HDDS">{{HDD.title}}</option>
-            </select>
-          </div>
+      <div class="form-group">
+        <label for="exampleFormControlSelect2">Select symptoms:</label>
+        <select [(ngModel)]="selectedSymp" multiple class="form-control" name="selectedSymp">
+          <option *ngFor="let symptom of symptoms.symptomsList">{{symptom}}</option>
+        </select>
+        <label for="exampleFormControlSelect2">Select cause:</label>
+        <select [(ngModel)]="selectedCauses" multiple class="form-control" name="selectedCause">
+          <option *ngFor="let cause of causes.causesList">{{cause}}</option>
+        </select>
+      </div>
         <button (click)="Submit()" style="background-color: #F64C72; color: white;" class="btn mt-5">Submit</button>
     </form>
+
+    <label *ngFor="let res of results">{{res}}</label>
+
+    <div class="mt-5">
+      <table class="table table-hover table-bordered" style="border: #EAE7DC;">
+        <thead style="background-color:#EAE7DC; color: #F64C72;">
+          <tr>
+            <th scope="col">Malfunction</th>
+            <th scope="col">Probability</th>
+          </tr>
+        </thead>
+        <tbody style="color: #58504b;">
+          <tr *ngFor='let result of results'>
+            <td>{{result.results.malfunction}}</td>
+            <td>{{result.probability}}</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>  
     
 </div>
